@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.menadevs.io/">
-    <img src="assets/logo.png" alt="MENADevs" width="320">
+    <img src="assets/logo.png" width="320" alt="MENADevs">
   </a>
 </p>
 
