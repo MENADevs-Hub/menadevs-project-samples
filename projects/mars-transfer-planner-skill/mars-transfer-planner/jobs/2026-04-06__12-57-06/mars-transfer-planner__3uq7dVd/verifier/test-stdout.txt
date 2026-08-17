@@ -1,0 +1,116 @@
+Collecting pytest
+  Downloading pytest-9.0.2-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-json-ctrf
+  Downloading pytest_json_ctrf-0.4.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting iniconfig>=1.0.1 (from pytest)
+  Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting packaging>=22 (from pytest)
+  Downloading packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pluggy<2,>=1.5 (from pytest)
+  Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting pygments>=2.7.2 (from pytest)
+  Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Downloading pytest-9.0.2-py3-none-any.whl (374 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 374.8/374.8 kB 1.5 MB/s eta 0:00:00
+Downloading pytest_json_ctrf-0.4.1-py3-none-any.whl (7.2 kB)
+Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Downloading packaging-26.0-py3-none-any.whl (74 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 74.4/74.4 kB 5.1 MB/s eta 0:00:00
+Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 7.0 MB/s eta 0:00:00
+Installing collected packages: pygments, pluggy, packaging, iniconfig, pytest, pytest-json-ctrf
+Successfully installed iniconfig-2.3.0 packaging-26.0 pluggy-1.6.0 pygments-2.20.0 pytest-9.0.2 pytest-json-ctrf-0.4.1
+============================= test session starts ==============================
+platform linux -- Python 3.11.15, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.11
+cachedir: .pytest_cache
+rootdir: /tests
+plugins: json-ctrf-0.4.1
+collecting ... collected 7 items
+
+../tests/test_outputs.py::test_plan_structure PASSED                     [ 14%]
+../tests/test_outputs.py::test_orbital_mechanics FAILED                  [ 28%]
+../tests/test_outputs.py::test_transfer_time PASSED                      [ 42%]
+../tests/test_outputs.py::test_fuel_budget FAILED                        [ 57%]
+../tests/test_outputs.py::test_constraints_and_cost FAILED               [ 71%]
+../tests/test_outputs.py::test_provider_and_compatibility PASSED         [ 85%]
+../tests/test_outputs.py::test_timeline PASSED                           [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_orbital_mechanics ____________________________
+
+plan = {'cost_breakdown': {'contingency_usd': 9554375.0, 'fuel_cost_usd': 1176184.0, 'fuel_handling_surcharge_usd': 141142.0,...w': {'alignment_quality': 0.92, 'close_date': '2026-12-05', 'delta_v_penalty_pct': 1.8, 'name': '2026-Beta', ...}, ...}
+
+    def test_orbital_mechanics(plan):
+        """Correction values match heritage data, components sum, Hohmann math verified."""
+        om = plan["orbital_mechanics"]
+    
+        # Gravity loss must match the heritage value (0.386), not a generic estimate
+>       assert abs(om["gravity_loss_km_s"] - GRAVITY_LOSS) < 0.02, \
+            f"Gravity loss {om['gravity_loss_km_s']} != expected {GRAVITY_LOSS} from heritage data"
+E       AssertionError: Gravity loss 0.1 != expected 0.386 from heritage data
+E       assert 0.28600000000000003 < 0.02
+E        +  where 0.28600000000000003 = abs((0.1 - 0.386))
+
+/tests/test_outputs.py:65: AssertionError
+_______________________________ test_fuel_budget _______________________________
+
+plan = {'cost_breakdown': {'contingency_usd': 9554375.0, 'fuel_cost_usd': 1176184.0, 'fuel_handling_surcharge_usd': 141142.0,...w': {'alignment_quality': 0.92, 'close_date': '2026-12-05', 'delta_v_penalty_pct': 1.8, 'name': '2026-Beta', ...}, ...}
+
+    def test_fuel_budget(plan):
+        """Fuel includes boil-off, settling, and 5.5% reserve; base matches Tsiolkovsky."""
+        fb = plan["fuel_budget"]
+        om = plan["orbital_mechanics"]
+        dv_m_s = om["total_delta_v_km_s"] * 1000.0
+        isp = plan["spacecraft"]["engine_isp_s"]
+        dry = plan["spacecraft"]["dry_mass_kg"]
+        payload = fb["payload_kg"]
+        ve = isp * G0
+        expected_base = (dry + payload) * (math.exp(dv_m_s / ve) - 1)
+    
+        # Base fuel must match Tsiolkovsky
+        base = fb.get("base_fuel_mass_kg", fb["fuel_mass_kg"])
+>       assert abs(base - expected_base) < expected_base * 0.02, \
+            f"Base fuel {base:.0f} != Tsiolkovsky {expected_base:.0f} (±2%)"
+E       AssertionError: Base fuel 119438 != Tsiolkovsky 157845 (±2%)
+E       assert 38407.234904620505 < (157845.2349046205 * 0.02)
+E        +  where 38407.234904620505 = abs((119438.0 - 157845.2349046205))
+
+/tests/test_outputs.py:116: AssertionError
+__________________________ test_constraints_and_cost ___________________________
+
+plan = {'cost_breakdown': {'contingency_usd': 9554375.0, 'fuel_cost_usd': 1176184.0, 'fuel_handling_surcharge_usd': 141142.0,...w': {'alignment_quality': 0.92, 'close_date': '2026-12-05', 'delta_v_penalty_pct': 1.8, 'name': '2026-Beta', ...}, ...}
+
+    def test_constraints_and_cost(plan):
+        """Budget ≤$850M, payload ≥3000kg, reliability ≥0.93, handling surcharge at correct rate."""
+        cb = plan["cost_breakdown"]
+        assert cb["total_cost_usd"] <= 850_000_000, \
+            f"Cost ${cb['total_cost_usd']:,.0f} exceeds $850M"
+        assert plan["fuel_budget"]["payload_kg"] >= 3000, \
+            f"Payload {plan['fuel_budget']['payload_kg']} kg below 3000 kg"
+        assert plan["spacecraft"]["reliability_rating"] >= 0.93, \
+            f"Reliability {plan['spacecraft']['reliability_rating']} below 0.93"
+    
+        # Handling surcharge must match the skill's non-standard rates
+        SURCHARGE_RATES = {"LOX/LH2": 0.11, "LOX/RP-1": 0.045, "LOX/LCH4": 0.07}
+        ft = plan["fuel_provider"]["fuel_type"]
+        fuel_cost = cb["fuel_cost_usd"]
+        expected_surcharge = fuel_cost * SURCHARGE_RATES.get(ft, 0)
+        actual_surcharge = cb.get("fuel_handling_surcharge_usd", 0)
+>       assert abs(actual_surcharge - expected_surcharge) < expected_surcharge * 0.05, \
+            f"Handling surcharge ${actual_surcharge:,.0f} != expected ${expected_surcharge:,.0f} ({SURCHARGE_RATES[ft]*100}% of fuel cost)"
+E       AssertionError: Handling surcharge $141,142 != expected $52,928 (4.5% of fuel cost)
+E       assert 88213.72 < (52928.28 * 0.05)
+E        +  where 88213.72 = abs((141142.0 - 52928.28))
+
+/tests/test_outputs.py:153: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_plan_structure
+PASSED ../tests/test_outputs.py::test_transfer_time
+PASSED ../tests/test_outputs.py::test_provider_and_compatibility
+PASSED ../tests/test_outputs.py::test_timeline
+FAILED ../tests/test_outputs.py::test_orbital_mechanics - AssertionError: Gra...
+FAILED ../tests/test_outputs.py::test_fuel_budget - AssertionError: Base fuel...
+FAILED ../tests/test_outputs.py::test_constraints_and_cost - AssertionError: ...
+========================= 3 failed, 4 passed in 0.03s ==========================

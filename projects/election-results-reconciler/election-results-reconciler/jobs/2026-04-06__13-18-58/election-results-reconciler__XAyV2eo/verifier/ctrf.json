@@ -1,0 +1,50 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 3,
+            "passed": 3,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1775470811.5334508,
+            "stop": 1775470811.5568871
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_report_structure",
+                "status": "passed",
+                "duration": 0.0007202960041468032,
+                "start": 1775470811.5493245,
+                "stop": 1775470811.5503736,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_summary",
+                "status": "passed",
+                "duration": 0.00042465700244065374,
+                "start": 1775470811.5506685,
+                "stop": 1775470811.5512645,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_discrepancy",
+                "status": "passed",
+                "duration": 0.0005795740071334876,
+                "start": 1775470811.551522,
+                "stop": 1775470811.5522528,
+                "retries": 5,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::precinct,candidate,d_type,severity,checks::[('North Ward', 'Maria Chen', 'vote_count_mismatch', 'low', {'official_votes': 1247, 'tally_votes': 1249, 'difference': 2}), ('South Ward', 'James Walker', 'impossible_value', 'high', {'tally_votes': 4500}), ('West Ward', 'Sofia Rivera', 'vote_count_mismatch', 'medium', {'difference': 14}), ('Central', 'Maria Chen', 'vote_count_mismatch', 'high', {'difference': 150}), ('University District', 'Sofia Rivera', 'candidate_missing', 'high', {}), ('Harbor Area', None, 'precinct_missing', 'high', {})]"
+                ]
+            }
+        ]
+    }
+}

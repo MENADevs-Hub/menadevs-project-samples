@@ -1,0 +1,105 @@
+University,Program,Department,Degree Level,Annual Tuition In-State,Annual Tuition Out-of-State,Program Ranking,Has Co-op,Has Online Option,Avg Starting Salary
+Ohio State University,Computer Science,Engineering,BS,11936,35019,30,No,No,82000
+Ohio State University,Data Science,Engineering,BS,11936,35019,42,No,No,78000
+Ohio State University,Electrical Engineering,Engineering,BS,11936,35019,35,No,No,75000
+University of Michigan,Computer Science,Engineering,BS,16736,55334,8,No,No,105000
+University of Michigan,Data Science,School of Information,BS,16736,55334,12,No,No,95000
+University of Michigan,Electrical Engineering,Engineering,BS,16736,55334,6,No,No,90000
+Purdue University,Computer Science,Engineering,BS,9992,28794,20,Yes,No,88000
+Purdue University,Data Science,Science,BS,9992,28794,28,No,No,80000
+Purdue University,Cybersecurity,Polytechnic,BS,9992,28794,35,Yes,No,82000
+University of Illinois Urbana-Champaign,Computer Science,Engineering,BS,17138,36068,5,No,No,110000
+University of Illinois Urbana-Champaign,Data Science,iSchool,BS,13370,30068,15,No,No,92000
+University of Illinois Urbana-Champaign,Electrical Engineering,Engineering,BS,17138,36068,4,No,No,88000
+Georgia Institute of Technology,Computer Science,Computing,BS,10258,33794,7,Yes,No,108000
+Georgia Institute of Technology,Cybersecurity,Computing,BS,10258,33794,10,Yes,No,95000
+Georgia Institute of Technology,Data Science,Computing,BS,10258,33794,18,No,No,90000
+University of Texas at Austin,Computer Science,Natural Sciences,BS,11448,40996,10,No,No,102000
+University of Texas at Austin,Data Science,Natural Sciences,BS,11448,40996,20,No,No,88000
+University of Texas at Austin,Electrical Engineering,Engineering,BS,11448,40996,8,No,No,85000
+University of Wisconsin-Madison,Computer Science,Letters & Science,BS,10796,39427,15,No,No,90000
+University of Wisconsin-Madison,Data Science,Letters & Science,BS,10796,39427,25,No,No,82000
+Penn State University,Computer Science,Engineering,BS,18898,38018,38,Yes,Yes,78000
+Penn State University,Cybersecurity,IST,BS,18898,38018,30,Yes,Yes,80000
+Penn State University,Data Science,IST,BS,18898,38018,45,No,Yes,75000
+Virginia Tech,Computer Science,Engineering,BS,14726,34866,40,Yes,No,82000
+Virginia Tech,Cybersecurity,Engineering,BS,14726,34866,22,Yes,No,80000
+Virginia Tech,Data Science,Science,BS,14726,34866,50,No,No,74000
+University of Florida,Computer Science,Engineering,BS,6380,28658,42,No,No,80000
+University of Florida,Data Science,Engineering,BS,6380,28658,48,No,No,75000
+University of Washington,Computer Science,Engineering,BS,12076,39906,12,No,No,112000
+University of Washington,Data Science,iSchool,BS,12076,39906,10,No,No,95000
+University of Washington,Electrical Engineering,Engineering,BS,12076,39906,15,No,No,88000
+Carnegie Mellon University,Computer Science,SCS,BS,62260,62260,1,No,No,125000
+Carnegie Mellon University,Data Science,SCS,BS,62260,62260,3,No,No,115000
+Carnegie Mellon University,Electrical Engineering,Engineering,BS,62260,62260,10,No,No,100000
+Massachusetts Institute of Technology,Computer Science,EECS,BS,59750,59750,1,No,No,130000
+Massachusetts Institute of Technology,Data Science,EECS,BS,59750,59750,2,No,No,120000
+Massachusetts Institute of Technology,Electrical Engineering,EECS,BS,59750,59750,1,No,No,110000
+Stanford University,Computer Science,Engineering,BS,61731,61731,2,No,No,128000
+Stanford University,Data Science,Engineering,BS,61731,61731,5,No,No,118000
+Rice University,Computer Science,Engineering,BS,56874,56874,22,No,No,98000
+Rice University,Data Science,Engineering,BS,56874,56874,30,No,No,90000
+Rice University,Electrical Engineering,Engineering,BS,56874,56874,28,No,No,88000
+Northwestern University,Computer Science,Engineering,BS,63468,63468,25,Yes,No,100000
+Northwestern University,Data Science,Engineering,BS,63468,63468,18,No,No,92000
+University of Southern California,Computer Science,Viterbi,BS,64726,64726,28,No,No,96000
+University of Southern California,Data Science,Viterbi,BS,64726,64726,22,No,No,88000
+University of Southern California,Cybersecurity,Viterbi,BS,64726,64726,15,No,No,92000
+Case Western Reserve University,Computer Science,Engineering,BS,60120,60120,55,Yes,No,82000
+Case Western Reserve University,Data Science,Arts & Sciences,BS,60120,60120,60,No,No,78000
+Case Western Reserve University,Electrical Engineering,Engineering,BS,60120,60120,50,No,No,76000
+Rensselaer Polytechnic Institute,Computer Science,Science,BS,60590,60590,48,Yes,No,85000
+Rensselaer Polytechnic Institute,Data Science,Science,BS,60590,60590,52,No,No,80000
+Rochester Institute of Technology,Computer Science,Computing,BS,53280,53280,65,Yes,No,78000
+Rochester Institute of Technology,Cybersecurity,Computing,BS,53280,53280,38,Yes,No,80000
+Rochester Institute of Technology,Data Science,Computing,BS,53280,53280,70,No,No,74000
+Drexel University,Computer Science,CCI,BS,57282,57282,88,Yes,No,75000
+Drexel University,Data Science,CCI,BS,57282,57282,92,Yes,No,72000
+Drexel University,Cybersecurity,CCI,BS,57282,57282,60,Yes,No,78000
+Stevens Institute of Technology,Computer Science,SES,BS,58684,58684,72,Yes,No,82000
+Stevens Institute of Technology,Cybersecurity,SES,BS,58684,58684,40,Yes,No,85000
+Worcester Polytechnic Institute,Computer Science,CS,BS,56366,56366,65,Yes,No,82000
+Worcester Polytechnic Institute,Data Science,DS,BS,56366,56366,68,No,No,78000
+Worcester Polytechnic Institute,Cybersecurity,CS,BS,56366,56366,42,Yes,No,80000
+Illinois Institute of Technology,Computer Science,Computing,BS,50234,50234,95,Yes,No,72000
+Illinois Institute of Technology,Cybersecurity,Computing,BS,50234,50234,78,Yes,No,75000
+Illinois Institute of Technology,Data Science,Computing,BS,50234,50234,100,No,No,70000
+University of Minnesota,Computer Science,CSE,BS,15142,35286,32,No,No,85000
+University of Minnesota,Data Science,CSE,BS,15142,35286,38,No,No,80000
+Iowa State University,Computer Science,LAS,BS,9614,24508,58,No,No,72000
+Iowa State University,Data Science,LAS,BS,9614,24508,75,No,No,68000
+Iowa State University,Cybersecurity,Engineering,BS,9614,24508,55,No,No,70000
+Michigan State University,Computer Science,Engineering,BS,14750,40178,52,No,No,75000
+Michigan State University,Data Science,Engineering,BS,14750,40178,60,No,No,70000
+University of Maryland,Computer Science,CMNS,BS,10779,39000,16,No,No,98000
+University of Maryland,Data Science,CMNS,BS,10779,39000,20,No,No,90000
+University of Maryland,Cybersecurity,CMNS,BS,10779,39000,8,No,No,92000
+North Carolina State University,Computer Science,Engineering,BS,9128,29220,42,Yes,No,82000
+North Carolina State University,Data Science,Engineering,BS,9128,29220,55,No,No,75000
+Colorado School of Mines,Computer Science,CESE,BS,19836,42198,70,Yes,No,80000
+Colorado School of Mines,Data Science,AMS,BS,19836,42198,80,No,No,76000
+University of Colorado Boulder,Computer Science,Engineering,BS,13590,40488,50,No,No,82000
+University of Colorado Boulder,Data Science,Engineering,BS,13590,40488,58,No,No,76000
+Arizona State University,Computer Science,Fulton,BS,12467,30592,45,No,Yes,78000
+Arizona State University,Data Science,Fulton,BS,12467,30592,55,No,Yes,72000
+Arizona State University,Cybersecurity,Fulton,BS,12467,30592,48,No,Yes,75000
+University of Pittsburgh,Computer Science,SCI,BS,20220,37332,50,Yes,No,80000
+University of Pittsburgh,Data Science,SCI,BS,20220,37332,58,No,No,75000
+Clemson University,Computer Science,Engineering,BS,15558,39498,62,Yes,No,76000
+Clemson University,Data Science,Science,BS,15558,39498,72,No,No,70000
+Texas A&M University,Computer Science,Engineering,BS,12413,40607,34,No,No,85000
+Texas A&M University,Data Science,Engineering,BS,12413,40607,40,No,No,78000
+Texas A&M University,Cybersecurity,Engineering,BS,12413,40607,32,No,No,80000
+University of Virginia,Computer Science,Engineering,BS,19698,55914,36,No,No,90000
+University of Virginia,Data Science,Data Science School,BS,19698,55914,14,No,No,88000
+Indiana University Bloomington,Computer Science,Luddy,BS,11220,38364,45,No,No,78000
+Indiana University Bloomington,Data Science,Luddy,BS,11220,38364,32,No,No,76000
+Indiana University Bloomington,Cybersecurity,Luddy,BS,11220,38364,28,No,No,80000
+Northeastern University,Computer Science,Khoury,BS,60192,60192,30,Yes,No,95000
+Northeastern University,Data Science,Khoury,BS,60192,60192,25,Yes,No,88000
+Northeastern University,Cybersecurity,Khoury,BS,60192,60192,18,Yes,No,90000
+Boston University,Computer Science,CAS,BS,62360,62360,38,No,No,88000
+Boston University,Data Science,CDS,BS,62360,62360,28,No,No,84000
+Lehigh University,Computer Science,Engineering,BS,60180,60180,68,No,No,82000
+Lehigh University,Data Science,Engineering,BS,60180,60180,75,No,No,78000

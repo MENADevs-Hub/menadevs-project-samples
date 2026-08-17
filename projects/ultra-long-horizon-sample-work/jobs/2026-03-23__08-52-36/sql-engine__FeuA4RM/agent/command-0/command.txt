@@ -1,0 +1,88 @@
+SANDBOX_VOLUMES=${PWD}:/workspace:rw /opt/openhands-venv/bin/python -m openhands.core.main --task='Implement the SQL query engine for toydb, a distributed SQL database built in Rust. Your implementation must pass all goldenscript tests with exact output parity.
+
+## Background
+
+toydb is a distributed SQL database with a layered architecture. The storage engine, MVCC transaction layer, and Raft consensus layer are fully implemented and working. The SQL engine sits on top of these layers — its method bodies have been replaced with `todo!()` stubs.
+
+The skeleton compiles (`cargo check` passes) but all tests fail at runtime because every function hits `todo!()`.
+
+## Instructions
+
+You must implement all method bodies in these 10 files:
+
+- `src/sql/parser/lexer.rs` — SQL tokenizer
+- `src/sql/parser/parser.rs` — SQL parser
+- `src/sql/planner/planner.rs` — query planner
+- `src/sql/planner/plan.rs` — plan nodes and execution dispatch
+- `src/sql/planner/optimizer.rs` — query optimizations
+- `src/sql/execution/executor.rs` — query executor
+- `src/sql/execution/session.rs` — session management
+- `src/sql/execution/aggregator.rs` — aggregate functions
+- `src/sql/execution/join.rs` — join implementations
+- `src/sql/engine/local.rs` — local SQL engine bridging SQL to storage
+
+**Do not modify** any other source files or test files. Type names, trait definitions, and function signatures are fixed. You may add private helpers, but existing public signatures must remain as defined.
+
+## Reference
+
+Study the existing codebase to understand the interfaces your code must satisfy:
+
+- `src/sql/types/` — data types, expressions, schema definitions
+- `src/sql/parser/ast.rs` — AST node definitions
+- `src/sql/engine/engine.rs` — `Engine`, `Transaction`, `Catalog` traits
+- `src/storage/` and `src/encoding/` — underlying storage and serialization
+- `docs/architecture/` — detailed architecture documentation
+
+## Testing
+
+```bash
+cargo test               # Run all tests
+cargo test --lib sql     # Run SQL tests only
+```
+
+Test scripts are in `src/sql/testscripts/` organized by category (expressions, queries, schema, transactions, writes, optimizers).
+
+## Feature Implementation Roadmap
+
+This section outlines the phased approach to increasing SQL engine complexity, with feature descriptions for each mechanism.
+
+### 1. Scalar Function Registry + Core Built-ins
+
+- **Description:** Registry for scalar functions (length, lower, upper, trim, abs, round, ceil, floor, coalesce, nullif, now). Enables extensible function lookup and evaluation.
+
+### 2. CASE Expressions
+
+- **Description:** Support for simple/searched CASE ... WHEN ... THEN ... ELSE ... END expressions in queries.
+
+### 3. IN / BETWEEN Predicates
+
+- **Description:** Implement IN, NOT IN, and BETWEEN predicates for filtering in WHERE/HAVING.
+
+### 4. EXISTS and Scalar Subqueries
+
+- **Description:** Support EXISTS, NOT EXISTS, and scalar subqueries in WHERE and SELECT.
+
+### 5. Non-recursive CTEs (WITH)
+
+- **Description:** Implement WITH clause for non-recursive common table expressions.
+
+### 6. UNION ALL / UNION
+
+- **Description:** Support UNION ALL and UNION for combining result sets.
+
+### 7. Upsert (ON CONFLICT)
+
+- **Description:** Implement INSERT ... ON CONFLICT DO UPDATE/NOTHING for upsert semantics.
+
+### 8. CHECK Constraints
+
+- **Description:** Support CHECK constraints for row-level predicate enforcement.
+
+### 9. ALTER TABLE Basics
+
+- **Description:** Implement ALTER TABLE for add/drop column, defaults, nullable changes, index add/drop.
+
+### 10. Window Functions
+
+- **Description:** Support window functions (row_number, rank, dense_rank, lag, lead, running aggregates).
+' 2>&1 </dev/null | stdbuf -oL tee /logs/agent/openhands.txt

@@ -1,0 +1,24 @@
+# Column schema for the raw customer CSV.
+# Used by the loader to validate presence and coerce types.
+columns:
+  - name: customer_id
+    type: string
+    required: true
+  - name: full_name
+    type: string
+    required: true
+  - name: email
+    type: string
+    required: true
+  - name: phone
+    type: string
+    required: false
+  - name: country
+    type: string
+    required: false
+  - name: postal_code
+    type: string
+    required: false
+  - name: signup_date
+    type: date
+    required: false

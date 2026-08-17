@@ -1,0 +1,97 @@
+{
+    "id": "0f35ab76-d931-4633-8624-96a74fa00eda",
+    "task_name": "sql-engine",
+    "trial_name": "sql-engine__AHva6qy",
+    "trial_uri": "file:///home/zaid/tmp/Abundant-AI-Task-2/jobs/2026-03-21__05-26-51/sql-engine__AHva6qy",
+    "task_id": {
+        "path": "sql-engine"
+    },
+    "source": null,
+    "task_checksum": "11fcce53fe9330d253e01cf46e2a94d4bb2e19ec7919feaf2514bb7fbbf04736",
+    "config": {
+        "task": {
+            "path": "sql-engine",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "sql-engine__AHva6qy",
+        "trials_dir": "jobs/2026-03-21__05-26-51",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "openhands",
+            "import_path": null,
+            "model_name": "litellm_proxy/qwen3.5-35b",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "142803e8-1fde-48e8-8d6b-9e543b045177"
+    },
+    "agent_info": {
+        "name": "openhands",
+        "version": "unknown",
+        "model_info": {
+            "name": "qwen3.5-35b",
+            "provider": "litellm_proxy"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 22044875,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 101650,
+        "cost_usd": 5.714518749999999,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-21T02:26:51.531093Z",
+    "finished_at": "2026-03-21T03:13:58.853023Z",
+    "environment_setup": {
+        "started_at": "2026-03-21T02:26:51.536831Z",
+        "finished_at": "2026-03-21T02:26:56.515505Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-21T02:26:56.515529Z",
+        "finished_at": "2026-03-21T02:29:00.234213Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-21T02:29:00.234244Z",
+        "finished_at": "2026-03-21T03:13:21.584654Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-21T03:13:21.584703Z",
+        "finished_at": "2026-03-21T03:13:42.084525Z"
+    }
+}

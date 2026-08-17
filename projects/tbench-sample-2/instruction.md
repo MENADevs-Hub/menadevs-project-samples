@@ -1,0 +1,3 @@
+The suppression planner in /app is giving bad send/no-send decisions when historical email events arrive out of order or are later corrected by resubscribe activity. Please fix the Node.js implementation so the CLI produces a deterministic suppression report from JSONL event input.
+
+Use the contract in /app/docs/suppression-contract.md as the source of truth. The CLI entry point is /app/bin/suppression-cli.js and it must write the report path passed with --out. Keep the existing CLI shape and JSON output fields intact; the important cases are bounce and complaint windows, unsubscribe scope, resubscribe clearing, duplicate/invalid events, and expiration boundaries.

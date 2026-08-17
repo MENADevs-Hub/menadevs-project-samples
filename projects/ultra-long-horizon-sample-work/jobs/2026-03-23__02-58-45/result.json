@@ -1,0 +1,29 @@
+{
+    "id": "c7242b7f-aed8-4a75-a1cc-35de740646ff",
+    "started_at": "2026-03-23T02:58:45.225648",
+    "finished_at": "2026-03-23T03:06:13.593489",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "openhands__gpt-oss:120b__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0833
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0833": [
+                            "sql-engine__NqzpsjX"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

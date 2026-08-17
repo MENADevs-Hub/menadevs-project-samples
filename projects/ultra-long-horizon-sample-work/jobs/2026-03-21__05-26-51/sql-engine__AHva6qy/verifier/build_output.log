@@ -1,0 +1,1666 @@
+   Compiling serde_core v1.0.228
+   Compiling cfg-if v1.0.4
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.44
+   Compiling unicode-ident v1.0.23
+   Compiling libc v0.2.182
+   Compiling memchr v2.8.0
+   Compiling syn v2.0.115
+   Compiling crunchy v0.2.4
+   Compiling crossbeam-utils v0.8.21
+   Compiling tiny-keccak v2.0.2
+   Compiling bitflags v2.11.0
+   Compiling getrandom v0.2.17
+   Compiling zerocopy v0.8.39
+   Compiling ucd-trie v0.1.7
+   Compiling serde v1.0.228
+   Compiling once_cell v1.21.3
+   Compiling typeid v1.0.3
+   Compiling utf8parse v0.2.2
+   Compiling const-random-macro v0.1.16
+   Compiling rustix v1.1.3
+   Compiling anyhow v1.0.101
+   Compiling pest v2.8.6
+   Compiling const-random v0.1.18
+   Compiling anstyle-parse v0.2.7
+   Compiling foldhash v0.1.5
+   Compiling cfg_aliases v0.2.1
+   Compiling rand_core v0.10.0
+   Compiling itoa v1.0.17
+   Compiling pest_meta v2.8.6
+   Compiling anstyle-query v1.1.5
+   Compiling serde_derive v1.0.228
+   Compiling getrandom v0.4.1
+   Compiling anstyle v1.0.13
+   Compiling erased-serde v0.4.9
+   Compiling autocfg v1.5.0
+   Compiling zmij v1.0.21
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling linux-raw-sys v0.11.0
+   Compiling colorchoice v1.0.4
+   Compiling crc32fast v1.5.0
+   Compiling anstream v0.6.21
+   Compiling num-traits v0.2.19
+   Compiling pest_generator v2.8.6
+   Compiling ppv-lite86 v0.2.21
+   Compiling nix v0.30.1
+   Compiling hashbrown v0.15.5
+   Compiling rand_core v0.6.4
+   Compiling dlv-list v0.5.2
+   Compiling time-core v0.1.8
+   Compiling hashbrown v0.14.5
+   Compiling num-conv v0.2.0
+   Compiling clap_lex v1.0.0
+   Compiling simd-adler32 v0.3.8
+   Compiling unicode-segmentation v1.12.0
+   Compiling winnow v0.7.14
+   Compiling strsim v0.11.1
+   Compiling adler2 v2.0.1
+   Compiling powerfmt v0.2.0
+   Compiling heck v0.5.0
+   Compiling serde_json v1.0.149
+   Compiling smallvec v1.15.1
+   Compiling nibble_vec v0.1.0
+   Compiling clap_derive v4.5.55
+   Compiling deranged v0.5.6
+   Compiling toml_parser v1.0.8+spec-1.1.0
+   Compiling clap_builder v4.5.58
+   Compiling miniz_oxide v0.8.9
+   Compiling ordered-multimap v0.7.3
+   Compiling time-macros v0.2.27
+   Compiling petname v2.0.2
+   Compiling hashlink v0.10.0
+   Compiling rand_chacha v0.3.1
+   Compiling pest_derive v2.8.6
+   Compiling crossbeam-channel v0.5.15
+   Compiling crossbeam-epoch v0.9.18
+   Compiling serde_spanned v1.0.4
+   Compiling toml_datetime v0.7.5+spec-1.1.0
+   Compiling aho-corasick v1.1.4
+   Compiling encoding_rs v0.8.35
+   Compiling regex-syntax v0.8.9
+   Compiling log v0.4.29
+   Compiling num_threads v0.1.7
+   Compiling cpufeatures v0.3.0
+   Compiling minimal-lexical v0.2.1
+   Compiling arraydeque v0.5.1
+   Compiling either v1.15.0
+   Compiling endian-type v0.1.2
+   Compiling virtue v0.0.18
+   Compiling radix_trie v0.2.1
+   Compiling itertools v0.14.0
+   Compiling bincode_derive v2.0.1
+   Compiling ron v0.12.0
+   Compiling yaml-rust2 v0.10.4
+   Compiling time v0.3.47
+   Compiling nom v7.1.3
+   Compiling chacha20 v0.10.0
+   Compiling regex-automata v0.4.14
+   Compiling toml v0.9.12+spec-1.1.0
+   Compiling crossbeam-deque v0.8.6
+   Compiling serde-untagged v0.1.9
+   Compiling clap v4.5.58
+   Compiling flate2 v1.1.9
+   Compiling json5 v0.4.1
+   Compiling rand v0.8.5
+   Compiling rust-ini v0.21.3
+   Compiling convert_case v0.6.0
+   Compiling fd-lock v4.0.4
+   Compiling async-trait v0.1.89
+   Compiling crossbeam-queue v0.3.12
+   Compiling pathdiff v0.2.3
+   Compiling termcolor v1.4.1
+   Compiling home v0.5.12
+   Compiling byteorder v1.5.0
+   Compiling unicode-width v0.2.2
+   Compiling base64 v0.21.7
+   Compiling unty v0.0.4
+   Compiling rustyline v17.0.2
+   Compiling bincode v2.0.1
+   Compiling hdrhistogram v7.5.4
+   Compiling simplelog v0.12.2
+   Compiling config v0.15.19
+   Compiling crossbeam v0.8.4
+   Compiling regex v1.12.3
+   Compiling rand v0.10.0
+   Compiling uuid v1.21.0
+   Compiling fs4 v0.13.1
+   Compiling rustyline-derive v0.11.1
+   Compiling serde_bytes v0.11.19
+   Compiling dyn-clone v1.0.20
+   Compiling toydb v1.0.0 (/app)
+warning: unused import: `std::slice`
+ --> src/sql/engine/local.rs:3:5
+  |
+3 | use std::slice;
+  |     ^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `itertools::Itertools as _`
+ --> src/sql/engine/local.rs:5:5
+  |
+5 | use itertools::Itertools as _;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `Key as _` and `Value as _`
+ --> src/sql/engine/local.rs:9:29
+  |
+9 | use crate::encoding::{self, Key as _, Value as _};
+  |                             ^^^^^^^^  ^^^^^^^^^^
+
+warning: unused import: `crate::errinput`
+  --> src/sql/engine/local.rs:10:5
+   |
+10 | use crate::errinput;
+   |     ^^^^^^^^^^^^^^^
+
+warning: unused import: `itertools::Itertools as _`
+ --> src/sql/execution/aggregator.rs:3:5
+  |
+3 | use itertools::Itertools as _;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `std::cmp::Ordering`
+ --> src/sql/execution/executor.rs:1:5
+  |
+1 | use std::cmp::Ordering;
+  |     ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `BTreeMap`
+ --> src/sql/execution/executor.rs:2:24
+  |
+2 | use std::collections::{BTreeMap, HashMap};
+  |                        ^^^^^^^^
+
+warning: unused imports: `Itertools as _` and `izip`
+ --> src/sql/execution/executor.rs:4:17
+  |
+4 | use itertools::{Itertools as _, izip};
+  |                 ^^^^^^^^^^^^^^  ^^^^
+
+warning: unused import: `super::aggregator::Aggregator`
+ --> src/sql/execution/executor.rs:6:5
+  |
+6 | use super::aggregator::Aggregator;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `HashJoiner` and `NestedLoopJoiner`
+ --> src/sql/execution/executor.rs:7:19
+  |
+7 | use super::join::{HashJoiner, NestedLoopJoiner};
+  |                   ^^^^^^^^^^  ^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::errinput`
+ --> src/sql/execution/executor.rs:8:5
+  |
+8 | use crate::errinput;
+  |     ^^^^^^^^^^^^^^^
+
+warning: unused imports: `Row` and `Value`
+  --> src/sql/execution/executor.rs:12:44
+   |
+12 | use crate::sql::types::{Expression, Label, Row, Rows, Table, Value};
+   |                                            ^^^               ^^^^^
+
+warning: unused import: `crate::errinput`
+ --> src/sql/execution/join.rs:4:5
+  |
+4 | use crate::errinput;
+  |     ^^^^^^^^^^^^^^^
+
+warning: unused import: `itertools::Itertools as _`
+ --> src/sql/execution/session.rs:1:5
+  |
+1 | use itertools::Itertools as _;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `log::error`
+ --> src/sql/execution/session.rs:2:5
+  |
+2 | use log::error;
+  |     ^^^^^^^^^^
+
+warning: unused import: `Transaction as _`
+ --> src/sql/execution/session.rs:6:48
+  |
+6 | use crate::sql::engine::{Engine, Raft, Status, Transaction as _};
+  |                                                ^^^^^^^^^^^^^^^^
+
+warning: unused imports: `Parser` and `ast`
+ --> src/sql/execution/session.rs:8:26
+  |
+8 | use crate::sql::parser::{Parser, ast};
+  |                          ^^^^^^  ^^^
+
+warning: unused imports: `errdata` and `errinput`
+  --> src/sql/execution/session.rs:12:13
+   |
+12 | use crate::{errdata, errinput};
+   |             ^^^^^^^  ^^^^^^^^
+
+warning: unused import: `crate::errinput`
+ --> src/sql/parser/lexer.rs:5:5
+  |
+5 | use crate::errinput;
+  |     ^^^^^^^^^^^^^^^
+
+warning: unused import: `std::collections::HashMap`
+ --> src/sql/planner/optimizer.rs:1:5
+  |
+1 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `Label` and `Value`
+ --> src/sql/planner/optimizer.rs:7:37
+  |
+7 | use crate::sql::types::{Expression, Label, Value};
+  |                                     ^^^^^  ^^^^^
+
+warning: unused import: `itertools::Itertools as _`
+ --> src/sql/planner/plan.rs:4:5
+  |
+4 | use itertools::Itertools as _;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `super::optimizer::OPTIMIZERS`
+ --> src/sql/planner/plan.rs:7:5
+  |
+7 | use super::optimizer::OPTIMIZERS;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `super::planner::Planner`
+ --> src/sql/planner/plan.rs:8:5
+  |
+8 | use super::planner::Planner;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `Executor`
+  --> src/sql/planner/plan.rs:11:46
+   |
+11 | use crate::sql::execution::{ExecutionResult, Executor};
+   |                                              ^^^^^^^^
+
+warning: unused import: `Either`
+ --> src/sql/planner/planner.rs:3:17
+  |
+3 | use itertools::{Either, Itertools as _};
+  |                 ^^^^^^
+
+warning: unused import: `invert_remap`
+ --> src/sql/planner/planner.rs:5:42
+  |
+5 | use super::plan::{Aggregate, Node, Plan, invert_remap};
+  |                                          ^^^^^^^^^^^^
+
+error[E0308]: `?` operator has incompatible types
+  --> src/sql/planner/planner.rs:76:26
+   |
+76 |                 default: col.default.map(|e| Self::build_expression(e, &Scope::new())).transpose()?,
+   |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `Option<Value>`, found `Option<Expression>`
+   |
+   = note: `?` operator cannot convert from `std::option::Option<expression::Expression>` to `std::option::Option<types::value::Value>`
+   = note: expected enum `std::option::Option<types::value::Value>`
+              found enum `std::option::Option<expression::Expression>`
+
+error[E0599]: no method named `ok_or_else` found for enum `std::result::Result<T, E>` in the current scope
+  --> src/sql/planner/planner.rs:94:56
+   |
+94 |         let table_ref = self.catalog.get_table(&table).ok_or_else(|| errinput!("unknown table: {}", table))?;
+   |                                                        ^^^^^^^^^^
+   |
+note: the method `ok_or_else` exists on the type `std::option::Option<schema::Table>`
+  --> /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/option.rs:1363:5
+help: use the `?` operator to extract the `std::option::Option<schema::Table>` value, propagating a `Result::Err` value to the caller
+   |
+94 |         let table_ref = self.catalog.get_table(&table)?.ok_or_else(|| errinput!("unknown table: {}", table))?;
+   |                                                       +
+help: there is a method `or_else` with a similar name
+   |
+94 -         let table_ref = self.catalog.get_table(&table).ok_or_else(|| errinput!("unknown table: {}", table))?;
+94 +         let table_ref = self.catalog.get_table(&table).or_else(|| errinput!("unknown table: {}", table))?;
+   |
+
+error[E0599]: no variant or associated item named `Literal` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:104:56
+    |
+104 |             predicate: condition.unwrap_or(Expression::Literal(Value::Boolean(true))),
+    |                                                        ^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `Literal` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no method named `ok_or_else` found for enum `std::result::Result<T, E>` in the current scope
+   --> src/sql/planner/planner.rs:117:56
+    |
+117 |         let table_ref = self.catalog.get_table(&table).ok_or_else(|| errinput!("unknown table: {}", table))?;
+    |                                                        ^^^^^^^^^^
+    |
+note: the method `ok_or_else` exists on the type `std::option::Option<schema::Table>`
+   --> /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/option.rs:1363:5
+help: use the `?` operator to extract the `std::option::Option<schema::Table>` value, propagating a `Result::Err` value to the caller
+    |
+117 |         let table_ref = self.catalog.get_table(&table)?.ok_or_else(|| errinput!("unknown table: {}", table))?;
+    |                                                       +
+help: there is a method `or_else` with a similar name
+    |
+117 -         let table_ref = self.catalog.get_table(&table).ok_or_else(|| errinput!("unknown table: {}", table))?;
+117 +         let table_ref = self.catalog.get_table(&table).or_else(|| errinput!("unknown table: {}", table))?;
+    |
+
+error[E0599]: no method named `ok_or_else` found for enum `std::result::Result<T, E>` in the current scope
+   --> src/sql/planner/planner.rs:151:56
+    |
+151 |         let table_ref = self.catalog.get_table(&table).ok_or_else(|| errinput!("unknown table: {}", table))?;
+    |                                                        ^^^^^^^^^^
+    |
+note: the method `ok_or_else` exists on the type `std::option::Option<schema::Table>`
+   --> /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/option.rs:1363:5
+help: use the `?` operator to extract the `std::option::Option<schema::Table>` value, propagating a `Result::Err` value to the caller
+    |
+151 |         let table_ref = self.catalog.get_table(&table)?.ok_or_else(|| errinput!("unknown table: {}", table))?;
+    |                                                       +
+help: there is a method `or_else` with a similar name
+    |
+151 -         let table_ref = self.catalog.get_table(&table).ok_or_else(|| errinput!("unknown table: {}", table))?;
+151 +         let table_ref = self.catalog.get_table(&table).or_else(|| errinput!("unknown table: {}", table))?;
+    |
+
+error[E0599]: no variant or associated item named `Literal` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:159:57
+    |
+159 |                 Ok((col_idx, expr.unwrap_or(Expression::Literal(Value::Null))))
+    |                                                         ^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `Literal` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `Literal` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:169:56
+    |
+169 |             predicate: condition.unwrap_or(Expression::Literal(Value::Boolean(true))),
+    |                                                        ^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `Literal` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `Function` found for enum `Operator` in the current scope
+   --> src/sql/planner/planner.rs:213:65
+    |
+213 |                 if let ast::Expression::Operator(ast::Operator::Function(name, args)) = &expr {
+    |                                                                 ^^^^^^^^ variant or associated item not found in `Operator`
+    |
+   ::: src/sql/parser/ast.rs:210:1
+    |
+210 | pub enum Operator {
+    | ----------------- variant or associated item `Function` not found for this enum
+
+error[E0282]: type annotations needed
+   --> src/sql/planner/planner.rs:216:31
+    |
+216 |                         .map(|e| Self::build_expression(e.clone(), &group_by_scope))
+    |                               ^                         - type must be known at this point
+    |
+help: consider giving this closure parameter an explicit type
+    |
+216 |                         .map(|e: /* Type */| Self::build_expression(e.clone(), &group_by_scope))
+    |                                ++++++++++++
+
+error[E0599]: no variant or associated item named `Literal` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:219:99
+    |
+219 |                         "count" => Aggregate::Count(args.into_iter().next().unwrap_or(Expression::Literal(Value::Null))),
+    |                                                                                                   ^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `Literal` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `Literal` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:220:95
+    |
+220 |                         "sum" => Aggregate::Sum(args.into_iter().next().unwrap_or(Expression::Literal(Value::Null))),
+    |                                                                                               ^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `Literal` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `Literal` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:221:99
+    |
+221 |                         "avg" => Aggregate::Average(args.into_iter().next().unwrap_or(Expression::Literal(Value::Null))),
+    |                                                                                                   ^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `Literal` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `Literal` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:222:95
+    |
+222 |                         "min" => Aggregate::Min(args.into_iter().next().unwrap_or(Expression::Literal(Value::Null))),
+    |                                                                                               ^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `Literal` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `Literal` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:223:95
+    |
+223 |                         "max" => Aggregate::Max(args.into_iter().next().unwrap_or(Expression::Literal(Value::Null))),
+    |                                                                                               ^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `Literal` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `Literal` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:224:59
+    |
+224 |                         _ => Aggregate::Count(Expression::Literal(Value::Null)),
+    |                                                           ^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `Literal` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0631]: type mismatch in function arguments
+   --> src/sql/planner/planner.rs:297:45
+    |
+297 |             aliases.push(alias.as_ref().map(Label::Unqualified).unwrap_or(Label::None));
+    |                                         --- ^^^^^^^^^^^^^^^^^^ expected due to this
+    |                                         |
+    |                                         required by a bound introduced by this call
+    |
+   ::: src/sql/types/value.rs:400:5
+    |
+400 |     Unqualified(String),
+    |     ----------- found signature defined here
+    |
+    = note: expected function signature `fn(&std::string::String) -> _`
+               found function signature `fn(std::string::String) -> _`
+note: required by a bound in `std::option::Option::<T>::map`
+   --> /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/option.rs:1160:5
+help: consider wrapping the function in a closure
+    |
+297 |             aliases.push(alias.as_ref().map(|arg0: &std::string::String| Label::Unqualified(*arg0)).unwrap_or(Label::None));
+    |                                             ++++++++++++++++++++++++++++                   +++++++
+
+error[E0599]: no method named `clone` found for enum `ast::From` in the current scope
+   --> src/sql/planner/planner.rs:314:50
+    |
+314 |         let mut result = self.build_from(from[0].clone(), scope)?;
+    |                                                  ^^^^^ method not found in `ast::From`
+    |
+   ::: src/sql/parser/ast.rs:85:1
+    |
+ 85 | pub enum From {
+    | ------------- method `clone` not found for this enum
+    |
+    = help: items from traits can only be used if the trait is implemented and in scope
+    = note: the following trait defines an item `clone`, perhaps you need to implement it:
+            candidate #1: `Clone`
+
+error[E0599]: no method named `clone` found for struct `sql::planner::planner::Scope` in the current scope
+   --> src/sql/planner/planner.rs:318:72
+    |
+318 |             let child = self.build_from(item.clone(), &mut child_scope.clone())?;
+    |                                                                        ^^^^^ method not found in `sql::planner::planner::Scope`
+...
+579 | pub struct Scope {
+    | ---------------- method `clone` not found for this struct
+    |
+    = help: items from traits can only be used if the trait is implemented and in scope
+    = note: the following trait defines an item `clone`, perhaps you need to implement it:
+            candidate #1: `Clone`
+
+error[E0308]: mismatched types
+   --> src/sql/planner/planner.rs:318:41
+    |
+318 |             let child = self.build_from(item.clone(), &mut child_scope.clone())?;
+    |                              ---------- ^^^^^^^^^^^^ expected `From`, found `&From`
+    |                              |
+    |                              arguments to this method are incorrect
+    |
+note: `ast::From` does not implement `Clone`, so `&ast::From` was cloned instead
+   --> src/sql/planner/planner.rs:318:41
+    |
+318 |             let child = self.build_from(item.clone(), &mut child_scope.clone())?;
+    |                                         ^^^^
+note: method defined here
+   --> src/sql/planner/planner.rs:333:8
+    |
+333 |     fn build_from(&self, from: ast::From, parent_scope: &mut Scope) -> Result<Node> {
+    |        ^^^^^^^^^^        ---------------
+help: consider annotating `ast::From` with `#[derive(Clone)]`
+   --> src/sql/parser/ast.rs:85:1
+    |
+ 85 + #[derive(Clone)]
+ 86 | pub enum From {
+    |
+
+error[E0599]: no method named `ok_or_else` found for enum `std::result::Result<T, E>` in the current scope
+   --> src/sql/planner/planner.rs:336:59
+    |
+336 |                 let table = self.catalog.get_table(&name).ok_or_else(|| errinput!("unknown table: {}", name))?;
+    |                                                           ^^^^^^^^^^
+    |
+note: the method `ok_or_else` exists on the type `std::option::Option<schema::Table>`
+   --> /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/option.rs:1363:5
+help: use the `?` operator to extract the `std::option::Option<schema::Table>` value, propagating a `Result::Err` value to the caller
+    |
+336 |                 let table = self.catalog.get_table(&name)?.ok_or_else(|| errinput!("unknown table: {}", name))?;
+    |                                                          +
+help: there is a method `or_else` with a similar name
+    |
+336 -                 let table = self.catalog.get_table(&name).ok_or_else(|| errinput!("unknown table: {}", name))?;
+336 +                 let table = self.catalog.get_table(&name).or_else(|| errinput!("unknown table: {}", name))?;
+    |
+
+error[E0599]: no variant or associated item named `Function` found for enum `Operator` in the current scope
+   --> src/sql/planner/planner.rs:369:57
+    |
+369 |         if let ast::Expression::Operator(ast::Operator::Function(name, args)) = expr {
+    |                                                         ^^^^^^^^ variant or associated item not found in `Operator`
+    |
+   ::: src/sql/parser/ast.rs:210:1
+    |
+210 | pub enum Operator {
+    | ----------------- variant or associated item `Function` not found for this enum
+
+error[E0599]: no variant or associated item named `Literal` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:376:94
+    |
+376 |                 "count" => Ok(Aggregate::Count(args.into_iter().next().unwrap_or(Expression::Literal(Value::Null)))),
+    |                                                                                              ^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `Literal` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `Literal` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:377:90
+    |
+377 |                 "sum" => Ok(Aggregate::Sum(args.into_iter().next().unwrap_or(Expression::Literal(Value::Null)))),
+    |                                                                                          ^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `Literal` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `Literal` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:378:94
+    |
+378 |                 "avg" => Ok(Aggregate::Average(args.into_iter().next().unwrap_or(Expression::Literal(Value::Null)))),
+    |                                                                                              ^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `Literal` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `Literal` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:379:90
+    |
+379 |                 "min" => Ok(Aggregate::Min(args.into_iter().next().unwrap_or(Expression::Literal(Value::Null)))),
+    |                                                                                          ^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `Literal` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `Literal` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:380:90
+    |
+380 |                 "max" => Ok(Aggregate::Max(args.into_iter().next().unwrap_or(Expression::Literal(Value::Null)))),
+    |                                                                                          ^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `Literal` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `Function` found for enum `Operator` in the current scope
+   --> src/sql/planner/planner.rs:390:57
+    |
+390 |         if let ast::Expression::Operator(ast::Operator::Function(name, _)) = expr {
+    |                                                         ^^^^^^^^ variant or associated item not found in `Operator`
+    |
+   ::: src/sql/parser/ast.rs:210:1
+    |
+210 | pub enum Operator {
+    | ----------------- variant or associated item `Function` not found for this enum
+
+error[E0599]: no variant or associated item named `Function` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:446:32
+    |
+446 |                 Ok(Expression::Function(name, args))
+    |                                ^^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `Function` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `GreaterThanOrEqual` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:485:32
+    |
+485 |                 Ok(Expression::GreaterThanOrEqual(Box::new(lhs), Box::new(rhs)))
+    |                                ^^^^^^^^^^^^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `GreaterThanOrEqual` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `LessThanOrEqual` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:504:32
+    |
+504 |                 Ok(Expression::LessThanOrEqual(Box::new(lhs), Box::new(rhs)))
+    |                                ^^^^^^^^^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `LessThanOrEqual` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `NotEqual` found for enum `expression::Expression` in the current scope
+   --> src/sql/planner/planner.rs:509:32
+    |
+509 |                 Ok(Expression::NotEqual(Box::new(lhs), Box::new(rhs)))
+    |                                ^^^^^^^^ variant or associated item not found in `expression::Expression`
+    |
+   ::: src/sql/types/expression.rs:19:1
+    |
+ 19 | pub enum Expression {
+    | ------------------- variant or associated item `NotEqual` not found for this enum
+    |
+note: if you're trying to build a new `expression::Expression`, consider using `expression::Expression::and_vec` which returns `std::option::Option<expression::Expression>`
+   --> src/sql/types/expression.rs:354:5
+    |
+354 |     pub fn and_vec(exprs: Vec<Expression>) -> Option<Self> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no variant or associated item named `Function` found for enum `Operator` in the current scope
+   --> src/sql/planner/planner.rs:671:57
+    |
+671 |         if let ast::Expression::Operator(ast::Operator::Function(name, args)) = expr {
+    |                                                         ^^^^^^^^ variant or associated item not found in `Operator`
+    |
+   ::: src/sql/parser/ast.rs:210:1
+    |
+210 | pub enum Operator {
+    | ----------------- variant or associated item `Function` not found for this enum
+
+error[E0631]: type mismatch in function arguments
+   --> src/sql/planner/planner.rs:723:44
+    |
+723 |             let label = alias.as_ref().map(Label::Unqualified).unwrap_or(Label::None);
+    |                                        --- ^^^^^^^^^^^^^^^^^^ expected due to this
+    |                                        |
+    |                                        required by a bound introduced by this call
+    |
+   ::: src/sql/types/value.rs:400:5
+    |
+400 |     Unqualified(String),
+    |     ----------- found signature defined here
+    |
+    = note: expected function signature `fn(&std::string::String) -> _`
+               found function signature `fn(std::string::String) -> _`
+note: required by a bound in `std::option::Option::<T>::map`
+   --> /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/option.rs:1160:5
+help: consider wrapping the function in a closure
+    |
+723 |             let label = alias.as_ref().map(|arg0: &std::string::String| Label::Unqualified(*arg0)).unwrap_or(Label::None);
+    |                                            ++++++++++++++++++++++++++++                   +++++++
+
+error[E0599]: no variant or associated item named `Function` found for enum `Operator` in the current scope
+   --> src/sql/planner/planner.rs:725:61
+    |
+725 |             if let ast::Expression::Operator(ast::Operator::Function(_, _)) = expr {
+    |                                                             ^^^^^^^^ variant or associated item not found in `Operator`
+    |
+   ::: src/sql/parser/ast.rs:210:1
+    |
+210 | pub enum Operator {
+    | ----------------- variant or associated item `Function` not found for this enum
+
+warning: unused import: `Itertools`
+ --> src/sql/planner/planner.rs:3:25
+  |
+3 | use itertools::{Either, Itertools as _};
+  |                         ^^^^^^^^^
+
+warning: unused variable: `engine`
+  --> src/sql/engine/local.rs:51:16
+   |
+51 |     pub fn new(engine: E) -> Self {
+   |                ^^^^^^ help: if this is intentional, prefix it with an underscore: `_engine`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `state`
+  --> src/sql/engine/local.rs:56:26
+   |
+56 |     pub fn resume(&self, state: mvcc::TransactionState) -> Result<Transaction<E>> {
+   |                          ^^^^^ help: if this is intentional, prefix it with an underscore: `_state`
+
+warning: unused variable: `key`
+  --> src/sql/engine/local.rs:61:35
+   |
+61 |     pub fn get_unversioned(&self, key: &[u8]) -> Result<Option<Vec<u8>>> {
+   |                                   ^^^ help: if this is intentional, prefix it with an underscore: `_key`
+
+warning: unused variable: `key`
+  --> src/sql/engine/local.rs:66:35
+   |
+66 |     pub fn set_unversioned(&self, key: &[u8], value: Vec<u8>) -> Result<()> {
+   |                                   ^^^ help: if this is intentional, prefix it with an underscore: `_key`
+
+warning: unused variable: `value`
+  --> src/sql/engine/local.rs:66:47
+   |
+66 |     pub fn set_unversioned(&self, key: &[u8], value: Vec<u8>) -> Result<()> {
+   |                                               ^^^^^ help: if this is intentional, prefix it with an underscore: `_value`
+
+warning: unused variable: `version`
+  --> src/sql/engine/local.rs:82:27
+   |
+82 |     fn begin_as_of(&self, version: mvcc::Version) -> Result<Self::Transaction> {
+   |                           ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_version`
+
+warning: unused variable: `txn`
+  --> src/sql/engine/local.rs:94:12
+   |
+94 |     fn new(txn: mvcc::Transaction<E>) -> Self {
+   |            ^^^ help: if this is intentional, prefix it with an underscore: `_txn`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:104:25
+    |
+104 |     fn get_index(&self, table: &str, column: &str, value: &Value) -> Result<BTreeSet<Value>> {
+    |                         ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `column`
+   --> src/sql/engine/local.rs:104:38
+    |
+104 |     fn get_index(&self, table: &str, column: &str, value: &Value) -> Result<BTreeSet<Value>> {
+    |                                      ^^^^^^ help: if this is intentional, prefix it with an underscore: `_column`
+
+warning: unused variable: `value`
+   --> src/sql/engine/local.rs:104:52
+    |
+104 |     fn get_index(&self, table: &str, column: &str, value: &Value) -> Result<BTreeSet<Value>> {
+    |                                                    ^^^^^ help: if this is intentional, prefix it with an underscore: `_value`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:109:23
+    |
+109 |     fn get_row(&self, table: &str, id: &Value) -> Result<Option<Row>> {
+    |                       ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `id`
+   --> src/sql/engine/local.rs:109:36
+    |
+109 |     fn get_row(&self, table: &str, id: &Value) -> Result<Option<Row>> {
+    |                                    ^^ help: if this is intentional, prefix it with an underscore: `_id`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:114:25
+    |
+114 |     fn has_index(&self, table: &str, column: &str) -> Result<bool> {
+    |                         ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `column`
+   --> src/sql/engine/local.rs:114:38
+    |
+114 |     fn has_index(&self, table: &str, column: &str) -> Result<bool> {
+    |                                      ^^^^^^ help: if this is intentional, prefix it with an underscore: `_column`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:121:9
+    |
+121 |         table: &str,
+    |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `column`
+   --> src/sql/engine/local.rs:122:9
+    |
+122 |         column: &str,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_column`
+
+warning: unused variable: `value`
+   --> src/sql/engine/local.rs:123:9
+    |
+123 |         value: &Value,
+    |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_value`
+
+warning: unused variable: `ids`
+   --> src/sql/engine/local.rs:124:9
+    |
+124 |         ids: BTreeSet<Value>,
+    |         ^^^ help: if this is intentional, prefix it with an underscore: `_ids`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:130:32
+    |
+130 |     fn table_references(&self, table: &str) -> Result<Vec<(Table, Vec<usize>)>> {
+    |                                ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:148:22
+    |
+148 |     fn delete(&self, table: &str, ids: &[Value]) -> Result<()> {
+    |                      ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `ids`
+   --> src/sql/engine/local.rs:148:35
+    |
+148 |     fn delete(&self, table: &str, ids: &[Value]) -> Result<()> {
+    |                                   ^^^ help: if this is intentional, prefix it with an underscore: `_ids`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:152:19
+    |
+152 |     fn get(&self, table: &str, ids: &[Value]) -> Result<Vec<Row>> {
+    |                   ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `ids`
+   --> src/sql/engine/local.rs:152:32
+    |
+152 |     fn get(&self, table: &str, ids: &[Value]) -> Result<Vec<Row>> {
+    |                                ^^^ help: if this is intentional, prefix it with an underscore: `_ids`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:156:22
+    |
+156 |     fn insert(&self, table: &str, rows: Vec<Row>) -> Result<()> {
+    |                      ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `rows`
+   --> src/sql/engine/local.rs:156:35
+    |
+156 |     fn insert(&self, table: &str, rows: Vec<Row>) -> Result<()> {
+    |                                   ^^^^ help: if this is intentional, prefix it with an underscore: `_rows`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:160:28
+    |
+160 |     fn lookup_index(&self, table: &str, column: &str, values: &[Value]) -> Result<BTreeSet<Value>> {
+    |                            ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `column`
+   --> src/sql/engine/local.rs:160:41
+    |
+160 |     fn lookup_index(&self, table: &str, column: &str, values: &[Value]) -> Result<BTreeSet<Value>> {
+    |                                         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_column`
+
+warning: unused variable: `values`
+   --> src/sql/engine/local.rs:160:55
+    |
+160 |     fn lookup_index(&self, table: &str, column: &str, values: &[Value]) -> Result<BTreeSet<Value>> {
+    |                                                       ^^^^^^ help: if this is intentional, prefix it with an underscore: `_values`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:164:20
+    |
+164 |     fn scan(&self, table: &str, filter: Option<Expression>) -> Result<Rows> {
+    |                    ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `filter`
+   --> src/sql/engine/local.rs:164:33
+    |
+164 |     fn scan(&self, table: &str, filter: Option<Expression>) -> Result<Rows> {
+    |                                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_filter`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:168:22
+    |
+168 |     fn update(&self, table: &str, rows: BTreeMap<Value, Row>) -> Result<()> {
+    |                      ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `rows`
+   --> src/sql/engine/local.rs:168:35
+    |
+168 |     fn update(&self, table: &str, rows: BTreeMap<Value, Row>) -> Result<()> {
+    |                                   ^^^^ help: if this is intentional, prefix it with an underscore: `_rows`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:174:28
+    |
+174 |     fn create_table(&self, table: Table) -> Result<()> {
+    |                            ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:178:26
+    |
+178 |     fn drop_table(&self, table: &str, if_exists: bool) -> Result<bool> {
+    |                          ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `if_exists`
+   --> src/sql/engine/local.rs:178:39
+    |
+178 |     fn drop_table(&self, table: &str, if_exists: bool) -> Result<bool> {
+    |                                       ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_if_exists`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:182:25
+    |
+182 |     fn get_table(&self, table: &str) -> Result<Option<Table>> {
+    |                         ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `group_by`
+  --> src/sql/execution/aggregator.rs:21:16
+   |
+21 |     pub fn new(group_by: Vec<Expression>, aggregates: Vec<Aggregate>) -> Self {
+   |                ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_group_by`
+
+warning: unused variable: `aggregates`
+  --> src/sql/execution/aggregator.rs:21:43
+   |
+21 |     pub fn new(group_by: Vec<Expression>, aggregates: Vec<Aggregate>) -> Self {
+   |                                           ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_aggregates`
+
+warning: unused variable: `row`
+  --> src/sql/execution/aggregator.rs:26:27
+   |
+26 |     pub fn add(&mut self, row: &Row) -> Result<()> {
+   |                           ^^^ help: if this is intentional, prefix it with an underscore: `_row`
+
+warning: unused variable: `rows`
+  --> src/sql/execution/aggregator.rs:31:32
+   |
+31 |     pub fn add_rows(&mut self, rows: Rows) -> Result<()> {
+   |                                ^^^^ help: if this is intentional, prefix it with an underscore: `_rows`
+
+warning: unused variable: `aggregate`
+  --> src/sql/execution/aggregator.rs:55:12
+   |
+55 |     fn new(aggregate: &Aggregate) -> Self {
+   |            ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_aggregate`
+
+warning: unused variable: `value`
+  --> src/sql/execution/aggregator.rs:60:23
+   |
+60 |     fn add(&mut self, value: Value) -> Result<()> {
+   |                       ^^^^^ help: if this is intentional, prefix it with an underscore: `_value`
+
+warning: unused variable: `txn`
+  --> src/sql/execution/executor.rs:22:16
+   |
+22 |     pub fn new(txn: &'a T) -> Self {
+   |                ^^^ help: if this is intentional, prefix it with an underscore: `_txn`
+
+warning: unused variable: `plan`
+  --> src/sql/execution/executor.rs:27:31
+   |
+27 |     pub fn execute(&mut self, plan: Plan) -> Result<ExecutionResult> {
+   |                               ^^^^ help: if this is intentional, prefix it with an underscore: `_plan`
+
+warning: unused variable: `node`
+  --> src/sql/execution/executor.rs:32:32
+   |
+32 |     fn execute_node(&mut self, node: Node) -> Result<Rows> {
+   |                                ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `table`
+  --> src/sql/execution/executor.rs:37:22
+   |
+37 |     fn delete(&self, table: &str, primary_key: usize, source: Rows) -> Result<u64> {
+   |                      ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `primary_key`
+  --> src/sql/execution/executor.rs:37:35
+   |
+37 |     fn delete(&self, table: &str, primary_key: usize, source: Rows) -> Result<u64> {
+   |                                   ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_primary_key`
+
+warning: unused variable: `source`
+  --> src/sql/execution/executor.rs:37:55
+   |
+37 |     fn delete(&self, table: &str, primary_key: usize, source: Rows) -> Result<u64> {
+   |                                                       ^^^^^^ help: if this is intentional, prefix it with an underscore: `_source`
+
+warning: variable does not need to be mutable
+  --> src/sql/execution/executor.rs:46:9
+   |
+46 |         mut source: Rows,
+   |         ----^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `table`
+  --> src/sql/execution/executor.rs:44:9
+   |
+44 |         table: Table,
+   |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `column_map`
+  --> src/sql/execution/executor.rs:45:9
+   |
+45 |         column_map: Option<HashMap<usize, usize>>,
+   |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_column_map`
+
+warning: unused variable: `source`
+  --> src/sql/execution/executor.rs:46:9
+   |
+46 |         mut source: Rows,
+   |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_source`
+
+warning: variable does not need to be mutable
+  --> src/sql/execution/executor.rs:56:9
+   |
+56 |         mut source: Rows,
+   |         ----^^^^^^
+   |         |
+   |         help: remove this `mut`
+
+warning: unused variable: `table`
+  --> src/sql/execution/executor.rs:54:9
+   |
+54 |         table: &str,
+   |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `primary_key`
+  --> src/sql/execution/executor.rs:55:9
+   |
+55 |         primary_key: usize,
+   |         ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_primary_key`
+
+warning: unused variable: `source`
+  --> src/sql/execution/executor.rs:56:9
+   |
+56 |         mut source: Rows,
+   |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_source`
+
+warning: unused variable: `expressions`
+  --> src/sql/execution/executor.rs:57:9
+   |
+57 |         expressions: Vec<(usize, Expression)>,
+   |         ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_expressions`
+
+warning: unused variable: `source`
+  --> src/sql/execution/executor.rs:63:14
+   |
+63 |     fn order(source: Rows, order: Vec<(Expression, Direction)>) -> Result<Rows> {
+   |              ^^^^^^ help: if this is intentional, prefix it with an underscore: `_source`
+
+warning: unused variable: `order`
+  --> src/sql/execution/executor.rs:63:28
+   |
+63 |     fn order(source: Rows, order: Vec<(Expression, Direction)>) -> Result<Rows> {
+   |                            ^^^^^ help: if this is intentional, prefix it with an underscore: `_order`
+
+warning: unused variable: `left`
+  --> src/sql/execution/join.rs:30:9
+   |
+30 |         left: Rows,
+   |         ^^^^ help: if this is intentional, prefix it with an underscore: `_left`
+
+warning: unused variable: `right`
+  --> src/sql/execution/join.rs:31:9
+   |
+31 |         right: Rows,
+   |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_right`
+
+warning: unused variable: `right_columns`
+  --> src/sql/execution/join.rs:32:9
+   |
+32 |         right_columns: usize,
+   |         ^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_right_columns`
+
+warning: unused variable: `predicate`
+  --> src/sql/execution/join.rs:33:9
+   |
+33 |         predicate: Option<Expression>,
+   |         ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_predicate`
+
+warning: unused variable: `outer`
+  --> src/sql/execution/join.rs:34:9
+   |
+34 |         outer: bool,
+   |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_outer`
+
+warning: variable does not need to be mutable
+  --> src/sql/execution/join.rs:75:9
+   |
+75 |         mut right: Rows,
+   |         ----^^^^^
+   |         |
+   |         help: remove this `mut`
+
+warning: unused variable: `left`
+  --> src/sql/execution/join.rs:73:9
+   |
+73 |         left: Rows,
+   |         ^^^^ help: if this is intentional, prefix it with an underscore: `_left`
+
+warning: unused variable: `left_column`
+  --> src/sql/execution/join.rs:74:9
+   |
+74 |         left_column: usize,
+   |         ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_left_column`
+
+warning: unused variable: `right`
+  --> src/sql/execution/join.rs:75:9
+   |
+75 |         mut right: Rows,
+   |         ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_right`
+
+warning: unused variable: `right_column`
+  --> src/sql/execution/join.rs:76:9
+   |
+76 |         right_column: usize,
+   |         ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_right_column`
+
+warning: unused variable: `right_columns`
+  --> src/sql/execution/join.rs:77:9
+   |
+77 |         right_columns: usize,
+   |         ^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_right_columns`
+
+warning: unused variable: `outer`
+  --> src/sql/execution/join.rs:78:9
+   |
+78 |         outer: bool,
+   |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_outer`
+
+warning: unused variable: `engine`
+  --> src/sql/execution/session.rs:24:16
+   |
+24 |     pub fn new(engine: &'a E) -> Self {
+   |                ^^^^^^ help: if this is intentional, prefix it with an underscore: `_engine`
+
+warning: unused variable: `statement`
+  --> src/sql/execution/session.rs:29:31
+   |
+29 |     pub fn execute(&mut self, statement: &str) -> Result<StatementResult> {
+   |                               ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_statement`
+
+warning: unused variable: `read_only`
+  --> src/sql/execution/session.rs:34:38
+   |
+34 |     pub fn with_txn<F, T>(&mut self, read_only: bool, f: F) -> Result<T>
+   |                                      ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_read_only`
+
+warning: unused variable: `f`
+  --> src/sql/execution/session.rs:34:55
+   |
+34 |     pub fn with_txn<F, T>(&mut self, read_only: bool, f: F) -> Result<T>
+   |                                                       ^ help: if this is intentional, prefix it with an underscore: `_f`
+
+warning: unused variable: `result`
+  --> src/sql/execution/session.rs:77:17
+   |
+77 |     fn try_from(result: ExecutionResult) -> Result<Self> {
+   |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `result`
+  --> src/sql/execution/session.rs:86:17
+   |
+86 |     fn try_from(result: StatementResult) -> Result<Self> {
+   |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `result`
+  --> src/sql/execution/session.rs:95:17
+   |
+95 |     fn try_from(result: StatementResult) -> Result<Self> {
+   |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `result`
+   --> src/sql/execution/session.rs:104:17
+    |
+104 |     fn try_from(result: StatementResult) -> Result<Self> {
+    |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `result`
+   --> src/sql/execution/session.rs:113:17
+    |
+113 |     fn try_from(result: StatementResult) -> Result<Self> {
+    |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `result`
+   --> src/sql/execution/session.rs:122:17
+    |
+122 |     fn try_from(result: StatementResult) -> Result<Self> {
+    |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `result`
+   --> src/sql/execution/session.rs:131:17
+    |
+131 |     fn try_from(result: StatementResult) -> Result<Self> {
+    |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `result`
+   --> src/sql/execution/session.rs:140:17
+    |
+140 |     fn try_from(result: StatementResult) -> Result<Self> {
+    |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `min_precedence`
+   --> src/sql/parser/parser.rs:667:44
+    |
+667 |     fn parse_prefix_operator_at(&mut self, min_precedence: Precedence) -> Option<PrefixOperator> {
+    |                                            ^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_min_precedence`
+
+warning: unused variable: `min_precedence`
+   --> src/sql/parser/parser.rs:681:43
+    |
+681 |     fn parse_infix_operator_at(&mut self, min_precedence: Precedence) -> Option<InfixOperator> {
+    |                                           ^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_min_precedence`
+
+warning: unused variable: `min_precedence`
+   --> src/sql/parser/parser.rs:723:9
+    |
+723 |         min_precedence: Precedence,
+    |         ^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_min_precedence`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:27:24
+   |
+27 |     fn optimize(&self, node: Node) -> Result<Node> {
+   |                        ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: variable does not need to be mutable
+  --> src/sql/planner/optimizer.rs:34:17
+   |
+34 |     pub fn fold(mut expr: Expression) -> Result<Expression> {
+   |                 ----^^^^
+   |                 |
+   |                 help: remove this `mut`
+
+warning: unused variable: `expr`
+  --> src/sql/planner/optimizer.rs:34:17
+   |
+34 |     pub fn fold(mut expr: Expression) -> Result<Expression> {
+   |                 ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_expr`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:44:24
+   |
+44 |     fn optimize(&self, node: Node) -> Result<Node> {
+   |                        ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: variable does not need to be mutable
+  --> src/sql/planner/optimizer.rs:51:21
+   |
+51 |     fn push_filters(mut node: Node) -> Node {
+   |                     ----^^^^
+   |                     |
+   |                     help: remove this `mut`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:51:21
+   |
+51 |     fn push_filters(mut node: Node) -> Node {
+   |                     ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `expr`
+  --> src/sql/planner/optimizer.rs:56:18
+   |
+56 |     fn push_into(expr: Expression, target: &mut Node) -> Option<Expression> {
+   |                  ^^^^ help: if this is intentional, prefix it with an underscore: `_expr`
+
+warning: unused variable: `target`
+  --> src/sql/planner/optimizer.rs:56:36
+   |
+56 |     fn push_into(expr: Expression, target: &mut Node) -> Option<Expression> {
+   |                                    ^^^^^^ help: if this is intentional, prefix it with an underscore: `_target`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:61:26
+   |
+61 |     fn maybe_push_filter(node: Node) -> Node {
+   |                          ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:67:24
+   |
+67 |     fn maybe_push_join(node: Node) -> Node {
+   |                        ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:77:24
+   |
+77 |     fn optimize(&self, node: Node) -> Result<Node> {
+   |                        ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: variable does not need to be mutable
+  --> src/sql/planner/optimizer.rs:84:21
+   |
+84 |     fn index_lookup(mut node: Node) -> Node {
+   |                     ----^^^^
+   |                     |
+   |                     help: remove this `mut`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:84:21
+   |
+84 |     fn index_lookup(mut node: Node) -> Node {
+   |                     ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:94:24
+   |
+94 |     fn optimize(&self, node: Node) -> Result<Node> {
+   |                        ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src/sql/planner/optimizer.rs:101:22
+    |
+101 |     pub fn hash_join(node: Node) -> Node {
+    |                      ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src/sql/planner/optimizer.rs:111:24
+    |
+111 |     fn optimize(&self, node: Node) -> Result<Node> {
+    |                        ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: variable does not need to be mutable
+   --> src/sql/planner/optimizer.rs:118:22
+    |
+118 |     fn short_circuit(mut node: Node) -> Node {
+    |                      ----^^^^
+    |                      |
+    |                      help: remove this `mut`
+
+warning: unused variable: `node`
+   --> src/sql/planner/optimizer.rs:118:22
+    |
+118 |     fn short_circuit(mut node: Node) -> Node {
+    |                      ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `statement`
+  --> src/sql/planner/plan.rs:39:18
+   |
+39 |     pub fn build(statement: ast::Statement, catalog: &impl Catalog) -> Result<Self> {
+   |                  ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_statement`
+
+warning: unused variable: `catalog`
+  --> src/sql/planner/plan.rs:39:45
+   |
+39 |     pub fn build(statement: ast::Statement, catalog: &impl Catalog) -> Result<Self> {
+   |                                             ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_catalog`
+
+warning: unused variable: `txn`
+  --> src/sql/planner/plan.rs:44:26
+   |
+44 |     pub fn execute(self, txn: &impl Transaction) -> Result<ExecutionResult> {
+   |                          ^^^ help: if this is intentional, prefix it with an underscore: `_txn`
+
+warning: unused variable: `index`
+   --> src/sql/planner/plan.rs:113:32
+    |
+113 |     pub fn column_label(&self, index: usize) -> Label {
+    |                                ^^^^^ help: if this is intentional, prefix it with an underscore: `_index`
+
+warning: variable does not need to be mutable
+   --> src/sql/planner/plan.rs:119:9
+    |
+119 |         mut self,
+    |         ----^^^^
+    |         |
+    |         help: remove this `mut`
+
+warning: unused variable: `before`
+   --> src/sql/planner/plan.rs:120:9
+    |
+120 |         before: &impl Fn(Self) -> Result<Self>,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_before`
+
+warning: unused variable: `after`
+   --> src/sql/planner/plan.rs:121:9
+    |
+121 |         after: &impl Fn(Self) -> Result<Self>,
+    |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_after`
+
+warning: unused variable: `before`
+   --> src/sql/planner/plan.rs:129:9
+    |
+129 |         before: &impl Fn(Expression) -> Result<Expression>,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_before`
+
+warning: unused variable: `after`
+   --> src/sql/planner/plan.rs:130:9
+    |
+130 |         after: &impl Fn(Expression) -> Result<Expression>,
+    |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_after`
+
+warning: unused variable: `node`
+   --> src/sql/planner/plan.rs:149:22
+    |
+149 |     fn format(&self, node: &Node) -> String {
+    |                      ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `f`
+   --> src/sql/planner/plan.rs:167:19
+    |
+167 |     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+    |                   ^ help: if this is intentional, prefix it with an underscore: `_f`
+
+warning: unused variable: `dir`
+   --> src/sql/planner/plan.rs:173:13
+    |
+173 |     fn from(dir: ast::Direction) -> Self {
+    |             ^^^ help: if this is intentional, prefix it with an underscore: `_dir`
+
+warning: unused variable: `f`
+   --> src/sql/planner/plan.rs:180:19
+    |
+180 |     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+    |                   ^ help: if this is intentional, prefix it with an underscore: `_f`
+
+warning: unused variable: `f`
+   --> src/sql/planner/plan.rs:186:19
+    |
+186 |     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+    |                   ^ help: if this is intentional, prefix it with an underscore: `_f`
+
+warning: unused variable: `f`
+   --> src/sql/planner/plan.rs:195:9
+    |
+195 |         f: &mut std::fmt::Formatter<'_>,
+    |         ^ help: if this is intentional, prefix it with an underscore: `_f`
+
+warning: unused variable: `prefix`
+   --> src/sql/planner/plan.rs:196:9
+    |
+196 |         prefix: &str,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_prefix`
+
+warning: unused variable: `root`
+   --> src/sql/planner/plan.rs:197:9
+    |
+197 |         root: bool,
+    |         ^^^^ help: if this is intentional, prefix it with an underscore: `_root`
+
+warning: unused variable: `last_child`
+   --> src/sql/planner/plan.rs:198:9
+    |
+198 |         last_child: bool,
+    |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_last_child`
+
+warning: unused variable: `targets`
+   --> src/sql/planner/plan.rs:205:21
+    |
+205 | pub fn invert_remap(targets: &[Option<usize>]) -> Vec<Option<usize>> {
+    |                     ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_targets`
+
+warning: unused variable: `i`
+   --> src/sql/planner/planner.rs:633:14
+    |
+633 |         for (i, col) in table.columns.iter().enumerate() {
+    |              ^ help: if this is intentional, prefix it with an underscore: `_i`
+
+error[E0382]: borrow of moved value: `label`
+   --> src/sql/planner/planner.rs:703:54
+    |
+701 |         for (i, label) in scope.columns.into_iter().enumerate() {
+    |                 ----- move occurs because `label` has type `Label`, which does not implement the `Copy` trait
+702 |             let idx = self.add_column(label);
+    |                                       ----- value moved here
+703 |             if let Label::Qualified(table, column) = &label {
+    |                                                      ^^^^^^ value borrowed here after move
+    |
+note: consider changing this parameter type in method `add_column` to borrow instead if owning the value isn't necessary
+   --> src/sql/planner/planner.rs:647:37
+    |
+647 |     fn add_column(&mut self, label: Label) -> usize {
+    |        ---------- in this method    ^^^^^ this parameter takes ownership of the value
+help: consider cloning the value if the performance cost is acceptable
+    |
+702 |             let idx = self.add_column(label.clone());
+    |                                            ++++++++
+
+warning: unused variable: `i`
+   --> src/sql/planner/planner.rs:701:14
+    |
+701 |         for (i, label) in scope.columns.into_iter().enumerate() {
+    |              ^ help: if this is intentional, prefix it with an underscore: `_i`
+
+error[E0382]: borrow of moved value: `label`
+   --> src/sql/planner/planner.rs:739:58
+    |
+737 |                 let label = self.columns[*idx].clone();
+    |                     ----- move occurs because `label` has type `Label`, which does not implement the `Copy` trait
+738 |                 let new_idx = result.add_column(label);
+    |                                                 ----- value moved here
+739 |                 if let Label::Qualified(table, column) = &label {
+    |                                                          ^^^^^^ value borrowed here after move
+    |
+note: consider changing this parameter type in method `add_column` to borrow instead if owning the value isn't necessary
+   --> src/sql/planner/planner.rs:647:37
+    |
+647 |     fn add_column(&mut self, label: Label) -> usize {
+    |        ---------- in this method    ^^^^^ this parameter takes ownership of the value
+help: consider cloning the value if the performance cost is acceptable
+    |
+738 |                 let new_idx = result.add_column(label.clone());
+    |                                                      ++++++++
+
+Some errors have detailed explanations: E0282, E0308, E0382, E0599, E0631.
+For more information about an error, try `rustc --explain E0282`.
+warning: `toydb` (lib) generated 153 warnings
+error: could not compile `toydb` (lib) due to 36 previous errors; 153 warnings emitted

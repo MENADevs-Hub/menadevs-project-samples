@@ -1,0 +1,50 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 3,
+            "passed": 3,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1775471523.7720885,
+            "stop": 1775471523.8088574
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_report_structure",
+                "status": "passed",
+                "duration": 0.0011303169885650277,
+                "start": 1775471523.7974422,
+                "stop": 1775471523.7989047,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_summary",
+                "status": "passed",
+                "duration": 0.0006640670035267249,
+                "start": 1775471523.7993703,
+                "stop": 1775471523.800235,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_discrepancy",
+                "status": "passed",
+                "duration": 0.000812264988780953,
+                "start": 1775471523.8006628,
+                "stop": 1775471523.8016727,
+                "retries": 5,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::precinct,candidate,d_type,severity,checks::[('North Ward', 'Maria Chen', 'vote_count_mismatch', 'low', {'official_votes': 1247, 'tally_votes': 1249, 'difference': 2}), ('South Ward', 'James Walker', 'impossible_value', 'high', {'tally_votes': 4500}), ('West Ward', 'Sofia Rivera', 'vote_count_mismatch', 'medium', {'difference': 14}), ('Central', 'Maria Chen', 'vote_count_mismatch', 'high', {'difference': 150}), ('University District', 'Sofia Rivera', 'candidate_missing', 'high', {}), ('Harbor Area', None, 'precinct_missing', 'high', {})]"
+                ]
+            }
+        ]
+    }
+}

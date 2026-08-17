@@ -1,0 +1,69 @@
+{
+  "source": "Riverside County Tally Sheets",
+  "election_date": "2026-11-03",
+  "election": "County Commissioner Race",
+  "sheets": [
+    {
+      "precinct": "North Ward",
+      "registered_voters": 3200,
+      "results": [
+        {"candidate": "Maria Chen", "party": "DEM", "votes": "1,249"},
+        {"candidate": "James Walker", "party": "REP", "votes": 1089},
+        {"candidate": "Sofia Rivera", "party": "IND", "votes": 156}
+      ]
+    },
+    {
+      "precinct": "South Ward",
+      "registered_voters": 2100,
+      "results": [
+        {"candidate": "Maria Chen", "party": "DEM", "votes": 892},
+        {"candidate": "James Walker", "party": "REP", "votes": 4500},
+        {"candidate": "Sofia Rivera", "party": "IND", "votes": 98}
+      ]
+    },
+    {
+      "precinct": "East Wrd",
+      "registered_voters": 2800,
+      "results": [
+        {"candidate": "Maria Chen", "party": "DEM", "votes": 1103},
+        {"candidate": "James Walker", "party": "REP", "votes": 1245},
+        {"candidate": "Sofia Rivera", "party": "IND", "votes": 87}
+      ]
+    },
+    {
+      "precinct": "West Ward",
+      "registered_voters": 1900,
+      "results": [
+        {"candidate": "Maria Chen", "party": "DEM", "votes": 567},
+        {"candidate": "James Walker", "party": "REP", "votes": 823},
+        {"candidate": "Sofia Rivera", "party": "IND", "votes": 187}
+      ]
+    },
+    {
+      "precinct": "Central",
+      "registered_voters": 4100,
+      "results": [
+        {"candidate": "Maria Chen", "party": "DEM", "votes": 1742},
+        {"candidate": "James Walker", "party": "REP", "votes": 1456},
+        {"candidate": "Sofia Rivera", "party": "IND", "votes": 312}
+      ]
+    },
+    {
+      "precinct": "University District",
+      "registered_voters": 2600,
+      "results": [
+        {"candidate": "Maria Chen", "party": "DEM", "votes": 1567},
+        {"candidate": "James Walker", "party": "REP", "votes": 623}
+      ]
+    },
+    {
+      "precinct": "Industrial Zone",
+      "registered_voters": 1750,
+      "results": [
+        {"candidate": "Maria Chen", "party": "DEM", "votes": 498},
+        {"candidate": "James Walker", "party": "REP", "votes": 876},
+        {"candidate": "Sofia Rivera", "party": "IND", "votes": 45}
+      ]
+    }
+  ]
+}

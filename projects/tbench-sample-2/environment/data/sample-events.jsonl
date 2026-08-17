@@ -1,0 +1,2 @@
+{"event_id":"sample-1","email":"User@example.com","type":"soft_bounce","timestamp":"2026-05-01T00:00:00Z"}
+{"event_id":"sample-2","email":"User@example.com","type":"resubscribe","timestamp":"2026-05-02T00:00:00Z"}

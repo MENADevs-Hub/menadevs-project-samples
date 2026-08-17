@@ -1,0 +1,182 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.5.0-2ubuntu10.8).
+0 upgraded, 0 newly installed, 0 to remove and 10 not upgraded.
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 8 items
+
+../tests/test_outputs.py .FFFFFFF                                        [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_summary _________________________________
+
+summary = {'precincts_matched': 7, 'precincts_with_discrepancies': 6, 'severity_breakdown': {'high': 4, 'low': 1, 'medium': 1}, 'total_discrepancies': 6, ...}
+
+    def test_summary(summary):
+        """Summary counts match the 6 known discrepancies: totals, severity breakdown, and type breakdown."""
+        assert summary["total_discrepancies"] == 6, \
+            f"Expected 6 total discrepancies, got {summary['total_discrepancies']}"
+    
+>       sev = summary["discrepancies_by_severity"]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'discrepancies_by_severity'
+
+/tests/test_outputs.py:63: KeyError
+___ test_discrepancy[North Ward-Maria Chen-vote_count_mismatch-low-checks0] ____
+
+discrepancies = [{'candidate': 'Sofia Rivera', 'difference': 14, 'official_votes': 201, 'precinct': 'West Ward', ...}, {'candidate': '...entral', ...}, {'candidate': 'James Walker', 'difference': 3744, 'official_votes': 756, 'precinct': 'South Ward', ...}]
+precinct = 'North Ward', candidate = 'Maria Chen'
+d_type = 'vote_count_mismatch', severity = 'low'
+checks = {'difference': 2, 'official_votes': 1247, 'tally_votes': 1249}
+
+    @pytest.mark.parametrize("precinct,candidate,d_type,severity,checks", [
+        ("North Ward",        "Maria Chen",   "vote_count_mismatch", "low",    {"official_votes": 1247, "tally_votes": 1249, "difference": 2}),
+        ("South Ward",        "James Walker", "impossible_value",    "high",   {"tally_votes": 4500}),
+        ("West Ward",         "Sofia Rivera", "vote_count_mismatch", "medium", {"difference": 14}),
+        ("Central",           "Maria Chen",   "vote_count_mismatch", "high",   {"difference": 150}),
+        ("University District", "Sofia Rivera", "candidate_missing", "high",   {}),
+        ("Harbor Area",       None,           "precinct_missing",    "high",   {}),
+    ])
+    def test_discrepancy(discrepancies, precinct, candidate, d_type, severity, checks):
+        """Each known discrepancy is present with the correct type, severity, and numeric fields."""
+        d = find(discrepancies, precinct, candidate, d_type)
+>       assert d is not None, f"Missing discrepancy: {precinct} / {candidate} ({d_type})"
+E       AssertionError: Missing discrepancy: North Ward / Maria Chen (vote_count_mismatch)
+E       assert None is not None
+
+/tests/test_outputs.py:86: AssertionError
+___ test_discrepancy[South Ward-James Walker-impossible_value-high-checks1] ____
+
+discrepancies = [{'candidate': 'Sofia Rivera', 'difference': 14, 'official_votes': 201, 'precinct': 'West Ward', ...}, {'candidate': '...entral', ...}, {'candidate': 'James Walker', 'difference': 3744, 'official_votes': 756, 'precinct': 'South Ward', ...}]
+precinct = 'South Ward', candidate = 'James Walker', d_type = 'impossible_value'
+severity = 'high', checks = {'tally_votes': 4500}
+
+    @pytest.mark.parametrize("precinct,candidate,d_type,severity,checks", [
+        ("North Ward",        "Maria Chen",   "vote_count_mismatch", "low",    {"official_votes": 1247, "tally_votes": 1249, "difference": 2}),
+        ("South Ward",        "James Walker", "impossible_value",    "high",   {"tally_votes": 4500}),
+        ("West Ward",         "Sofia Rivera", "vote_count_mismatch", "medium", {"difference": 14}),
+        ("Central",           "Maria Chen",   "vote_count_mismatch", "high",   {"difference": 150}),
+        ("University District", "Sofia Rivera", "candidate_missing", "high",   {}),
+        ("Harbor Area",       None,           "precinct_missing",    "high",   {}),
+    ])
+    def test_discrepancy(discrepancies, precinct, candidate, d_type, severity, checks):
+        """Each known discrepancy is present with the correct type, severity, and numeric fields."""
+        d = find(discrepancies, precinct, candidate, d_type)
+>       assert d is not None, f"Missing discrepancy: {precinct} / {candidate} ({d_type})"
+E       AssertionError: Missing discrepancy: South Ward / James Walker (impossible_value)
+E       assert None is not None
+
+/tests/test_outputs.py:86: AssertionError
+_ test_discrepancy[West Ward-Sofia Rivera-vote_count_mismatch-medium-checks2] __
+
+discrepancies = [{'candidate': 'Sofia Rivera', 'difference': 14, 'official_votes': 201, 'precinct': 'West Ward', ...}, {'candidate': '...entral', ...}, {'candidate': 'James Walker', 'difference': 3744, 'official_votes': 756, 'precinct': 'South Ward', ...}]
+precinct = 'West Ward', candidate = 'Sofia Rivera'
+d_type = 'vote_count_mismatch', severity = 'medium', checks = {'difference': 14}
+
+    @pytest.mark.parametrize("precinct,candidate,d_type,severity,checks", [
+        ("North Ward",        "Maria Chen",   "vote_count_mismatch", "low",    {"official_votes": 1247, "tally_votes": 1249, "difference": 2}),
+        ("South Ward",        "James Walker", "impossible_value",    "high",   {"tally_votes": 4500}),
+        ("West Ward",         "Sofia Rivera", "vote_count_mismatch", "medium", {"difference": 14}),
+        ("Central",           "Maria Chen",   "vote_count_mismatch", "high",   {"difference": 150}),
+        ("University District", "Sofia Rivera", "candidate_missing", "high",   {}),
+        ("Harbor Area",       None,           "precinct_missing",    "high",   {}),
+    ])
+    def test_discrepancy(discrepancies, precinct, candidate, d_type, severity, checks):
+        """Each known discrepancy is present with the correct type, severity, and numeric fields."""
+        d = find(discrepancies, precinct, candidate, d_type)
+>       assert d is not None, f"Missing discrepancy: {precinct} / {candidate} ({d_type})"
+E       AssertionError: Missing discrepancy: West Ward / Sofia Rivera (vote_count_mismatch)
+E       assert None is not None
+
+/tests/test_outputs.py:86: AssertionError
+____ test_discrepancy[Central-Maria Chen-vote_count_mismatch-high-checks3] _____
+
+discrepancies = [{'candidate': 'Sofia Rivera', 'difference': 14, 'official_votes': 201, 'precinct': 'West Ward', ...}, {'candidate': '...entral', ...}, {'candidate': 'James Walker', 'difference': 3744, 'official_votes': 756, 'precinct': 'South Ward', ...}]
+precinct = 'Central', candidate = 'Maria Chen', d_type = 'vote_count_mismatch'
+severity = 'high', checks = {'difference': 150}
+
+    @pytest.mark.parametrize("precinct,candidate,d_type,severity,checks", [
+        ("North Ward",        "Maria Chen",   "vote_count_mismatch", "low",    {"official_votes": 1247, "tally_votes": 1249, "difference": 2}),
+        ("South Ward",        "James Walker", "impossible_value",    "high",   {"tally_votes": 4500}),
+        ("West Ward",         "Sofia Rivera", "vote_count_mismatch", "medium", {"difference": 14}),
+        ("Central",           "Maria Chen",   "vote_count_mismatch", "high",   {"difference": 150}),
+        ("University District", "Sofia Rivera", "candidate_missing", "high",   {}),
+        ("Harbor Area",       None,           "precinct_missing",    "high",   {}),
+    ])
+    def test_discrepancy(discrepancies, precinct, candidate, d_type, severity, checks):
+        """Each known discrepancy is present with the correct type, severity, and numeric fields."""
+        d = find(discrepancies, precinct, candidate, d_type)
+>       assert d is not None, f"Missing discrepancy: {precinct} / {candidate} ({d_type})"
+E       AssertionError: Missing discrepancy: Central / Maria Chen (vote_count_mismatch)
+E       assert None is not None
+
+/tests/test_outputs.py:86: AssertionError
+_ test_discrepancy[University District-Sofia Rivera-candidate_missing-high-checks4] _
+
+discrepancies = [{'candidate': 'Sofia Rivera', 'difference': 14, 'official_votes': 201, 'precinct': 'West Ward', ...}, {'candidate': '...entral', ...}, {'candidate': 'James Walker', 'difference': 3744, 'official_votes': 756, 'precinct': 'South Ward', ...}]
+precinct = 'University District', candidate = 'Sofia Rivera'
+d_type = 'candidate_missing', severity = 'high', checks = {}
+
+    @pytest.mark.parametrize("precinct,candidate,d_type,severity,checks", [
+        ("North Ward",        "Maria Chen",   "vote_count_mismatch", "low",    {"official_votes": 1247, "tally_votes": 1249, "difference": 2}),
+        ("South Ward",        "James Walker", "impossible_value",    "high",   {"tally_votes": 4500}),
+        ("West Ward",         "Sofia Rivera", "vote_count_mismatch", "medium", {"difference": 14}),
+        ("Central",           "Maria Chen",   "vote_count_mismatch", "high",   {"difference": 150}),
+        ("University District", "Sofia Rivera", "candidate_missing", "high",   {}),
+        ("Harbor Area",       None,           "precinct_missing",    "high",   {}),
+    ])
+    def test_discrepancy(discrepancies, precinct, candidate, d_type, severity, checks):
+        """Each known discrepancy is present with the correct type, severity, and numeric fields."""
+        d = find(discrepancies, precinct, candidate, d_type)
+>       assert d is not None, f"Missing discrepancy: {precinct} / {candidate} ({d_type})"
+E       AssertionError: Missing discrepancy: University District / Sofia Rivera (candidate_missing)
+E       assert None is not None
+
+/tests/test_outputs.py:86: AssertionError
+_______ test_discrepancy[Harbor Area-None-precinct_missing-high-checks5] _______
+
+discrepancies = [{'candidate': 'Sofia Rivera', 'difference': 14, 'official_votes': 201, 'precinct': 'West Ward', ...}, {'candidate': '...entral', ...}, {'candidate': 'James Walker', 'difference': 3744, 'official_votes': 756, 'precinct': 'South Ward', ...}]
+precinct = 'Harbor Area', candidate = None, d_type = 'precinct_missing'
+severity = 'high', checks = {}
+
+    @pytest.mark.parametrize("precinct,candidate,d_type,severity,checks", [
+        ("North Ward",        "Maria Chen",   "vote_count_mismatch", "low",    {"official_votes": 1247, "tally_votes": 1249, "difference": 2}),
+        ("South Ward",        "James Walker", "impossible_value",    "high",   {"tally_votes": 4500}),
+        ("West Ward",         "Sofia Rivera", "vote_count_mismatch", "medium", {"difference": 14}),
+        ("Central",           "Maria Chen",   "vote_count_mismatch", "high",   {"difference": 150}),
+        ("University District", "Sofia Rivera", "candidate_missing", "high",   {}),
+        ("Harbor Area",       None,           "precinct_missing",    "high",   {}),
+    ])
+    def test_discrepancy(discrepancies, precinct, candidate, d_type, severity, checks):
+        """Each known discrepancy is present with the correct type, severity, and numeric fields."""
+        d = find(discrepancies, precinct, candidate, d_type)
+>       assert d is not None, f"Missing discrepancy: {precinct} / {candidate} ({d_type})"
+E       AssertionError: Missing discrepancy: Harbor Area / None (precinct_missing)
+E       assert None is not None
+
+/tests/test_outputs.py:86: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_report_structure
+FAILED ../tests/test_outputs.py::test_summary - KeyError: 'discrepancies_by_s...
+FAILED ../tests/test_outputs.py::test_discrepancy[North Ward-Maria Chen-vote_count_mismatch-low-checks0]
+FAILED ../tests/test_outputs.py::test_discrepancy[South Ward-James Walker-impossible_value-high-checks1]
+FAILED ../tests/test_outputs.py::test_discrepancy[West Ward-Sofia Rivera-vote_count_mismatch-medium-checks2]
+FAILED ../tests/test_outputs.py::test_discrepancy[Central-Maria Chen-vote_count_mismatch-high-checks3]
+FAILED ../tests/test_outputs.py::test_discrepancy[University District-Sofia Rivera-candidate_missing-high-checks4]
+FAILED ../tests/test_outputs.py::test_discrepancy[Harbor Area-None-precinct_missing-high-checks5]
+========================= 7 failed, 1 passed in 0.08s ==========================

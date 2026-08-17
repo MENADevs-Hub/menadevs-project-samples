@@ -1,0 +1,25 @@
+{
+  "firstStartTime": "2026-04-06T09:52:30.707Z",
+  "opusProMigrationComplete": true,
+  "sonnet1m45MigrationComplete": true,
+  "migrationVersion": 11,
+  "userID": "46e7e371107f47ea83a9c7c9be1087af504366b92ab80cd2df9b16b7e9195b7d",
+  "skillUsage": {
+    "query-mission-db": {
+      "usageCount": 1,
+      "lastUsedAt": 1775469157051
+    },
+    "compute-hohmann-transfer": {
+      "usageCount": 1,
+      "lastUsedAt": 1775469189043
+    },
+    "compute-fuel-budget": {
+      "usageCount": 1,
+      "lastUsedAt": 1775469240831
+    },
+    "estimate-mission-cost": {
+      "usageCount": 1,
+      "lastUsedAt": 1775469277420
+    }
+  }
+}

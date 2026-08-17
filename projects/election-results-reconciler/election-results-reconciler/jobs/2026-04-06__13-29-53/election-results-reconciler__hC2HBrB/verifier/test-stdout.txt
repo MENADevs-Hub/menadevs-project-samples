@@ -1,0 +1,34 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.5.0-2ubuntu10.8).
+0 upgraded, 0 newly installed, 0 to remove and 10 not upgraded.
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 8 items
+
+../tests/test_outputs.py ........                                        [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_report_structure
+PASSED ../tests/test_outputs.py::test_summary
+PASSED ../tests/test_outputs.py::test_discrepancy[North Ward-Maria Chen-vote_count_mismatch-low-checks0]
+PASSED ../tests/test_outputs.py::test_discrepancy[South Ward-James Walker-impossible_value-high-checks1]
+PASSED ../tests/test_outputs.py::test_discrepancy[West Ward-Sofia Rivera-vote_count_mismatch-medium-checks2]
+PASSED ../tests/test_outputs.py::test_discrepancy[Central-Maria Chen-vote_count_mismatch-high-checks3]
+PASSED ../tests/test_outputs.py::test_discrepancy[University District-Sofia Rivera-candidate_missing-high-checks4]
+PASSED ../tests/test_outputs.py::test_discrepancy[Harbor Area-None-precinct_missing-high-checks5]
+============================== 8 passed in 0.04s ===============================

@@ -1,0 +1,8 @@
+{
+  "host": "10.0.1.7",
+  "destination": "198.51.100.77",
+  "peak_hour": "2025-03-07T15:00:00Z",
+  "bytes_sent": 289080555,
+  "mad_z_score": 6377.4,
+  "baseline_median_bytes_per_hour": 156370
+}

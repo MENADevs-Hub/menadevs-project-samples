@@ -1,0 +1,41 @@
+Name,State,City,Type,Enrollment,Acceptance Rate,US News Ranking,Setting
+Ohio State University,Ohio,Columbus,Public,61369,0.53,49,Urban
+University of Michigan,Michigan,Ann Arbor,Public,47907,0.20,21,Suburban
+Purdue University,Indiana,West Lafayette,Public,49639,0.60,51,Suburban
+University of Illinois Urbana-Champaign,Illinois,Champaign,Public,56607,0.45,35,Urban
+Georgia Institute of Technology,Georgia,Atlanta,Public,44007,0.17,33,Urban
+University of Texas at Austin,Texas,Austin,Public,52384,0.29,32,Urban
+University of Wisconsin-Madison,Wisconsin,Madison,Public,49066,0.49,38,Urban
+Penn State University,Pennsylvania,State College,Public,46810,0.55,60,Suburban
+Virginia Tech,Virginia,Blacksburg,Public,37698,0.57,62,Rural
+University of Florida,Florida,Gainesville,Public,55211,0.23,28,Suburban
+University of Washington,Washington,Seattle,Public,48149,0.48,40,Urban
+Carnegie Mellon University,Pennsylvania,Pittsburgh,Private,15818,0.11,22,Urban
+Massachusetts Institute of Technology,Massachusetts,Cambridge,Private,11858,0.04,2,Urban
+Stanford University,California,Stanford,Private,17680,0.04,3,Suburban
+Rice University,Texas,Houston,Private,8285,0.09,17,Urban
+Northwestern University,Illinois,Evanston,Private,23161,0.07,9,Suburban
+University of Southern California,California,Los Angeles,Private,49500,0.12,28,Urban
+Case Western Reserve University,Ohio,Cleveland,Private,12489,0.27,45,Urban
+Rensselaer Polytechnic Institute,New York,Troy,Private,7762,0.57,55,Suburban
+Rochester Institute of Technology,New York,Rochester,Private,16254,0.68,98,Suburban
+Drexel University,Pennsylvania,Philadelphia,Private,24190,0.73,105,Urban
+Stevens Institute of Technology,New Jersey,Hoboken,Private,7485,0.41,76,Urban
+Worcester Polytechnic Institute,Massachusetts,Worcester,Private,7124,0.49,72,Suburban
+Illinois Institute of Technology,Illinois,Chicago,Private,6350,0.52,103,Urban
+University of Minnesota,Minnesota,Minneapolis,Public,52017,0.73,53,Urban
+Iowa State University,Iowa,Ames,Public,30708,0.90,127,Suburban
+Michigan State University,Michigan,East Lansing,Public,49695,0.83,77,Suburban
+University of Maryland,Maryland,College Park,Public,41200,0.44,46,Suburban
+North Carolina State University,North Carolina,Raleigh,Public,36304,0.47,58,Urban
+Colorado School of Mines,Colorado,Golden,Public,6801,0.54,67,Suburban
+University of Colorado Boulder,Colorado,Boulder,Public,38661,0.80,89,Suburban
+Arizona State University,Arizona,Tempe,Public,78254,0.90,132,Urban
+University of Pittsburgh,Pennsylvania,Pittsburgh,Public,34651,0.57,59,Urban
+Clemson University,South Carolina,Clemson,Public,27341,0.47,75,Rural
+Texas A&M University,Texas,College Station,Public,72982,0.57,47,Suburban
+University of Virginia,Virginia,Charlottesville,Public,26173,0.19,24,Suburban
+Indiana University Bloomington,Indiana,Bloomington,Public,45328,0.80,73,Suburban
+Northeastern University,Massachusetts,Boston,Private,22207,0.07,40,Urban
+Boston University,Massachusetts,Boston,Private,36729,0.11,39,Urban
+Lehigh University,Pennsylvania,Bethlehem,Private,7503,0.32,61,Suburban

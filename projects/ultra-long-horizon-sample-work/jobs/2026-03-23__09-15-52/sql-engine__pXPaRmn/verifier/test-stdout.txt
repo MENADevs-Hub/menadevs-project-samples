@@ -1,0 +1,3495 @@
+gpg: AES256.CFB encrypted data
+gpg: encrypted with 1 passphrase
+=== Restoring tamper-proof test files ===
+=== Test files restored ===
+=== Building toydb ===
+   Compiling serde_core v1.0.228
+   Compiling cfg-if v1.0.4
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.44
+   Compiling unicode-ident v1.0.23
+   Compiling libc v0.2.182
+   Compiling memchr v2.8.0
+   Compiling syn v2.0.115
+   Compiling crunchy v0.2.4
+   Compiling tiny-keccak v2.0.2
+   Compiling crossbeam-utils v0.8.21
+   Compiling bitflags v2.11.0
+   Compiling getrandom v0.2.17
+   Compiling zerocopy v0.8.39
+   Compiling ucd-trie v0.1.7
+   Compiling once_cell v1.21.3
+   Compiling utf8parse v0.2.2
+   Compiling typeid v1.0.3
+   Compiling serde v1.0.228
+   Compiling const-random-macro v0.1.16
+   Compiling anyhow v1.0.101
+   Compiling rustix v1.1.3
+   Compiling const-random v0.1.18
+   Compiling pest v2.8.6
+   Compiling anstyle-parse v0.2.7
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling autocfg v1.5.0
+   Compiling cfg_aliases v0.2.1
+   Compiling foldhash v0.1.5
+   Compiling serde_derive v1.0.228
+   Compiling pest_meta v2.8.6
+   Compiling zmij v1.0.21
+   Compiling getrandom v0.4.1
+   Compiling anstyle-query v1.1.5
+   Compiling anstyle v1.0.13
+   Compiling linux-raw-sys v0.11.0
+   Compiling rand_core v0.10.0
+   Compiling colorchoice v1.0.4
+   Compiling erased-serde v0.4.9
+   Compiling itoa v1.0.17
+   Compiling crc32fast v1.5.0
+   Compiling anstream v0.6.21
+   Compiling ppv-lite86 v0.2.21
+   Compiling pest_generator v2.8.6
+   Compiling hashbrown v0.15.5
+   Compiling nix v0.30.1
+   Compiling num-traits v0.2.19
+   Compiling rand_core v0.6.4
+   Compiling dlv-list v0.5.2
+   Compiling heck v0.5.0
+   Compiling clap_lex v1.0.0
+   Compiling powerfmt v0.2.0
+   Compiling time-core v0.1.8
+   Compiling simd-adler32 v0.3.8
+   Compiling winnow v0.7.14
+   Compiling serde_json v1.0.149
+   Compiling strsim v0.11.1
+   Compiling num-conv v0.2.0
+   Compiling smallvec v1.15.1
+   Compiling adler2 v2.0.1
+   Compiling unicode-segmentation v1.12.0
+   Compiling hashbrown v0.14.5
+   Compiling nibble_vec v0.1.0
+   Compiling miniz_oxide v0.8.9
+   Compiling ordered-multimap v0.7.3
+   Compiling toml_parser v1.0.8+spec-1.1.0
+   Compiling time-macros v0.2.27
+   Compiling clap_builder v4.5.58
+   Compiling petname v2.0.2
+   Compiling deranged v0.5.6
+   Compiling clap_derive v4.5.55
+   Compiling hashlink v0.10.0
+   Compiling rand_chacha v0.3.1
+   Compiling pest_derive v2.8.6
+   Compiling crossbeam-channel v0.5.15
+   Compiling crossbeam-epoch v0.9.18
+   Compiling toml_datetime v0.7.5+spec-1.1.0
+   Compiling serde_spanned v1.0.4
+   Compiling aho-corasick v1.1.4
+   Compiling encoding_rs v0.8.35
+   Compiling minimal-lexical v0.2.1
+   Compiling log v0.4.29
+   Compiling either v1.15.0
+   Compiling cpufeatures v0.3.0
+   Compiling regex-syntax v0.8.9
+   Compiling endian-type v0.1.2
+   Compiling virtue v0.0.18
+   Compiling num_threads v0.1.7
+   Compiling arraydeque v0.5.1
+   Compiling ron v0.12.0
+   Compiling yaml-rust2 v0.10.4
+   Compiling time v0.3.47
+   Compiling bincode_derive v2.0.1
+   Compiling radix_trie v0.2.1
+   Compiling regex-automata v0.4.14
+   Compiling chacha20 v0.10.0
+   Compiling itertools v0.14.0
+   Compiling nom v7.1.3
+   Compiling toml v0.9.12+spec-1.1.0
+   Compiling crossbeam-deque v0.8.6
+   Compiling serde-untagged v0.1.9
+   Compiling flate2 v1.1.9
+   Compiling clap v4.5.58
+   Compiling json5 v0.4.1
+   Compiling rand v0.8.5
+   Compiling rust-ini v0.21.3
+   Compiling convert_case v0.6.0
+   Compiling fd-lock v4.0.4
+   Compiling async-trait v0.1.89
+   Compiling crossbeam-queue v0.3.12
+   Compiling termcolor v1.4.1
+   Compiling pathdiff v0.2.3
+   Compiling unty v0.0.4
+   Compiling base64 v0.21.7
+   Compiling byteorder v1.5.0
+   Compiling home v0.5.12
+   Compiling unicode-width v0.2.2
+   Compiling hdrhistogram v7.5.4
+   Compiling rustyline v17.0.2
+   Compiling config v0.15.19
+   Compiling bincode v2.0.1
+   Compiling simplelog v0.12.2
+   Compiling crossbeam v0.8.4
+   Compiling regex v1.12.3
+   Compiling rand v0.10.0
+   Compiling uuid v1.21.0
+   Compiling fs4 v0.13.1
+   Compiling rustyline-derive v0.11.1
+   Compiling serde_bytes v0.11.19
+   Compiling dyn-clone v1.0.20
+   Compiling toydb v1.0.0 (/app)
+warning: unused import: `std::slice`
+ --> src/sql/engine/local.rs:3:5
+  |
+3 | use std::slice;
+  |     ^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `itertools::Itertools as _`
+ --> src/sql/engine/local.rs:5:5
+  |
+5 | use itertools::Itertools as _;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `Key as _` and `Value as _`
+ --> src/sql/engine/local.rs:9:29
+  |
+9 | use crate::encoding::{self, Key as _, Value as _};
+  |                             ^^^^^^^^  ^^^^^^^^^^
+
+warning: unused import: `crate::errinput`
+  --> src/sql/engine/local.rs:10:5
+   |
+10 | use crate::errinput;
+   |     ^^^^^^^^^^^^^^^
+
+warning: unused import: `itertools::Itertools as _`
+ --> src/sql/execution/aggregator.rs:3:5
+  |
+3 | use itertools::Itertools as _;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `std::cmp::Ordering`
+ --> src/sql/execution/executor.rs:1:5
+  |
+1 | use std::cmp::Ordering;
+  |     ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `BTreeMap`
+ --> src/sql/execution/executor.rs:2:24
+  |
+2 | use std::collections::{BTreeMap, HashMap};
+  |                        ^^^^^^^^
+
+warning: unused imports: `Itertools as _` and `izip`
+ --> src/sql/execution/executor.rs:4:17
+  |
+4 | use itertools::{Itertools as _, izip};
+  |                 ^^^^^^^^^^^^^^  ^^^^
+
+warning: unused import: `super::aggregator::Aggregator`
+ --> src/sql/execution/executor.rs:6:5
+  |
+6 | use super::aggregator::Aggregator;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `HashJoiner` and `NestedLoopJoiner`
+ --> src/sql/execution/executor.rs:7:19
+  |
+7 | use super::join::{HashJoiner, NestedLoopJoiner};
+  |                   ^^^^^^^^^^  ^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::errinput`
+ --> src/sql/execution/executor.rs:8:5
+  |
+8 | use crate::errinput;
+  |     ^^^^^^^^^^^^^^^
+
+warning: unused imports: `Row` and `Value`
+  --> src/sql/execution/executor.rs:12:44
+   |
+12 | use crate::sql::types::{Expression, Label, Row, Rows, Table, Value};
+   |                                            ^^^               ^^^^^
+
+warning: unused import: `crate::errinput`
+ --> src/sql/execution/join.rs:4:5
+  |
+4 | use crate::errinput;
+  |     ^^^^^^^^^^^^^^^
+
+warning: unused import: `itertools::Itertools as _`
+ --> src/sql/execution/session.rs:1:5
+  |
+1 | use itertools::Itertools as _;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `log::error`
+ --> src/sql/execution/session.rs:2:5
+  |
+2 | use log::error;
+  |     ^^^^^^^^^^
+
+warning: unused import: `Transaction as _`
+ --> src/sql/execution/session.rs:6:48
+  |
+6 | use crate::sql::engine::{Engine, Raft, Status, Transaction as _};
+  |                                                ^^^^^^^^^^^^^^^^
+
+warning: unused imports: `Parser` and `ast`
+ --> src/sql/execution/session.rs:8:26
+  |
+8 | use crate::sql::parser::{Parser, ast};
+  |                          ^^^^^^  ^^^
+
+warning: unused imports: `errdata` and `errinput`
+  --> src/sql/execution/session.rs:12:13
+   |
+12 | use crate::{errdata, errinput};
+   |             ^^^^^^^  ^^^^^^^^
+
+warning: unused import: `crate::errinput`
+ --> src/sql/parser/lexer.rs:5:5
+  |
+5 | use crate::errinput;
+  |     ^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::errinput`
+ --> src/sql/parser/parser.rs:5:5
+  |
+5 | use crate::errinput;
+  |     ^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::sql::types::DataType`
+ --> src/sql/parser/parser.rs:7:5
+  |
+7 | use crate::sql::types::DataType;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `std::collections::HashMap`
+ --> src/sql/planner/optimizer.rs:1:5
+  |
+1 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `Label` and `Value`
+ --> src/sql/planner/optimizer.rs:7:37
+  |
+7 | use crate::sql::types::{Expression, Label, Value};
+  |                                     ^^^^^  ^^^^^
+
+warning: unused import: `itertools::Itertools as _`
+ --> src/sql/planner/plan.rs:4:5
+  |
+4 | use itertools::Itertools as _;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `super::optimizer::OPTIMIZERS`
+ --> src/sql/planner/plan.rs:7:5
+  |
+7 | use super::optimizer::OPTIMIZERS;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `super::planner::Planner`
+ --> src/sql/planner/plan.rs:8:5
+  |
+8 | use super::planner::Planner;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `Executor`
+  --> src/sql/planner/plan.rs:11:46
+   |
+11 | use crate::sql::execution::{ExecutionResult, Executor};
+   |                                              ^^^^^^^^
+
+warning: unused imports: `Either` and `Itertools as _`
+ --> src/sql/planner/planner.rs:3:17
+  |
+3 | use itertools::{Either, Itertools as _};
+  |                 ^^^^^^  ^^^^^^^^^^^^^^
+
+warning: unused import: `invert_remap`
+ --> src/sql/planner/planner.rs:5:42
+  |
+5 | use super::plan::{Aggregate, Node, Plan, invert_remap};
+  |                                          ^^^^^^^^^^^^
+
+warning: unused import: `crate::errinput`
+ --> src/sql/planner/planner.rs:6:5
+  |
+6 | use crate::errinput;
+  |     ^^^^^^^^^^^^^^^
+
+warning: unused import: `Column`
+  --> src/sql/planner/planner.rs:10:25
+   |
+10 | use crate::sql::types::{Column, Expression, Label, Table, Value};
+   |                         ^^^^^^
+
+warning: unused variable: `engine`
+  --> src/sql/engine/local.rs:51:16
+   |
+51 |     pub fn new(engine: E) -> Self {
+   |                ^^^^^^ help: if this is intentional, prefix it with an underscore: `_engine`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `state`
+  --> src/sql/engine/local.rs:56:26
+   |
+56 |     pub fn resume(&self, state: mvcc::TransactionState) -> Result<Transaction<E>> {
+   |                          ^^^^^ help: if this is intentional, prefix it with an underscore: `_state`
+
+warning: unused variable: `key`
+  --> src/sql/engine/local.rs:61:35
+   |
+61 |     pub fn get_unversioned(&self, key: &[u8]) -> Result<Option<Vec<u8>>> {
+   |                                   ^^^ help: if this is intentional, prefix it with an underscore: `_key`
+
+warning: unused variable: `key`
+  --> src/sql/engine/local.rs:66:35
+   |
+66 |     pub fn set_unversioned(&self, key: &[u8], value: Vec<u8>) -> Result<()> {
+   |                                   ^^^ help: if this is intentional, prefix it with an underscore: `_key`
+
+warning: unused variable: `value`
+  --> src/sql/engine/local.rs:66:47
+   |
+66 |     pub fn set_unversioned(&self, key: &[u8], value: Vec<u8>) -> Result<()> {
+   |                                               ^^^^^ help: if this is intentional, prefix it with an underscore: `_value`
+
+warning: unused variable: `version`
+  --> src/sql/engine/local.rs:82:27
+   |
+82 |     fn begin_as_of(&self, version: mvcc::Version) -> Result<Self::Transaction> {
+   |                           ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_version`
+
+warning: unused variable: `txn`
+  --> src/sql/engine/local.rs:94:12
+   |
+94 |     fn new(txn: mvcc::Transaction<E>) -> Self {
+   |            ^^^ help: if this is intentional, prefix it with an underscore: `_txn`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:104:25
+    |
+104 |     fn get_index(&self, table: &str, column: &str, value: &Value) -> Result<BTreeSet<Value>> {
+    |                         ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `column`
+   --> src/sql/engine/local.rs:104:38
+    |
+104 |     fn get_index(&self, table: &str, column: &str, value: &Value) -> Result<BTreeSet<Value>> {
+    |                                      ^^^^^^ help: if this is intentional, prefix it with an underscore: `_column`
+
+warning: unused variable: `value`
+   --> src/sql/engine/local.rs:104:52
+    |
+104 |     fn get_index(&self, table: &str, column: &str, value: &Value) -> Result<BTreeSet<Value>> {
+    |                                                    ^^^^^ help: if this is intentional, prefix it with an underscore: `_value`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:109:23
+    |
+109 |     fn get_row(&self, table: &str, id: &Value) -> Result<Option<Row>> {
+    |                       ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `id`
+   --> src/sql/engine/local.rs:109:36
+    |
+109 |     fn get_row(&self, table: &str, id: &Value) -> Result<Option<Row>> {
+    |                                    ^^ help: if this is intentional, prefix it with an underscore: `_id`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:114:25
+    |
+114 |     fn has_index(&self, table: &str, column: &str) -> Result<bool> {
+    |                         ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `column`
+   --> src/sql/engine/local.rs:114:38
+    |
+114 |     fn has_index(&self, table: &str, column: &str) -> Result<bool> {
+    |                                      ^^^^^^ help: if this is intentional, prefix it with an underscore: `_column`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:121:9
+    |
+121 |         table: &str,
+    |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `column`
+   --> src/sql/engine/local.rs:122:9
+    |
+122 |         column: &str,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_column`
+
+warning: unused variable: `value`
+   --> src/sql/engine/local.rs:123:9
+    |
+123 |         value: &Value,
+    |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_value`
+
+warning: unused variable: `ids`
+   --> src/sql/engine/local.rs:124:9
+    |
+124 |         ids: BTreeSet<Value>,
+    |         ^^^ help: if this is intentional, prefix it with an underscore: `_ids`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:130:32
+    |
+130 |     fn table_references(&self, table: &str) -> Result<Vec<(Table, Vec<usize>)>> {
+    |                                ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:148:22
+    |
+148 |     fn delete(&self, table: &str, ids: &[Value]) -> Result<()> {
+    |                      ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `ids`
+   --> src/sql/engine/local.rs:148:35
+    |
+148 |     fn delete(&self, table: &str, ids: &[Value]) -> Result<()> {
+    |                                   ^^^ help: if this is intentional, prefix it with an underscore: `_ids`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:152:19
+    |
+152 |     fn get(&self, table: &str, ids: &[Value]) -> Result<Vec<Row>> {
+    |                   ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `ids`
+   --> src/sql/engine/local.rs:152:32
+    |
+152 |     fn get(&self, table: &str, ids: &[Value]) -> Result<Vec<Row>> {
+    |                                ^^^ help: if this is intentional, prefix it with an underscore: `_ids`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:156:22
+    |
+156 |     fn insert(&self, table: &str, rows: Vec<Row>) -> Result<()> {
+    |                      ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `rows`
+   --> src/sql/engine/local.rs:156:35
+    |
+156 |     fn insert(&self, table: &str, rows: Vec<Row>) -> Result<()> {
+    |                                   ^^^^ help: if this is intentional, prefix it with an underscore: `_rows`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:160:28
+    |
+160 |     fn lookup_index(&self, table: &str, column: &str, values: &[Value]) -> Result<BTreeSet<Value>> {
+    |                            ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `column`
+   --> src/sql/engine/local.rs:160:41
+    |
+160 |     fn lookup_index(&self, table: &str, column: &str, values: &[Value]) -> Result<BTreeSet<Value>> {
+    |                                         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_column`
+
+warning: unused variable: `values`
+   --> src/sql/engine/local.rs:160:55
+    |
+160 |     fn lookup_index(&self, table: &str, column: &str, values: &[Value]) -> Result<BTreeSet<Value>> {
+    |                                                       ^^^^^^ help: if this is intentional, prefix it with an underscore: `_values`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:164:20
+    |
+164 |     fn scan(&self, table: &str, filter: Option<Expression>) -> Result<Rows> {
+    |                    ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `filter`
+   --> src/sql/engine/local.rs:164:33
+    |
+164 |     fn scan(&self, table: &str, filter: Option<Expression>) -> Result<Rows> {
+    |                                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_filter`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:168:22
+    |
+168 |     fn update(&self, table: &str, rows: BTreeMap<Value, Row>) -> Result<()> {
+    |                      ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `rows`
+   --> src/sql/engine/local.rs:168:35
+    |
+168 |     fn update(&self, table: &str, rows: BTreeMap<Value, Row>) -> Result<()> {
+    |                                   ^^^^ help: if this is intentional, prefix it with an underscore: `_rows`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:174:28
+    |
+174 |     fn create_table(&self, table: Table) -> Result<()> {
+    |                            ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:178:26
+    |
+178 |     fn drop_table(&self, table: &str, if_exists: bool) -> Result<bool> {
+    |                          ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `if_exists`
+   --> src/sql/engine/local.rs:178:39
+    |
+178 |     fn drop_table(&self, table: &str, if_exists: bool) -> Result<bool> {
+    |                                       ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_if_exists`
+
+warning: unused variable: `table`
+   --> src/sql/engine/local.rs:182:25
+    |
+182 |     fn get_table(&self, table: &str) -> Result<Option<Table>> {
+    |                         ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `group_by`
+  --> src/sql/execution/aggregator.rs:21:16
+   |
+21 |     pub fn new(group_by: Vec<Expression>, aggregates: Vec<Aggregate>) -> Self {
+   |                ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_group_by`
+
+warning: unused variable: `aggregates`
+  --> src/sql/execution/aggregator.rs:21:43
+   |
+21 |     pub fn new(group_by: Vec<Expression>, aggregates: Vec<Aggregate>) -> Self {
+   |                                           ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_aggregates`
+
+warning: unused variable: `row`
+  --> src/sql/execution/aggregator.rs:26:27
+   |
+26 |     pub fn add(&mut self, row: &Row) -> Result<()> {
+   |                           ^^^ help: if this is intentional, prefix it with an underscore: `_row`
+
+warning: unused variable: `rows`
+  --> src/sql/execution/aggregator.rs:31:32
+   |
+31 |     pub fn add_rows(&mut self, rows: Rows) -> Result<()> {
+   |                                ^^^^ help: if this is intentional, prefix it with an underscore: `_rows`
+
+warning: unused variable: `aggregate`
+  --> src/sql/execution/aggregator.rs:55:12
+   |
+55 |     fn new(aggregate: &Aggregate) -> Self {
+   |            ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_aggregate`
+
+warning: unused variable: `value`
+  --> src/sql/execution/aggregator.rs:60:23
+   |
+60 |     fn add(&mut self, value: Value) -> Result<()> {
+   |                       ^^^^^ help: if this is intentional, prefix it with an underscore: `_value`
+
+warning: unused variable: `txn`
+  --> src/sql/execution/executor.rs:22:16
+   |
+22 |     pub fn new(txn: &'a T) -> Self {
+   |                ^^^ help: if this is intentional, prefix it with an underscore: `_txn`
+
+warning: unused variable: `plan`
+  --> src/sql/execution/executor.rs:27:31
+   |
+27 |     pub fn execute(&mut self, plan: Plan) -> Result<ExecutionResult> {
+   |                               ^^^^ help: if this is intentional, prefix it with an underscore: `_plan`
+
+warning: unused variable: `node`
+  --> src/sql/execution/executor.rs:32:32
+   |
+32 |     fn execute_node(&mut self, node: Node) -> Result<Rows> {
+   |                                ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `table`
+  --> src/sql/execution/executor.rs:37:22
+   |
+37 |     fn delete(&self, table: &str, primary_key: usize, source: Rows) -> Result<u64> {
+   |                      ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `primary_key`
+  --> src/sql/execution/executor.rs:37:35
+   |
+37 |     fn delete(&self, table: &str, primary_key: usize, source: Rows) -> Result<u64> {
+   |                                   ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_primary_key`
+
+warning: unused variable: `source`
+  --> src/sql/execution/executor.rs:37:55
+   |
+37 |     fn delete(&self, table: &str, primary_key: usize, source: Rows) -> Result<u64> {
+   |                                                       ^^^^^^ help: if this is intentional, prefix it with an underscore: `_source`
+
+warning: variable does not need to be mutable
+  --> src/sql/execution/executor.rs:46:9
+   |
+46 |         mut source: Rows,
+   |         ----^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `table`
+  --> src/sql/execution/executor.rs:44:9
+   |
+44 |         table: Table,
+   |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `column_map`
+  --> src/sql/execution/executor.rs:45:9
+   |
+45 |         column_map: Option<HashMap<usize, usize>>,
+   |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_column_map`
+
+warning: unused variable: `source`
+  --> src/sql/execution/executor.rs:46:9
+   |
+46 |         mut source: Rows,
+   |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_source`
+
+warning: variable does not need to be mutable
+  --> src/sql/execution/executor.rs:56:9
+   |
+56 |         mut source: Rows,
+   |         ----^^^^^^
+   |         |
+   |         help: remove this `mut`
+
+warning: unused variable: `table`
+  --> src/sql/execution/executor.rs:54:9
+   |
+54 |         table: &str,
+   |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `primary_key`
+  --> src/sql/execution/executor.rs:55:9
+   |
+55 |         primary_key: usize,
+   |         ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_primary_key`
+
+warning: unused variable: `source`
+  --> src/sql/execution/executor.rs:56:9
+   |
+56 |         mut source: Rows,
+   |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_source`
+
+warning: unused variable: `expressions`
+  --> src/sql/execution/executor.rs:57:9
+   |
+57 |         expressions: Vec<(usize, Expression)>,
+   |         ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_expressions`
+
+warning: unused variable: `source`
+  --> src/sql/execution/executor.rs:63:14
+   |
+63 |     fn order(source: Rows, order: Vec<(Expression, Direction)>) -> Result<Rows> {
+   |              ^^^^^^ help: if this is intentional, prefix it with an underscore: `_source`
+
+warning: unused variable: `order`
+  --> src/sql/execution/executor.rs:63:28
+   |
+63 |     fn order(source: Rows, order: Vec<(Expression, Direction)>) -> Result<Rows> {
+   |                            ^^^^^ help: if this is intentional, prefix it with an underscore: `_order`
+
+warning: unused variable: `left`
+  --> src/sql/execution/join.rs:30:9
+   |
+30 |         left: Rows,
+   |         ^^^^ help: if this is intentional, prefix it with an underscore: `_left`
+
+warning: unused variable: `right`
+  --> src/sql/execution/join.rs:31:9
+   |
+31 |         right: Rows,
+   |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_right`
+
+warning: unused variable: `right_columns`
+  --> src/sql/execution/join.rs:32:9
+   |
+32 |         right_columns: usize,
+   |         ^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_right_columns`
+
+warning: unused variable: `predicate`
+  --> src/sql/execution/join.rs:33:9
+   |
+33 |         predicate: Option<Expression>,
+   |         ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_predicate`
+
+warning: unused variable: `outer`
+  --> src/sql/execution/join.rs:34:9
+   |
+34 |         outer: bool,
+   |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_outer`
+
+warning: variable does not need to be mutable
+  --> src/sql/execution/join.rs:75:9
+   |
+75 |         mut right: Rows,
+   |         ----^^^^^
+   |         |
+   |         help: remove this `mut`
+
+warning: unused variable: `left`
+  --> src/sql/execution/join.rs:73:9
+   |
+73 |         left: Rows,
+   |         ^^^^ help: if this is intentional, prefix it with an underscore: `_left`
+
+warning: unused variable: `left_column`
+  --> src/sql/execution/join.rs:74:9
+   |
+74 |         left_column: usize,
+   |         ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_left_column`
+
+warning: unused variable: `right`
+  --> src/sql/execution/join.rs:75:9
+   |
+75 |         mut right: Rows,
+   |         ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_right`
+
+warning: unused variable: `right_column`
+  --> src/sql/execution/join.rs:76:9
+   |
+76 |         right_column: usize,
+   |         ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_right_column`
+
+warning: unused variable: `right_columns`
+  --> src/sql/execution/join.rs:77:9
+   |
+77 |         right_columns: usize,
+   |         ^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_right_columns`
+
+warning: unused variable: `outer`
+  --> src/sql/execution/join.rs:78:9
+   |
+78 |         outer: bool,
+   |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_outer`
+
+warning: unused variable: `engine`
+  --> src/sql/execution/session.rs:24:16
+   |
+24 |     pub fn new(engine: &'a E) -> Self {
+   |                ^^^^^^ help: if this is intentional, prefix it with an underscore: `_engine`
+
+warning: unused variable: `statement`
+  --> src/sql/execution/session.rs:29:31
+   |
+29 |     pub fn execute(&mut self, statement: &str) -> Result<StatementResult> {
+   |                               ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_statement`
+
+warning: unused variable: `read_only`
+  --> src/sql/execution/session.rs:34:38
+   |
+34 |     pub fn with_txn<F, T>(&mut self, read_only: bool, f: F) -> Result<T>
+   |                                      ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_read_only`
+
+warning: unused variable: `f`
+  --> src/sql/execution/session.rs:34:55
+   |
+34 |     pub fn with_txn<F, T>(&mut self, read_only: bool, f: F) -> Result<T>
+   |                                                       ^ help: if this is intentional, prefix it with an underscore: `_f`
+
+warning: unused variable: `result`
+  --> src/sql/execution/session.rs:77:17
+   |
+77 |     fn try_from(result: ExecutionResult) -> Result<Self> {
+   |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `result`
+  --> src/sql/execution/session.rs:86:17
+   |
+86 |     fn try_from(result: StatementResult) -> Result<Self> {
+   |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `result`
+  --> src/sql/execution/session.rs:95:17
+   |
+95 |     fn try_from(result: StatementResult) -> Result<Self> {
+   |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `result`
+   --> src/sql/execution/session.rs:104:17
+    |
+104 |     fn try_from(result: StatementResult) -> Result<Self> {
+    |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `result`
+   --> src/sql/execution/session.rs:113:17
+    |
+113 |     fn try_from(result: StatementResult) -> Result<Self> {
+    |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `result`
+   --> src/sql/execution/session.rs:122:17
+    |
+122 |     fn try_from(result: StatementResult) -> Result<Self> {
+    |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `result`
+   --> src/sql/execution/session.rs:131:17
+    |
+131 |     fn try_from(result: StatementResult) -> Result<Self> {
+    |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `result`
+   --> src/sql/execution/session.rs:140:17
+    |
+140 |     fn try_from(result: StatementResult) -> Result<Self> {
+    |                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `f`
+  --> src/sql/parser/lexer.rs:50:19
+   |
+50 |     fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+   |                   ^ help: if this is intentional, prefix it with an underscore: `_f`
+
+warning: unused variable: `keyword`
+  --> src/sql/parser/lexer.rs:56:13
+   |
+56 |     fn from(keyword: Keyword) -> Self {
+   |             ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_keyword`
+
+warning: unused variable: `value`
+   --> src/sql/parser/lexer.rs:136:17
+    |
+136 |     fn try_from(value: &str) -> std::result::Result<Self, Self::Error> {
+    |                 ^^^^^ help: if this is intentional, prefix it with an underscore: `_value`
+
+warning: unused variable: `f`
+   --> src/sql/parser/lexer.rs:142:19
+    |
+142 |     fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+    |                   ^ help: if this is intentional, prefix it with an underscore: `_f`
+
+warning: unused variable: `input`
+   --> src/sql/parser/lexer.rs:166:16
+    |
+166 |     pub fn new(input: &'a str) -> Lexer<'a> {
+    |                ^^^^^ help: if this is intentional, prefix it with an underscore: `_input`
+
+warning: unused variable: `predicate`
+   --> src/sql/parser/lexer.rs:171:27
+    |
+171 |     fn next_if(&mut self, predicate: impl Fn(char) -> bool) -> Option<char> {
+    |                           ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_predicate`
+
+warning: unused variable: `map`
+   --> src/sql/parser/lexer.rs:177:34
+    |
+177 |     fn next_if_map<T>(&mut self, map: impl Fn(char) -> Option<T>) -> Option<T> {
+    |                                  ^^^ help: if this is intentional, prefix it with an underscore: `_map`
+
+warning: unused variable: `c`
+   --> src/sql/parser/lexer.rs:182:27
+    |
+182 |     fn next_is(&mut self, c: char) -> bool {
+    |                           ^ help: if this is intentional, prefix it with an underscore: `_c`
+
+warning: unused variable: `ident`
+   --> src/sql/parser/lexer.rs:224:17
+    |
+224 | pub fn is_ident(ident: &str) -> bool {
+    |                 ^^^^^ help: if this is intentional, prefix it with an underscore: `_ident`
+
+warning: unused variable: `statement`
+  --> src/sql/parser/parser.rs:24:18
+   |
+24 |     pub fn parse(statement: &str) -> Result<ast::Statement> {
+   |                  ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_statement`
+
+warning: unused variable: `input`
+  --> src/sql/parser/parser.rs:36:12
+   |
+36 |     fn new(input: &str) -> Parser<'_> {
+   |            ^^^^^ help: if this is intentional, prefix it with an underscore: `_input`
+
+warning: unused variable: `predicate`
+  --> src/sql/parser/parser.rs:51:27
+   |
+51 |     fn next_if(&mut self, predicate: impl Fn(&Token) -> bool) -> Option<Token> {
+   |                           ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_predicate`
+
+warning: unused variable: `f`
+  --> src/sql/parser/parser.rs:57:34
+   |
+57 |     fn next_if_map<T>(&mut self, f: impl Fn(&Token) -> Option<T>) -> Option<T> {
+   |                                  ^ help: if this is intentional, prefix it with an underscore: `_f`
+
+warning: unused variable: `token`
+  --> src/sql/parser/parser.rs:67:27
+   |
+67 |     fn next_is(&mut self, token: Token) -> bool {
+   |                           ^^^^^ help: if this is intentional, prefix it with an underscore: `_token`
+
+warning: unused variable: `expect`
+  --> src/sql/parser/parser.rs:72:26
+   |
+72 |     fn expect(&mut self, expect: Token) -> Result<()> {
+   |                          ^^^^^^ help: if this is intentional, prefix it with an underscore: `_expect`
+
+warning: unused variable: `token`
+  --> src/sql/parser/parser.rs:78:24
+   |
+78 |     fn skip(&mut self, token: Token) {
+   |                        ^^^^^ help: if this is intentional, prefix it with an underscore: `_token`
+
+warning: unused variable: `min_precedence`
+   --> src/sql/parser/parser.rs:203:39
+    |
+203 |     fn parse_expression_at(&mut self, min_precedence: Precedence) -> Result<ast::Expression> {
+    |                                       ^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_min_precedence`
+
+warning: unused variable: `min_precedence`
+   --> src/sql/parser/parser.rs:214:44
+    |
+214 |     fn parse_prefix_operator_at(&mut self, min_precedence: Precedence) -> Option<PrefixOperator> {
+    |                                            ^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_min_precedence`
+
+warning: unused variable: `min_precedence`
+   --> src/sql/parser/parser.rs:220:43
+    |
+220 |     fn parse_infix_operator_at(&mut self, min_precedence: Precedence) -> Option<InfixOperator> {
+    |                                           ^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_min_precedence`
+
+warning: unused variable: `min_precedence`
+   --> src/sql/parser/parser.rs:228:9
+    |
+228 |         min_precedence: Precedence,
+    |         ^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_min_precedence`
+
+warning: unused variable: `rhs`
+   --> src/sql/parser/parser.rs:246:18
+    |
+246 |     fn add(self, rhs: Associativity) -> Self {
+    |                  ^^^ help: if this is intentional, prefix it with an underscore: `_rhs`
+
+warning: unused variable: `rhs`
+   --> src/sql/parser/parser.rs:271:30
+    |
+271 |     fn into_expression(self, rhs: ast::Expression) -> ast::Expression {
+    |                              ^^^ help: if this is intentional, prefix it with an underscore: `_rhs`
+
+warning: unused variable: `lhs`
+   --> src/sql/parser/parser.rs:307:30
+    |
+307 |     fn into_expression(self, lhs: ast::Expression, rhs: ast::Expression) -> ast::Expression {
+    |                              ^^^ help: if this is intentional, prefix it with an underscore: `_lhs`
+
+warning: unused variable: `rhs`
+   --> src/sql/parser/parser.rs:307:52
+    |
+307 |     fn into_expression(self, lhs: ast::Expression, rhs: ast::Expression) -> ast::Expression {
+    |                                                    ^^^ help: if this is intentional, prefix it with an underscore: `_rhs`
+
+warning: unused variable: `lhs`
+   --> src/sql/parser/parser.rs:326:30
+    |
+326 |     fn into_expression(self, lhs: ast::Expression) -> ast::Expression {
+    |                              ^^^ help: if this is intentional, prefix it with an underscore: `_lhs`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:27:24
+   |
+27 |     fn optimize(&self, node: Node) -> Result<Node> {
+   |                        ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: variable does not need to be mutable
+  --> src/sql/planner/optimizer.rs:34:17
+   |
+34 |     pub fn fold(mut expr: Expression) -> Result<Expression> {
+   |                 ----^^^^
+   |                 |
+   |                 help: remove this `mut`
+
+warning: unused variable: `expr`
+  --> src/sql/planner/optimizer.rs:34:17
+   |
+34 |     pub fn fold(mut expr: Expression) -> Result<Expression> {
+   |                 ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_expr`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:44:24
+   |
+44 |     fn optimize(&self, node: Node) -> Result<Node> {
+   |                        ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: variable does not need to be mutable
+  --> src/sql/planner/optimizer.rs:51:21
+   |
+51 |     fn push_filters(mut node: Node) -> Node {
+   |                     ----^^^^
+   |                     |
+   |                     help: remove this `mut`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:51:21
+   |
+51 |     fn push_filters(mut node: Node) -> Node {
+   |                     ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `expr`
+  --> src/sql/planner/optimizer.rs:56:18
+   |
+56 |     fn push_into(expr: Expression, target: &mut Node) -> Option<Expression> {
+   |                  ^^^^ help: if this is intentional, prefix it with an underscore: `_expr`
+
+warning: unused variable: `target`
+  --> src/sql/planner/optimizer.rs:56:36
+   |
+56 |     fn push_into(expr: Expression, target: &mut Node) -> Option<Expression> {
+   |                                    ^^^^^^ help: if this is intentional, prefix it with an underscore: `_target`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:61:26
+   |
+61 |     fn maybe_push_filter(node: Node) -> Node {
+   |                          ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:67:24
+   |
+67 |     fn maybe_push_join(node: Node) -> Node {
+   |                        ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:77:24
+   |
+77 |     fn optimize(&self, node: Node) -> Result<Node> {
+   |                        ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: variable does not need to be mutable
+  --> src/sql/planner/optimizer.rs:84:21
+   |
+84 |     fn index_lookup(mut node: Node) -> Node {
+   |                     ----^^^^
+   |                     |
+   |                     help: remove this `mut`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:84:21
+   |
+84 |     fn index_lookup(mut node: Node) -> Node {
+   |                     ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+  --> src/sql/planner/optimizer.rs:94:24
+   |
+94 |     fn optimize(&self, node: Node) -> Result<Node> {
+   |                        ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src/sql/planner/optimizer.rs:101:22
+    |
+101 |     pub fn hash_join(node: Node) -> Node {
+    |                      ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src/sql/planner/optimizer.rs:111:24
+    |
+111 |     fn optimize(&self, node: Node) -> Result<Node> {
+    |                        ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: variable does not need to be mutable
+   --> src/sql/planner/optimizer.rs:118:22
+    |
+118 |     fn short_circuit(mut node: Node) -> Node {
+    |                      ----^^^^
+    |                      |
+    |                      help: remove this `mut`
+
+warning: unused variable: `node`
+   --> src/sql/planner/optimizer.rs:118:22
+    |
+118 |     fn short_circuit(mut node: Node) -> Node {
+    |                      ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `statement`
+  --> src/sql/planner/plan.rs:39:18
+   |
+39 |     pub fn build(statement: ast::Statement, catalog: &impl Catalog) -> Result<Self> {
+   |                  ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_statement`
+
+warning: unused variable: `catalog`
+  --> src/sql/planner/plan.rs:39:45
+   |
+39 |     pub fn build(statement: ast::Statement, catalog: &impl Catalog) -> Result<Self> {
+   |                                             ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_catalog`
+
+warning: unused variable: `txn`
+  --> src/sql/planner/plan.rs:44:26
+   |
+44 |     pub fn execute(self, txn: &impl Transaction) -> Result<ExecutionResult> {
+   |                          ^^^ help: if this is intentional, prefix it with an underscore: `_txn`
+
+warning: unused variable: `index`
+   --> src/sql/planner/plan.rs:113:32
+    |
+113 |     pub fn column_label(&self, index: usize) -> Label {
+    |                                ^^^^^ help: if this is intentional, prefix it with an underscore: `_index`
+
+warning: variable does not need to be mutable
+   --> src/sql/planner/plan.rs:119:9
+    |
+119 |         mut self,
+    |         ----^^^^
+    |         |
+    |         help: remove this `mut`
+
+warning: unused variable: `before`
+   --> src/sql/planner/plan.rs:120:9
+    |
+120 |         before: &impl Fn(Self) -> Result<Self>,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_before`
+
+warning: unused variable: `after`
+   --> src/sql/planner/plan.rs:121:9
+    |
+121 |         after: &impl Fn(Self) -> Result<Self>,
+    |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_after`
+
+warning: unused variable: `before`
+   --> src/sql/planner/plan.rs:129:9
+    |
+129 |         before: &impl Fn(Expression) -> Result<Expression>,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_before`
+
+warning: unused variable: `after`
+   --> src/sql/planner/plan.rs:130:9
+    |
+130 |         after: &impl Fn(Expression) -> Result<Expression>,
+    |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_after`
+
+warning: unused variable: `node`
+   --> src/sql/planner/plan.rs:149:22
+    |
+149 |     fn format(&self, node: &Node) -> String {
+    |                      ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `f`
+   --> src/sql/planner/plan.rs:167:19
+    |
+167 |     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+    |                   ^ help: if this is intentional, prefix it with an underscore: `_f`
+
+warning: unused variable: `dir`
+   --> src/sql/planner/plan.rs:173:13
+    |
+173 |     fn from(dir: ast::Direction) -> Self {
+    |             ^^^ help: if this is intentional, prefix it with an underscore: `_dir`
+
+warning: unused variable: `f`
+   --> src/sql/planner/plan.rs:180:19
+    |
+180 |     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+    |                   ^ help: if this is intentional, prefix it with an underscore: `_f`
+
+warning: unused variable: `f`
+   --> src/sql/planner/plan.rs:186:19
+    |
+186 |     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+    |                   ^ help: if this is intentional, prefix it with an underscore: `_f`
+
+warning: unused variable: `f`
+   --> src/sql/planner/plan.rs:195:9
+    |
+195 |         f: &mut std::fmt::Formatter<'_>,
+    |         ^ help: if this is intentional, prefix it with an underscore: `_f`
+
+warning: unused variable: `prefix`
+   --> src/sql/planner/plan.rs:196:9
+    |
+196 |         prefix: &str,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_prefix`
+
+warning: unused variable: `root`
+   --> src/sql/planner/plan.rs:197:9
+    |
+197 |         root: bool,
+    |         ^^^^ help: if this is intentional, prefix it with an underscore: `_root`
+
+warning: unused variable: `last_child`
+   --> src/sql/planner/plan.rs:198:9
+    |
+198 |         last_child: bool,
+    |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_last_child`
+
+warning: unused variable: `targets`
+   --> src/sql/planner/plan.rs:205:21
+    |
+205 | pub fn invert_remap(targets: &[Option<usize>]) -> Vec<Option<usize>> {
+    |                     ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_targets`
+
+warning: unused variable: `catalog`
+  --> src/sql/planner/planner.rs:20:16
+   |
+20 |     pub fn new(catalog: &'a C) -> Self {
+   |                ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_catalog`
+
+warning: unused variable: `statement`
+  --> src/sql/planner/planner.rs:25:29
+   |
+25 |     pub fn build(&mut self, statement: ast::Statement) -> Result<Plan> {
+   |                             ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_statement`
+
+warning: unused variable: `name`
+  --> src/sql/planner/planner.rs:30:34
+   |
+30 |     fn build_create_table(&self, name: String, columns: Vec<ast::Column>) -> Result<Plan> {
+   |                                  ^^^^ help: if this is intentional, prefix it with an underscore: `_name`
+
+warning: unused variable: `columns`
+  --> src/sql/planner/planner.rs:30:48
+   |
+30 |     fn build_create_table(&self, name: String, columns: Vec<ast::Column>) -> Result<Plan> {
+   |                                                ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_columns`
+
+warning: unused variable: `name`
+  --> src/sql/planner/planner.rs:35:32
+   |
+35 |     fn build_drop_table(&self, name: String, if_exists: bool) -> Result<Plan> {
+   |                                ^^^^ help: if this is intentional, prefix it with an underscore: `_name`
+
+warning: unused variable: `if_exists`
+  --> src/sql/planner/planner.rs:35:46
+   |
+35 |     fn build_drop_table(&self, name: String, if_exists: bool) -> Result<Plan> {
+   |                                              ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_if_exists`
+
+warning: unused variable: `table`
+  --> src/sql/planner/planner.rs:40:28
+   |
+40 |     fn build_delete(&self, table: String, r#where: Option<ast::Expression>) -> Result<Plan> {
+   |                            ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `r#where`
+  --> src/sql/planner/planner.rs:40:43
+   |
+40 |     fn build_delete(&self, table: String, r#where: Option<ast::Expression>) -> Result<Plan> {
+   |                                           ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_where`
+
+warning: unused variable: `table`
+  --> src/sql/planner/planner.rs:47:9
+   |
+47 |         table: String,
+   |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `columns`
+  --> src/sql/planner/planner.rs:48:9
+   |
+48 |         columns: Option<Vec<String>>,
+   |         ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_columns`
+
+warning: unused variable: `values`
+  --> src/sql/planner/planner.rs:49:9
+   |
+49 |         values: Vec<Vec<ast::Expression>>,
+   |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_values`
+
+warning: unused variable: `table`
+  --> src/sql/planner/planner.rs:57:9
+   |
+57 |         table: String,
+   |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `set`
+  --> src/sql/planner/planner.rs:58:9
+   |
+58 |         set: BTreeMap<String, Option<ast::Expression>>,
+   |         ^^^ help: if this is intentional, prefix it with an underscore: `_set`
+
+warning: unused variable: `r#where`
+  --> src/sql/planner/planner.rs:59:9
+   |
+59 |         r#where: Option<ast::Expression>,
+   |         ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_where`
+
+warning: variable does not need to be mutable
+  --> src/sql/planner/planner.rs:68:9
+   |
+68 |         mut select: Vec<(ast::Expression, Option<String>)>,
+   |         ----^^^^^^
+   |         |
+   |         help: remove this `mut`
+
+warning: unused variable: `select`
+  --> src/sql/planner/planner.rs:68:9
+   |
+68 |         mut select: Vec<(ast::Expression, Option<String>)>,
+   |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_select`
+
+warning: unused variable: `from`
+  --> src/sql/planner/planner.rs:69:9
+   |
+69 |         from: Vec<ast::From>,
+   |         ^^^^ help: if this is intentional, prefix it with an underscore: `_from`
+
+warning: unused variable: `r#where`
+  --> src/sql/planner/planner.rs:70:9
+   |
+70 |         r#where: Option<ast::Expression>,
+   |         ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_where`
+
+warning: unused variable: `group_by`
+  --> src/sql/planner/planner.rs:71:9
+   |
+71 |         group_by: Vec<ast::Expression>,
+   |         ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_group_by`
+
+warning: unused variable: `having`
+  --> src/sql/planner/planner.rs:72:9
+   |
+72 |         having: Option<ast::Expression>,
+   |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_having`
+
+warning: unused variable: `order_by`
+  --> src/sql/planner/planner.rs:73:9
+   |
+73 |         order_by: Vec<(ast::Expression, ast::Direction)>,
+   |         ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_order_by`
+
+warning: unused variable: `offset`
+  --> src/sql/planner/planner.rs:74:9
+   |
+74 |         offset: Option<ast::Expression>,
+   |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_offset`
+
+warning: unused variable: `limit`
+  --> src/sql/planner/planner.rs:75:9
+   |
+75 |         limit: Option<ast::Expression>,
+   |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_limit`
+
+warning: unused variable: `from`
+  --> src/sql/planner/planner.rs:81:33
+   |
+81 |     fn build_from_clause(&self, from: Vec<ast::From>, scope: &mut Scope) -> Result<Node> {
+   |                                 ^^^^ help: if this is intentional, prefix it with an underscore: `_from`
+
+warning: unused variable: `scope`
+  --> src/sql/planner/planner.rs:81:55
+   |
+81 |     fn build_from_clause(&self, from: Vec<ast::From>, scope: &mut Scope) -> Result<Node> {
+   |                                                       ^^^^^ help: if this is intentional, prefix it with an underscore: `_scope`
+
+warning: unused variable: `from`
+  --> src/sql/planner/planner.rs:87:26
+   |
+87 |     fn build_from(&self, from: ast::From, parent_scope: &mut Scope) -> Result<Node> {
+   |                          ^^^^ help: if this is intentional, prefix it with an underscore: `_from`
+
+warning: unused variable: `parent_scope`
+  --> src/sql/planner/planner.rs:87:43
+   |
+87 |     fn build_from(&self, from: ast::From, parent_scope: &mut Scope) -> Result<Node> {
+   |                                           ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_parent_scope`
+
+warning: variable does not need to be mutable
+  --> src/sql/planner/planner.rs:95:9
+   |
+95 |         mut group_by: Vec<ast::Expression>,
+   |         ----^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/sql/planner/planner.rs:96:9
+   |
+96 |         mut aggregates: Vec<ast::Expression>,
+   |         ----^^^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+
+warning: unused variable: `source`
+  --> src/sql/planner/planner.rs:94:9
+   |
+94 |         source: Node,
+   |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_source`
+
+warning: unused variable: `group_by`
+  --> src/sql/planner/planner.rs:95:9
+   |
+95 |         mut group_by: Vec<ast::Expression>,
+   |         ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_group_by`
+
+warning: unused variable: `aggregates`
+  --> src/sql/planner/planner.rs:96:9
+   |
+96 |         mut aggregates: Vec<ast::Expression>,
+   |         ^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_aggregates`
+
+warning: unused variable: `scope`
+  --> src/sql/planner/planner.rs:97:9
+   |
+97 |         scope: &mut Scope,
+   |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_scope`
+
+warning: unused variable: `expr`
+   --> src/sql/planner/planner.rs:103:33
+    |
+103 |     fn build_aggregate_function(expr: ast::Expression, scope: &Scope) -> Result<Aggregate> {
+    |                                 ^^^^ help: if this is intentional, prefix it with an underscore: `_expr`
+
+warning: unused variable: `scope`
+   --> src/sql/planner/planner.rs:103:56
+    |
+103 |     fn build_aggregate_function(expr: ast::Expression, scope: &Scope) -> Result<Aggregate> {
+    |                                                        ^^^^^ help: if this is intentional, prefix it with an underscore: `_scope`
+
+warning: unused variable: `expr`
+   --> src/sql/planner/planner.rs:108:30
+    |
+108 |     fn is_aggregate_function(expr: &ast::Expression) -> bool {
+    |                              ^^^^ help: if this is intentional, prefix it with an underscore: `_expr`
+
+warning: unused variable: `select`
+   --> src/sql/planner/planner.rs:114:9
+    |
+114 |         select: &[(ast::Expression, Option<String>)],
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_select`
+
+warning: unused variable: `having`
+   --> src/sql/planner/planner.rs:115:9
+    |
+115 |         having: &Option<ast::Expression>,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_having`
+
+warning: unused variable: `order_by`
+   --> src/sql/planner/planner.rs:116:9
+    |
+116 |         order_by: &[(ast::Expression, ast::Direction)],
+    |         ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_order_by`
+
+warning: unused variable: `having`
+   --> src/sql/planner/planner.rs:125:9
+    |
+125 |         having: &Option<ast::Expression>,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_having`
+
+warning: unused variable: `order_by`
+   --> src/sql/planner/planner.rs:126:9
+    |
+126 |         order_by: &[(ast::Expression, ast::Direction)],
+    |         ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_order_by`
+
+warning: unused variable: `scope`
+   --> src/sql/planner/planner.rs:127:9
+    |
+127 |         scope: &Scope,
+    |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_scope`
+
+warning: unused variable: `child_scope`
+   --> src/sql/planner/planner.rs:128:9
+    |
+128 |         child_scope: &mut Scope,
+    |         ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_child_scope`
+
+warning: unused variable: `expr`
+   --> src/sql/planner/planner.rs:135:29
+    |
+135 |     pub fn build_expression(expr: ast::Expression, scope: &Scope) -> Result<Expression> {
+    |                             ^^^^ help: if this is intentional, prefix it with an underscore: `_expr`
+
+warning: unused variable: `scope`
+   --> src/sql/planner/planner.rs:135:52
+    |
+135 |     pub fn build_expression(expr: ast::Expression, scope: &Scope) -> Result<Expression> {
+    |                                                    ^^^^^ help: if this is intentional, prefix it with an underscore: `_scope`
+
+warning: unused variable: `expr`
+   --> src/sql/planner/planner.rs:140:29
+    |
+140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+    |                             ^^^^ help: if this is intentional, prefix it with an underscore: `_expr`
+
+warning: unused variable: `table`
+   --> src/sql/planner/planner.rs:170:19
+    |
+170 |     fn from_table(table: &Table) -> Result<Self> {
+    |                   ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `table`
+   --> src/sql/planner/planner.rs:180:29
+    |
+180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+    |                             ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `alias`
+   --> src/sql/planner/planner.rs:180:44
+    |
+180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+    |                                            ^^^^^ help: if this is intentional, prefix it with an underscore: `_alias`
+
+warning: unused variable: `label`
+   --> src/sql/planner/planner.rs:185:30
+    |
+185 |     fn add_column(&mut self, label: Label) -> usize {
+    |                              ^^^^^ help: if this is intentional, prefix it with an underscore: `_label`
+
+warning: unused variable: `table`
+   --> src/sql/planner/planner.rs:190:29
+    |
+190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+    |                             ^^^^^ help: if this is intentional, prefix it with an underscore: `_table`
+
+warning: unused variable: `name`
+   --> src/sql/planner/planner.rs:190:50
+    |
+190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+    |                                                  ^^^^ help: if this is intentional, prefix it with an underscore: `_name`
+
+warning: unused variable: `expr`
+   --> src/sql/planner/planner.rs:195:33
+    |
+195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+    |                                 ^^^^ help: if this is intentional, prefix it with an underscore: `_expr`
+
+warning: unused variable: `parent`
+   --> src/sql/planner/planner.rs:195:57
+    |
+195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+    |                                                         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_parent`
+
+warning: unused variable: `expr`
+   --> src/sql/planner/planner.rs:201:32
+    |
+201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+    |                                ^^^^ help: if this is intentional, prefix it with an underscore: `_expr`
+
+warning: unused variable: `parent`
+   --> src/sql/planner/planner.rs:206:35
+    |
+206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+    |                                   ^^^^^^ help: if this is intentional, prefix it with an underscore: `_parent`
+
+warning: unused variable: `parent_index`
+   --> src/sql/planner/planner.rs:206:51
+    |
+206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+    |                                                   ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_parent_index`
+
+warning: unused variable: `hide`
+   --> src/sql/planner/planner.rs:206:72
+    |
+206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+    |                                                                        ^^^^ help: if this is intentional, prefix it with an underscore: `_hide`
+
+warning: unused variable: `scope`
+   --> src/sql/planner/planner.rs:211:25
+    |
+211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+    |                         ^^^^^ help: if this is intentional, prefix it with an underscore: `_scope`
+
+warning: unused variable: `expressions`
+   --> src/sql/planner/planner.rs:216:23
+    |
+216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+    |                       ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_expressions`
+
+warning: unused variable: `targets`
+   --> src/sql/planner/planner.rs:221:21
+    |
+221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+    |                     ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_targets`
+
+warning: enum `KeyPrefix` is never used
+  --> src/sql/engine/local.rs:32:6
+   |
+32 | enum KeyPrefix<'a> {
+   |      ^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `txn` is never read
+  --> src/sql/engine/local.rs:89:5
+   |
+88 | pub struct Transaction<E: storage::Engine + 'static> {
+   |            ----------- field in this struct
+89 |     txn: mvcc::Transaction<E>,
+   |     ^^^
+
+warning: associated items `new`, `get_index`, `get_row`, `has_index`, `set_index`, and `table_references` are never used
+   --> src/sql/engine/local.rs:94:8
+    |
+ 92 | impl<E: storage::Engine> Transaction<E> {
+    | --------------------------------------- associated items in this implementation
+ 93 |     /// Creates a new SQL transaction using the given MVCC transaction.
+ 94 |     fn new(txn: mvcc::Transaction<E>) -> Self {
+    |        ^^^
+...
+104 |     fn get_index(&self, table: &str, column: &str, value: &Value) -> Result<BTreeSet<Value>> {
+    |        ^^^^^^^^^
+...
+109 |     fn get_row(&self, table: &str, id: &Value) -> Result<Option<Row>> {
+    |        ^^^^^^^
+...
+114 |     fn has_index(&self, table: &str, column: &str) -> Result<bool> {
+    |        ^^^^^^^^^
+...
+119 |     fn set_index(
+    |        ^^^^^^^^^
+...
+130 |     fn table_references(&self, table: &str) -> Result<Vec<(Table, Vec<usize>)>> {
+    |        ^^^^^^^^^^^^^^^^
+
+warning: struct `Aggregator` is never constructed
+  --> src/sql/execution/aggregator.rs:10:12
+   |
+10 | pub struct Aggregator {
+   |            ^^^^^^^^^^
+
+warning: associated items `new`, `add`, `add_rows`, and `into_rows` are never used
+  --> src/sql/execution/aggregator.rs:21:12
+   |
+19 | impl Aggregator {
+   | --------------- associated items in this implementation
+20 |     /// Creates a new aggregator for the given GROUP BY buckets and aggregates.
+21 |     pub fn new(group_by: Vec<Expression>, aggregates: Vec<Aggregate>) -> Self {
+   |            ^^^
+...
+26 |     pub fn add(&mut self, row: &Row) -> Result<()> {
+   |            ^^^
+...
+31 |     pub fn add_rows(&mut self, rows: Rows) -> Result<()> {
+   |            ^^^^^^^^
+...
+36 |     pub fn into_rows(self) -> Rows {
+   |            ^^^^^^^^^
+
+warning: enum `Accumulator` is never used
+  --> src/sql/execution/aggregator.rs:43:6
+   |
+43 | enum Accumulator {
+   |      ^^^^^^^^^^^
+
+warning: associated items `new`, `add`, and `value` are never used
+  --> src/sql/execution/aggregator.rs:55:8
+   |
+53 | impl Accumulator {
+   | ---------------- associated items in this implementation
+54 |     /// Creates a new accumulator from an aggregate kind.
+55 |     fn new(aggregate: &Aggregate) -> Self {
+   |        ^^^
+...
+60 |     fn add(&mut self, value: Value) -> Result<()> {
+   |        ^^^
+...
+65 |     fn value(self) -> Result<Value> {
+   |        ^^^^^
+
+warning: field `txn` is never read
+  --> src/sql/execution/executor.rs:17:5
+   |
+15 | pub struct Executor<'a, T: Transaction> {
+   |            -------- field in this struct
+16 |     /// The transaction used to execute the plan.
+17 |     txn: &'a T,
+   |     ^^^
+
+warning: associated items `execute_node`, `delete`, `insert`, `update`, and `order` are never used
+  --> src/sql/execution/executor.rs:32:8
+   |
+20 | impl<'a, T: Transaction> Executor<'a, T> {
+   | ---------------------------------------- associated items in this implementation
+...
+32 |     fn execute_node(&mut self, node: Node) -> Result<Rows> {
+   |        ^^^^^^^^^^^^
+...
+37 |     fn delete(&self, table: &str, primary_key: usize, source: Rows) -> Result<u64> {
+   |        ^^^^^^
+...
+42 |     fn insert(
+   |        ^^^^^^
+...
+52 |     fn update(
+   |        ^^^^^^
+...
+63 |     fn order(source: Rows, order: Vec<(Expression, Direction)>) -> Result<Rows> {
+   |        ^^^^^
+
+warning: struct `NestedLoopJoiner` is never constructed
+  --> src/sql/execution/join.rs:10:12
+   |
+10 | pub struct NestedLoopJoiner {
+   |            ^^^^^^^^^^^^^^^^
+
+warning: associated items `new` and `try_next` are never used
+  --> src/sql/execution/join.rs:29:12
+   |
+27 | impl NestedLoopJoiner {
+   | --------------------- associated items in this implementation
+28 |     /// Creates a new nested loop joiner.
+29 |     pub fn new(
+   |            ^^^
+...
+40 |     fn try_next(&mut self) -> Result<Option<Row>> {
+   |        ^^^^^^^^
+
+warning: struct `HashJoiner` is never constructed
+  --> src/sql/execution/join.rs:55:12
+   |
+55 | pub struct HashJoiner {
+   |            ^^^^^^^^^^
+
+warning: associated items `new` and `try_next` are never used
+  --> src/sql/execution/join.rs:72:12
+   |
+70 | impl HashJoiner {
+   | --------------- associated items in this implementation
+71 |     /// Creates a new hash joiner.
+72 |     pub fn new(
+   |            ^^^
+...
+84 |     fn try_next(&mut self) -> Result<Option<Row>> {
+   |        ^^^^^^^^
+
+warning: fields `engine` and `txn` are never read
+  --> src/sql/execution/session.rs:17:5
+   |
+15 | pub struct Session<'a, E: Engine<'a>> {
+   |            ------- fields in this struct
+16 |     /// The SQL engine.
+17 |     engine: &'a E,
+   |     ^^^^^^
+18 |     /// The current transaction, if any.
+19 |     txn: Option<E::Transaction>,
+   |     ^^^
+
+warning: field `chars` is never read
+   --> src/sql/parser/lexer.rs:152:5
+    |
+151 | pub struct Lexer<'a> {
+    |            ----- field in this struct
+152 |     chars: Peekable<Chars<'a>>,
+    |     ^^^^^
+
+warning: multiple methods are never used
+   --> src/sql/parser/lexer.rs:171:8
+    |
+164 | impl<'a> Lexer<'a> {
+    | ------------------ methods in this implementation
+...
+171 |     fn next_if(&mut self, predicate: impl Fn(char) -> bool) -> Option<char> {
+    |        ^^^^^^^
+...
+177 |     fn next_if_map<T>(&mut self, map: impl Fn(char) -> Option<T>) -> Option<T> {
+    |        ^^^^^^^^^^^
+...
+182 |     fn next_is(&mut self, c: char) -> bool {
+    |        ^^^^^^^
+...
+187 |     fn scan(&mut self) -> Result<Option<Token>> {
+    |        ^^^^
+...
+193 |     fn scan_ident_or_keyword(&mut self) -> Option<Token> {
+    |        ^^^^^^^^^^^^^^^^^^^^^
+...
+198 |     fn scan_ident_quoted(&mut self) -> Result<Option<Token>> {
+    |        ^^^^^^^^^^^^^^^^^
+...
+203 |     fn scan_number(&mut self) -> Option<Token> {
+    |        ^^^^^^^^^^^
+...
+208 |     fn scan_string(&mut self) -> Result<Option<Token>> {
+    |        ^^^^^^^^^^^
+...
+213 |     fn scan_symbol(&mut self) -> Option<Token> {
+    |        ^^^^^^^^^^^
+...
+218 |     fn skip_whitespace(&mut self) {
+    |        ^^^^^^^^^^^^^^^
+
+warning: multiple associated items are never used
+   --> src/sql/parser/parser.rs:36:8
+    |
+ 21 | impl Parser<'_> {
+    | --------------- associated items in this implementation
+...
+ 36 |     fn new(input: &str) -> Parser<'_> {
+    |        ^^^
+...
+ 41 |     fn next(&mut self) -> Result<Token> {
+    |        ^^^^
+...
+ 46 |     fn next_ident(&mut self) -> Result<String> {
+    |        ^^^^^^^^^^
+...
+ 51 |     fn next_if(&mut self, predicate: impl Fn(&Token) -> bool) -> Option<Token> {
+    |        ^^^^^^^
+...
+ 57 |     fn next_if_map<T>(&mut self, f: impl Fn(&Token) -> Option<T>) -> Option<T> {
+    |        ^^^^^^^^^^^
+...
+ 62 |     fn next_if_keyword(&mut self) -> Option<Keyword> {
+    |        ^^^^^^^^^^^^^^^
+...
+ 67 |     fn next_is(&mut self, token: Token) -> bool {
+    |        ^^^^^^^
+...
+ 72 |     fn expect(&mut self, expect: Token) -> Result<()> {
+    |        ^^^^^^
+...
+ 78 |     fn skip(&mut self, token: Token) {
+    |        ^^^^
+...
+ 83 |     fn peek(&mut self) -> Result<Option<&Token>> {
+    |        ^^^^
+...
+ 88 |     fn parse_statement(&mut self) -> Result<ast::Statement> {
+    |        ^^^^^^^^^^^^^^^
+...
+ 93 |     fn parse_begin(&mut self) -> Result<ast::Statement> {
+    |        ^^^^^^^^^^^
+...
+ 98 |     fn parse_commit(&mut self) -> Result<ast::Statement> {
+    |        ^^^^^^^^^^^^
+...
+103 |     fn parse_rollback(&mut self) -> Result<ast::Statement> {
+    |        ^^^^^^^^^^^^^^
+...
+108 |     fn parse_explain(&mut self) -> Result<ast::Statement> {
+    |        ^^^^^^^^^^^^^
+...
+113 |     fn parse_create_table(&mut self) -> Result<ast::Statement> {
+    |        ^^^^^^^^^^^^^^^^^^
+...
+118 |     fn parse_create_table_column(&mut self) -> Result<ast::Column> {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+123 |     fn parse_drop_table(&mut self) -> Result<ast::Statement> {
+    |        ^^^^^^^^^^^^^^^^
+...
+128 |     fn parse_delete(&mut self) -> Result<ast::Statement> {
+    |        ^^^^^^^^^^^^
+...
+133 |     fn parse_insert(&mut self) -> Result<ast::Statement> {
+    |        ^^^^^^^^^^^^
+...
+138 |     fn parse_update(&mut self) -> Result<ast::Statement> {
+    |        ^^^^^^^^^^^^
+...
+143 |     fn parse_select(&mut self) -> Result<ast::Statement> {
+    |        ^^^^^^^^^^^^
+...
+148 |     fn parse_select_clause(&mut self) -> Result<Vec<(ast::Expression, Option<String>)>> {
+    |        ^^^^^^^^^^^^^^^^^^^
+...
+153 |     fn parse_from_clause(&mut self) -> Result<Vec<ast::From>> {
+    |        ^^^^^^^^^^^^^^^^^
+...
+158 |     fn parse_from_table(&mut self) -> Result<ast::From> {
+    |        ^^^^^^^^^^^^^^^^
+...
+163 |     fn parse_from_join(&mut self) -> Result<Option<ast::JoinType>> {
+    |        ^^^^^^^^^^^^^^^
+...
+168 |     fn parse_where_clause(&mut self) -> Result<Option<ast::Expression>> {
+    |        ^^^^^^^^^^^^^^^^^^
+...
+173 |     fn parse_group_by_clause(&mut self) -> Result<Vec<ast::Expression>> {
+    |        ^^^^^^^^^^^^^^^^^^^^^
+...
+178 |     fn parse_having_clause(&mut self) -> Result<Option<ast::Expression>> {
+    |        ^^^^^^^^^^^^^^^^^^^
+...
+183 |     fn parse_order_by_clause(&mut self) -> Result<Vec<(ast::Expression, ast::Direction)>> {
+    |        ^^^^^^^^^^^^^^^^^^^^^
+...
+188 |     fn parse_limit_clause(&mut self) -> Result<Option<ast::Expression>> {
+    |        ^^^^^^^^^^^^^^^^^^
+...
+193 |     fn parse_offset_clause(&mut self) -> Result<Option<ast::Expression>> {
+    |        ^^^^^^^^^^^^^^^^^^^
+...
+198 |     fn parse_expression(&mut self) -> Result<ast::Expression> {
+    |        ^^^^^^^^^^^^^^^^
+...
+203 |     fn parse_expression_at(&mut self, min_precedence: Precedence) -> Result<ast::Expression> {
+    |        ^^^^^^^^^^^^^^^^^^^
+...
+208 |     fn parse_expression_atom(&mut self) -> Result<ast::Expression> {
+    |        ^^^^^^^^^^^^^^^^^^^^^
+...
+214 |     fn parse_prefix_operator_at(&mut self, min_precedence: Precedence) -> Option<PrefixOperator> {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^
+...
+220 |     fn parse_infix_operator_at(&mut self, min_precedence: Precedence) -> Option<InfixOperator> {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^
+...
+226 |     fn parse_postfix_operator_at(
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: variants `Left` and `Right` are never constructed
+   --> src/sql/parser/parser.rs:239:5
+    |
+238 | enum Associativity {
+    |      ------------- variants in this enum
+239 |     Left,
+    |     ^^^^
+240 |     Right,
+    |     ^^^^^
+
+warning: enum `PrefixOperator` is never used
+   --> src/sql/parser/parser.rs:252:6
+    |
+252 | enum PrefixOperator {
+    |      ^^^^^^^^^^^^^^
+
+warning: methods `precedence`, `associativity`, and `into_expression` are never used
+   --> src/sql/parser/parser.rs:260:8
+    |
+258 | impl PrefixOperator {
+    | ------------------- methods in this implementation
+259 |     /// The operator precedence.
+260 |     fn precedence(&self) -> Precedence {
+    |        ^^^^^^^^^^
+...
+266 |     fn associativity(&self) -> Associativity {
+    |        ^^^^^^^^^^^^^
+...
+271 |     fn into_expression(self, rhs: ast::Expression) -> ast::Expression {
+    |        ^^^^^^^^^^^^^^^
+
+warning: enum `InfixOperator` is never used
+   --> src/sql/parser/parser.rs:277:6
+    |
+277 | enum InfixOperator {
+    |      ^^^^^^^^^^^^^
+
+warning: methods `precedence`, `associativity`, and `into_expression` are never used
+   --> src/sql/parser/parser.rs:297:8
+    |
+295 | impl InfixOperator {
+    | ------------------ methods in this implementation
+296 |     /// The operator precedence.
+297 |     fn precedence(&self) -> Precedence {
+    |        ^^^^^^^^^^
+...
+302 |     fn associativity(&self) -> Associativity {
+    |        ^^^^^^^^^^^^^
+...
+307 |     fn into_expression(self, lhs: ast::Expression, rhs: ast::Expression) -> ast::Expression {
+    |        ^^^^^^^^^^^^^^^
+
+warning: enum `PostfixOperator` is never used
+   --> src/sql/parser/parser.rs:313:6
+    |
+313 | enum PostfixOperator {
+    |      ^^^^^^^^^^^^^^^
+
+warning: methods `precedence` and `into_expression` are never used
+   --> src/sql/parser/parser.rs:321:8
+    |
+319 | impl PostfixOperator {
+    | -------------------- methods in this implementation
+320 |     // The operator precedence.
+321 |     fn precedence(&self) -> Precedence {
+    |        ^^^^^^^^^^
+...
+326 |     fn into_expression(self, lhs: ast::Expression) -> ast::Expression {
+    |        ^^^^^^^^^^^^^^^
+
+warning: static `OPTIMIZERS` is never used
+  --> src/sql/planner/optimizer.rs:10:12
+   |
+10 | pub static OPTIMIZERS: LazyLock<Vec<Box<dyn Optimizer>>> = LazyLock::new(|| {
+   |            ^^^^^^^^^^
+
+warning: trait `Optimizer` is never used
+  --> src/sql/planner/optimizer.rs:16:11
+   |
+16 | pub trait Optimizer: Debug + Send + Sync {
+   |           ^^^^^^^^^
+
+warning: struct `ConstantFolding` is never constructed
+  --> src/sql/planner/optimizer.rs:24:12
+   |
+24 | pub struct ConstantFolding;
+   |            ^^^^^^^^^^^^^^^
+
+warning: associated function `fold` is never used
+  --> src/sql/planner/optimizer.rs:34:12
+   |
+32 | impl ConstantFolding {
+   | -------------------- associated function in this implementation
+33 |     /// Folds constant expressions in a node.
+34 |     pub fn fold(mut expr: Expression) -> Result<Expression> {
+   |            ^^^^
+
+warning: struct `FilterPushdown` is never constructed
+  --> src/sql/planner/optimizer.rs:41:12
+   |
+41 | pub struct FilterPushdown;
+   |            ^^^^^^^^^^^^^^
+
+warning: associated functions `push_filters`, `push_into`, `maybe_push_filter`, and `maybe_push_join` are never used
+  --> src/sql/planner/optimizer.rs:51:8
+   |
+49 | impl FilterPushdown {
+   | ------------------- associated functions in this implementation
+50 |     /// Pushes filter predicates down into child nodes where possible.
+51 |     fn push_filters(mut node: Node) -> Node {
+   |        ^^^^^^^^^^^^
+...
+56 |     fn push_into(expr: Expression, target: &mut Node) -> Option<Expression> {
+   |        ^^^^^^^^^
+...
+61 |     fn maybe_push_filter(node: Node) -> Node {
+   |        ^^^^^^^^^^^^^^^^^
+...
+67 |     fn maybe_push_join(node: Node) -> Node {
+   |        ^^^^^^^^^^^^^^^
+
+warning: struct `IndexLookup` is never constructed
+  --> src/sql/planner/optimizer.rs:74:12
+   |
+74 | pub struct IndexLookup;
+   |            ^^^^^^^^^^^
+
+warning: associated function `index_lookup` is never used
+  --> src/sql/planner/optimizer.rs:84:8
+   |
+82 | impl IndexLookup {
+   | ---------------- associated function in this implementation
+83 |     /// Rewrites a filtered scan node into a key or index lookup if possible.
+84 |     fn index_lookup(mut node: Node) -> Node {
+   |        ^^^^^^^^^^^^
+
+warning: struct `HashJoin` is never constructed
+  --> src/sql/planner/optimizer.rs:91:12
+   |
+91 | pub struct HashJoin;
+   |            ^^^^^^^^
+
+warning: associated function `hash_join` is never used
+   --> src/sql/planner/optimizer.rs:101:12
+    |
+ 99 | impl HashJoin {
+    | ------------- associated function in this implementation
+100 |     /// Rewrites a nested loop join into a hash join if possible.
+101 |     pub fn hash_join(node: Node) -> Node {
+    |            ^^^^^^^^^
+
+warning: struct `ShortCircuit` is never constructed
+   --> src/sql/planner/optimizer.rs:108:12
+    |
+108 | pub struct ShortCircuit;
+    |            ^^^^^^^^^^^^
+
+warning: associated function `short_circuit` is never used
+   --> src/sql/planner/optimizer.rs:118:8
+    |
+116 | impl ShortCircuit {
+    | ----------------- associated function in this implementation
+117 |     /// Short-circuits useless nodes.
+118 |     fn short_circuit(mut node: Node) -> Node {
+    |        ^^^^^^^^^^^^^
+
+warning: method `format` is never used
+   --> src/sql/planner/plan.rs:149:8
+    |
+148 | impl Aggregate {
+    | -------------- method in this implementation
+149 |     fn format(&self, node: &Node) -> String {
+    |        ^^^^^^
+
+warning: function `invert_remap` is never used
+   --> src/sql/planner/plan.rs:205:8
+    |
+205 | pub fn invert_remap(targets: &[Option<usize>]) -> Vec<Option<usize>> {
+    |        ^^^^^^^^^^^^
+
+warning: field `catalog` is never read
+  --> src/sql/planner/planner.rs:15:5
+   |
+14 | pub struct Planner<'a, C: Catalog> {
+   |            ------- field in this struct
+15 |     catalog: &'a C,
+   |     ^^^^^^^
+
+warning: multiple associated items are never used
+   --> src/sql/planner/planner.rs:30:8
+    |
+ 18 | impl<'a, C: Catalog> Planner<'a, C> {
+    | ----------------------------------- associated items in this implementation
+...
+ 30 |     fn build_create_table(&self, name: String, columns: Vec<ast::Column>) -> Result<Plan> {
+    |        ^^^^^^^^^^^^^^^^^^
+...
+ 35 |     fn build_drop_table(&self, name: String, if_exists: bool) -> Result<Plan> {
+    |        ^^^^^^^^^^^^^^^^
+...
+ 40 |     fn build_delete(&self, table: String, r#where: Option<ast::Expression>) -> Result<Plan> {
+    |        ^^^^^^^^^^^^
+...
+ 45 |     fn build_insert(
+    |        ^^^^^^^^^^^^
+...
+ 55 |     fn build_update(
+    |        ^^^^^^^^^^^^
+...
+ 66 |     fn build_select(
+    |        ^^^^^^^^^^^^
+...
+ 81 |     fn build_from_clause(&self, from: Vec<ast::From>, scope: &mut Scope) -> Result<Node> {
+    |        ^^^^^^^^^^^^^^^^^
+...
+ 87 |     fn build_from(&self, from: ast::From, parent_scope: &mut Scope) -> Result<Node> {
+    |        ^^^^^^^^^^
+...
+ 92 |     fn build_aggregate(
+    |        ^^^^^^^^^^^^^^^
+...
+103 |     fn build_aggregate_function(expr: ast::Expression, scope: &Scope) -> Result<Aggregate> {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^
+...
+108 |     fn is_aggregate_function(expr: &ast::Expression) -> bool {
+    |        ^^^^^^^^^^^^^^^^^^^^^
+...
+113 |     fn collect_aggregates(
+    |        ^^^^^^^^^^^^^^^^^^
+...
+123 |     fn build_select_hidden(
+    |        ^^^^^^^^^^^^^^^^^^^
+...
+140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+    |        ^^^^^^^^^^^^^^^^^^^^
+
+warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+   --> src/sql/planner/planner.rs:150:5
+    |
+148 | pub struct Scope {
+    |            ----- fields in this struct
+149 |     /// The currently visible columns.
+150 |     columns: Vec<Label>,
+    |     ^^^^^^^
+151 |     /// Index of currently visible tables, by query name.
+152 |     tables: HashSet<String>,
+    |     ^^^^^^
+153 |     /// Index of fully qualified table.column names to column indexes.
+154 |     qualified: HashMap<(String, String), usize>,
+    |     ^^^^^^^^^
+155 |     /// Index of unqualified column names to column indexes.
+156 |     unqualified: HashMap<String, Vec<usize>>,
+    |     ^^^^^^^^^^^
+157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+158 |     aggregates: HashMap<ast::Expression, usize>,
+    |     ^^^^^^^^^^
+159 |     /// Hidden columns.
+160 |     hidden: HashSet<usize>,
+    |     ^^^^^^
+
+warning: multiple associated items are never used
+   --> src/sql/planner/planner.rs:170:8
+    |
+163 | impl Scope {
+    | ---------- associated items in this implementation
+...
+170 |     fn from_table(table: &Table) -> Result<Self> {
+    |        ^^^^^^^^^^
+...
+180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+    |        ^^^^^^^^^
+...
+185 |     fn add_column(&mut self, label: Label) -> usize {
+    |        ^^^^^^^^^^
+...
+190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+    |        ^^^^^^^^^^^^^
+...
+195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+    |        ^^^^^^^^^^^^^
+...
+201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+    |        ^^^^^^^^^^^^^^^^
+...
+206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+    |        ^^^^^^^^^^^^^^^
+...
+211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+    |        ^^^^^
+...
+216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+    |        ^^^^^^^
+...
+221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+    |        ^^^^^
+...
+226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+    |        ^^^^^^^^^^^^^
+...
+232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+    |        ^^^^^^^^^^^^
+
+warning: `toydb` (lib) generated 279 warnings (run `cargo fix --lib -p toydb` to apply 237 suggestions)
+    Finished `release` profile [optimized] target(s) in 25.61s
+=== Build succeeded ===
+=== Running tests ===
+============================= test session starts ==============================
+platform linux -- Python 3.11.2, pytest-8.4.1, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collecting ... collected 12 items
+
+../tests/test_sql.py::test_compiles PASSED                               [  8%]
+../tests/test_sql.py::test_expressions FAILED                            [ 16%]
+../tests/test_sql.py::test_schema FAILED                                 [ 25%]
+../tests/test_sql.py::test_writes FAILED                                 [ 33%]
+../tests/test_sql.py::test_queries_core FAILED                           [ 41%]
+../tests/test_sql.py::test_joins FAILED                                  [ 50%]
+../tests/test_sql.py::test_aggregates FAILED                             [ 58%]
+../tests/test_sql.py::test_optimizers FAILED                             [ 66%]
+../tests/test_sql.py::test_transactions FAILED                           [ 75%]
+../tests/test_sql.py::test_median FAILED                                 [ 83%]
+../tests/test_sql.py::test_string_agg FAILED                             [ 91%]
+../tests/test_sql.py::test_integration FAILED                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_expressions _______________________________
+
+    def test_expressions():
+        """lexer.rs + parser.rs: SQL tokenisation and expression evaluation must be correct.
+    
+        Covers: literals, operators (arithmetic, comparison, logic, string LIKE),
+        operator precedence, and expression functions (sqrt etc.).
+        Maps to goldenscripts: src/sql/testscripts/expressions/
+        """
+        ok, output = _cargo_test(["--lib", "sql::tests::expressions", "--", "--test-threads=1"])
+>       assert ok, (
+            f"Expression tests failed (lexer.rs / parser.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: Expression tests failed (lexer.rs / parser.rs):
+E         ^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 15.14s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:74: AssertionError
+_________________________________ test_schema __________________________________
+
+    def test_schema():
+        """planner.rs + local.rs: CREATE TABLE and DROP TABLE must work correctly.
+    
+        Covers: basic DDL, data-type validation, primary keys, unique constraints,
+        foreign-key references, indexes, default values, nullable columns, transactions.
+        Maps to goldenscripts: src/sql/testscripts/schema/
+        """
+        ok, output = _cargo_test(["--lib", "sql::tests::schema", "--", "--test-threads=1"])
+>       assert ok, (
+            f"Schema tests failed (planner.rs / local.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: Schema tests failed (planner.rs / local.rs):
+E         ^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:91: AssertionError
+_________________________________ test_writes __________________________________
+
+    def test_writes():
+        """executor.rs: INSERT, UPDATE, and DELETE must work correctly.
+    
+        Covers: basic inserts, multi-row inserts, data-type handling, default values,
+        primary-key enforcement, unique constraints, foreign-key checks, index updates,
+        conditional deletes/updates, expression-based updates.
+        Maps to goldenscripts: src/sql/testscripts/writes/
+        """
+        ok, output = _cargo_test(["--lib", "sql::tests::writes", "--", "--test-threads=1"])
+>       assert ok, (
+            f"Write tests failed (executor.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: Write tests failed (executor.rs):
+E         ^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:109: AssertionError
+______________________________ test_queries_core _______________________________
+
+    def test_queries_core():
+        """plan.rs + executor.rs: SELECT, WHERE, ORDER BY, LIMIT, OFFSET must work.
+    
+        Runs all query goldenscripts except join and aggregate tests, giving
+        independent credit for the core query pipeline.
+        Maps to goldenscripts: src/sql/testscripts/queries/ (core subset)
+        """
+        ok, output = _cargo_test([
+            "--lib", "sql::tests::queries",
+            "--",
+            "--skip", "join",
+            "--skip", "aggregate",
+            "--skip", "group_by",
+            "--skip", "having",
+            "--test-threads=1",
+        ])
+>       assert ok, (
+            f"Core query tests failed (plan.rs / executor.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: Core query tests failed (plan.rs / executor.rs):
+E         ^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:134: AssertionError
+__________________________________ test_joins __________________________________
+
+    def test_joins():
+        """join.rs: INNER JOIN, LEFT/RIGHT OUTER JOIN, and CROSS JOIN must be correct.
+    
+        Covers hash-join, nested-loop join, and cross-product execution.
+        Maps to goldenscripts: sql::tests::queries::join_*
+        """
+        tests = [
+            "sql::tests::queries::join_inner",
+            "sql::tests::queries::join_outer",
+            "sql::tests::queries::join_cross",
+        ]
+        failures = []
+        for t in tests:
+            ok, output = _cargo_test(["--lib", t, "--", "--test-threads=1"])
+            if not ok:
+                failures.append((t, output[-1500:]))
+    
+>       assert not failures, (
+            "Join tests failed (join.rs):\n"
+            + "\n---\n".join(f"[{t}]\n{out}" for t, out in failures)
+        )
+E       AssertionError: Join tests failed (join.rs):
+E         [sql::tests::queries::join_inner]
+E         dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E         ---
+E         [sql::tests::queries::join_outer]
+E         dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E         ---
+E         [sql::tests::queries::join_cross]
+E         dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert not [('sql::tests::queries::join_inner', 'dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {\n    |        ^^^^^^^^^\n...\n185 |     fn add_column(&mut self, label: Label) -> usize {\n    |        ^^^^^^^^^^\n...\n190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {\n    |        ^^^^^^^^^^^^^\n...\n195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {\n    |        ^^^^^^^^^^^^^\n...\n201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {\n    |        ^^^^^^^^^^^^^^^^\n...\n206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {\n    |        ^^^^^^^^^^^^^^^\n...\n211 |     fn merge(&mut self, scope: Scope) -> Result<()> {\n    |        ^^^^^\n...\n216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {\n    |        ^^^^^^^\n...\n221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {\n    |        ^^^^^\n...\n226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {\n    |        ^^^^^^^^^^^^^\n...\n232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {\n ...t self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {\n    |        ^^^^^^^^^^^^^\n...\n201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {\n    |        ^^^^^^^^^^^^^^^^\n...\n206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {\n    |        ^^^^^^^^^^^^^^^\n...\n211 |     fn merge(&mut self, scope: Scope) -> Result<()> {\n    |        ^^^^^\n...\n216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {\n    |        ^^^^^^^\n...\n221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {\n    |        ^^^^^\n...\n226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {\n    |        ^^^^^^^^^^^^^\n...\n232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {\n    |        ^^^^^^^^^^^^\n\nwarning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s\n     Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)\nerror: test failed, to rerun pass `--lib`\nerror: 1 target failed:\n    `--lib`\n')]
+
+/tests/test_sql.py:160: AssertionError
+_______________________________ test_aggregates ________________________________
+
+    def test_aggregates():
+        """aggregator.rs: COUNT, SUM, AVG, MIN, MAX, GROUP BY, and HAVING must work.
+    
+        Covers standard SQL aggregates, null handling, empty-table behaviour,
+        and grouped aggregation with HAVING filters.
+        Maps to goldenscripts: sql::tests::queries::aggregate, group_by, having
+        """
+        tests = [
+            "sql::tests::queries::aggregate",
+            "sql::tests::queries::group_by",
+            "sql::tests::queries::having",
+        ]
+        failures = []
+        for t in tests:
+            ok, output = _cargo_test([
+                "--lib", t, "--", "--exact", "--test-threads=1",
+            ])
+            if not ok:
+                failures.append((t, output[-1500:]))
+    
+>       assert not failures, (
+            "Aggregate tests failed (aggregator.rs):\n"
+            + "\n---\n".join(f"[{t}]\n{out}" for t, out in failures)
+        )
+E       AssertionError: Aggregate tests failed (aggregator.rs):
+E         [sql::tests::queries::aggregate]
+E         dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E         ---
+E         [sql::tests::queries::group_by]
+E         dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E         ---
+E         [sql::tests::queries::having]
+E         dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert not [('sql::tests::queries::aggregate', 'dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {\n    |        ^^^^^^^^^\n...\n185 |     fn add_column(&mut self, label: Label) -> usize {\n    |        ^^^^^^^^^^\n...\n190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {\n    |        ^^^^^^^^^^^^^\n...\n195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {\n    |        ^^^^^^^^^^^^^\n...\n201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {\n    |        ^^^^^^^^^^^^^^^^\n...\n206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {\n    |        ^^^^^^^^^^^^^^^\n...\n211 |     fn merge(&mut self, scope: Scope) -> Result<()> {\n    |        ^^^^^\n...\n216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {\n    |        ^^^^^^^\n...\n221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {\n    |        ^^^^^\n...\n226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {\n    |        ^^^^^^^^^^^^^\n...\n232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {\n  ...t self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {\n    |        ^^^^^^^^^^^^^\n...\n201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {\n    |        ^^^^^^^^^^^^^^^^\n...\n206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {\n    |        ^^^^^^^^^^^^^^^\n...\n211 |     fn merge(&mut self, scope: Scope) -> Result<()> {\n    |        ^^^^^\n...\n216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {\n    |        ^^^^^^^\n...\n221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {\n    |        ^^^^^\n...\n226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {\n    |        ^^^^^^^^^^^^^\n...\n232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {\n    |        ^^^^^^^^^^^^\n\nwarning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s\n     Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)\nerror: test failed, to rerun pass `--lib`\nerror: 1 target failed:\n    `--lib`\n')]
+
+/tests/test_sql.py:190: AssertionError
+_______________________________ test_optimizers ________________________________
+
+    def test_optimizers():
+        """optimizer.rs: filter-pushdown, index-lookup, constant folding, hash-join optimizations.
+    
+        The optimizer must transform query plans correctly while preserving
+        exact output parity with the unoptimized baseline.
+        Maps to goldenscripts: src/sql/testscripts/optimizers/
+        """
+        ok, output = _cargo_test(["--lib", "sql::tests::optimizers", "--", "--test-threads=1"])
+>       assert ok, (
+            f"Optimizer tests failed (optimizer.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: Optimizer tests failed (optimizer.rs):
+E         ^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:208: AssertionError
+______________________________ test_transactions _______________________________
+
+    def test_transactions():
+        """session.rs: BEGIN, COMMIT, ROLLBACK and MVCC isolation must be correct.
+    
+        Covers snapshot isolation, anomaly prevention (dirty read, fuzzy read,
+        phantom read, write skew, lost update), and schema-change transactions.
+        Maps to goldenscripts: src/sql/testscripts/transactions/
+        """
+        ok, output = _cargo_test(["--lib", "sql::tests::transactions", "--", "--test-threads=1"])
+>       assert ok, (
+            f"Transaction tests failed (session.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: Transaction tests failed (session.rs):
+E         ^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:225: AssertionError
+_________________________________ test_median __________________________________
+
+    def test_median():
+        """aggregator.rs: MEDIAN(expr) must compute the statistical median correctly.
+    
+        MEDIAN is a custom aggregate not in the original toydb. It must:
+        - Return the middle value for odd-count datasets.
+        - Return the average of the two middle values for even-count datasets.
+        - Exclude NULL values from the computation.
+        - Return NULL for empty input.
+        Maps to goldenscript: sql::tests::queries::aggregate_median
+        """
+        ok, output = _cargo_test([
+            "--lib", "sql::tests::queries::aggregate_median",
+            "--", "--exact", "--test-threads=1",
+        ])
+>       assert ok, (
+            f"MEDIAN aggregate test failed (aggregator.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: MEDIAN aggregate test failed (aggregator.rs):
+E         ^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:248: AssertionError
+_______________________________ test_string_agg ________________________________
+
+    def test_string_agg():
+        """aggregator.rs: STRING_AGG(expr, delimiter) must concatenate strings correctly.
+    
+        STRING_AGG is a custom aggregate not in the original toydb. It must:
+        - Join non-NULL string values with the given delimiter.
+        - Exclude NULL values from the output.
+        - Return NULL for empty input.
+        Maps to goldenscript: sql::tests::queries::aggregate_string_agg
+        """
+        ok, output = _cargo_test([
+            "--lib", "sql::tests::queries::aggregate_string_agg",
+            "--", "--exact", "--test-threads=1",
+        ])
+>       assert ok, (
+            f"STRING_AGG aggregate test failed (aggregator.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: STRING_AGG aggregate test failed (aggregator.rs):
+E         ^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:270: AssertionError
+_______________________________ test_integration _______________________________
+
+    def test_integration():
+        """local.rs: full end-to-end integration tests using a real storage engine.
+    
+        Runs the integration test suite (tests/tests.rs) which exercises the
+        complete SQL-to-storage stack including Raft consensus simulation.
+        Maps to: cargo test --test tests
+        """
+        ok, output = _cargo_test([
+            "--test", "tests",
+            "--", "--test-threads=1",
+        ], timeout=360)
+>       assert ok, (
+            f"Integration tests failed (local.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: Integration tests failed (local.rs):
+E         ^^^^^^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib) generated 279 warnings (run `cargo fix --lib -p toydb` to apply 237 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 3.48s
+E              Running tests/tests.rs (target/debug/deps/tests-e4719fd2af91906f)
+E         error: test failed, to rerun pass `--test tests`
+E         error: 1 target failed:
+E             `--test tests`
+E         
+E       assert False
+
+/tests/test_sql.py:290: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_sql.py::test_compiles
+FAILED ../tests/test_sql.py::test_expressions - AssertionError: Expression te...
+FAILED ../tests/test_sql.py::test_schema - AssertionError: Schema tests faile...
+FAILED ../tests/test_sql.py::test_writes - AssertionError: Write tests failed...
+FAILED ../tests/test_sql.py::test_queries_core - AssertionError: Core query t...
+FAILED ../tests/test_sql.py::test_joins - AssertionError: Join tests failed (...
+FAILED ../tests/test_sql.py::test_aggregates - AssertionError: Aggregate test...
+FAILED ../tests/test_sql.py::test_optimizers - AssertionError: Optimizer test...
+FAILED ../tests/test_sql.py::test_transactions - AssertionError: Transaction ...
+FAILED ../tests/test_sql.py::test_median - AssertionError: MEDIAN aggregate t...
+FAILED ../tests/test_sql.py::test_string_agg - AssertionError: STRING_AGG agg...
+FAILED ../tests/test_sql.py::test_integration - AssertionError: Integration t...
+======================== 11 failed, 1 passed in 37.49s =========================
+Reward: 0.0833 (1/12 test categories passed)

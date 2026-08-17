@@ -1,0 +1,97 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "9.0.2"
+        },
+        "summary": {
+            "tests": 7,
+            "passed": 4,
+            "failed": 3,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1775470118875,
+            "stop": 1775470118899
+        },
+        "environment": {
+            "buildName": "Pytest JSON CTRF Report",
+            "buildNumber": "000",
+            "buildUrl": "https://ctrf.io"
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_plan_structure",
+                "status": "passed",
+                "duration": 0,
+                "start": 1775470118884,
+                "stop": 1775470118884,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_orbital_mechanics",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 9,
+                "start": 1775470118884,
+                "stop": 1775470118893,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "plan = {'cost_breakdown': {'contingency_usd': 9554375.0, 'fuel_cost_usd': 1176184.0, 'fuel_handling_surcharge_usd': 141142.0,...w': {'alignment_quality': 0.92, 'close_date': '2026-12-05', 'delta_v_penalty_pct': 1.8, 'name': '2026-Beta', ...}, ...}\n\n    def test_orbital_mechanics(plan):\n        \"\"\"Correction values match heritage data, components sum, Hohmann math verified.\"\"\"\n        om = plan[\"orbital_mechanics\"]\n    \n        # Gravity loss must match the heritage value (0.386), not a generic estimate\n>       assert abs(om[\"gravity_loss_km_s\"] - GRAVITY_LOSS) < 0.02, \\\n            f\"Gravity loss {om['gravity_loss_km_s']} != expected {GRAVITY_LOSS} from heritage data\"\nE       AssertionError: Gravity loss 0.1 != expected 0.386 from heritage data\nE       assert 0.28600000000000003 < 0.02\nE        +  where 0.28600000000000003 = abs((0.1 - 0.386))\n\n/tests/test_outputs.py:65: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_transfer_time",
+                "status": "passed",
+                "duration": 1,
+                "start": 1775470118893,
+                "stop": 1775470118894,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_fuel_budget",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 2,
+                "start": 1775470118894,
+                "stop": 1775470118896,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "plan = {'cost_breakdown': {'contingency_usd': 9554375.0, 'fuel_cost_usd': 1176184.0, 'fuel_handling_surcharge_usd': 141142.0,...w': {'alignment_quality': 0.92, 'close_date': '2026-12-05', 'delta_v_penalty_pct': 1.8, 'name': '2026-Beta', ...}, ...}\n\n    def test_fuel_budget(plan):\n        \"\"\"Fuel includes boil-off, settling, and 5.5% reserve; base matches Tsiolkovsky.\"\"\"\n        fb = plan[\"fuel_budget\"]\n        om = plan[\"orbital_mechanics\"]\n        dv_m_s = om[\"total_delta_v_km_s\"] * 1000.0\n        isp = plan[\"spacecraft\"][\"engine_isp_s\"]\n        dry = plan[\"spacecraft\"][\"dry_mass_kg\"]\n        payload = fb[\"payload_kg\"]\n        ve = isp * G0\n        expected_base = (dry + payload) * (math.exp(dv_m_s / ve) - 1)\n    \n        # Base fuel must match Tsiolkovsky\n        base = fb.get(\"base_fuel_mass_kg\", fb[\"fuel_mass_kg\"])\n>       assert abs(base - expected_base) < expected_base * 0.02, \\\n            f\"Base fuel {base:.0f} != Tsiolkovsky {expected_base:.0f} (\u00b12%)\"\nE       AssertionError: Base fuel 119438 != Tsiolkovsky 157845 (\u00b12%)\nE       assert 38407.234904620505 < (157845.2349046205 * 0.02)\nE        +  where 38407.234904620505 = abs((119438.0 - 157845.2349046205))\n\n/tests/test_outputs.py:116: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_constraints_and_cost",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 2,
+                "start": 1775470118896,
+                "stop": 1775470118898,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "plan = {'cost_breakdown': {'contingency_usd': 9554375.0, 'fuel_cost_usd': 1176184.0, 'fuel_handling_surcharge_usd': 141142.0,...w': {'alignment_quality': 0.92, 'close_date': '2026-12-05', 'delta_v_penalty_pct': 1.8, 'name': '2026-Beta', ...}, ...}\n\n    def test_constraints_and_cost(plan):\n        \"\"\"Budget \u2264$850M, payload \u22653000kg, reliability \u22650.93, handling surcharge at correct rate.\"\"\"\n        cb = plan[\"cost_breakdown\"]\n        assert cb[\"total_cost_usd\"] <= 850_000_000, \\\n            f\"Cost ${cb['total_cost_usd']:,.0f} exceeds $850M\"\n        assert plan[\"fuel_budget\"][\"payload_kg\"] >= 3000, \\\n            f\"Payload {plan['fuel_budget']['payload_kg']} kg below 3000 kg\"\n        assert plan[\"spacecraft\"][\"reliability_rating\"] >= 0.93, \\\n            f\"Reliability {plan['spacecraft']['reliability_rating']} below 0.93\"\n    \n        # Handling surcharge must match the skill's non-standard rates\n        SURCHARGE_RATES = {\"LOX/LH2\": 0.11, \"LOX/RP-1\": 0.045, \"LOX/LCH4\": 0.07}\n        ft = plan[\"fuel_provider\"][\"fuel_type\"]\n        fuel_cost = cb[\"fuel_cost_usd\"]\n        expected_surcharge = fuel_cost * SURCHARGE_RATES.get(ft, 0)\n        actual_surcharge = cb.get(\"fuel_handling_surcharge_usd\", 0)\n>       assert abs(actual_surcharge - expected_surcharge) < expected_surcharge * 0.05, \\\n            f\"Handling surcharge ${actual_surcharge:,.0f} != expected ${expected_surcharge:,.0f} ({SURCHARGE_RATES[ft]*100}% of fuel cost)\"\nE       AssertionError: Handling surcharge $141,142 != expected $52,928 (4.5% of fuel cost)\nE       assert 88213.72 < (52928.28 * 0.05)\nE        +  where 88213.72 = abs((141142.0 - 52928.28))\n\n/tests/test_outputs.py:153: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_provider_and_compatibility",
+                "status": "passed",
+                "duration": 0,
+                "start": 1775470118898,
+                "stop": 1775470118898,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_timeline",
+                "status": "passed",
+                "duration": 0,
+                "start": 1775470118899,
+                "stop": 1775470118899,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

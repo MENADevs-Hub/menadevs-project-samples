@@ -1,0 +1,7 @@
+{
+  "host": "10.0.1.7",
+  "tunnel_domain": "example.net",
+  "mean_subdomain_entropy": 3.65,
+  "query_count": 627,
+  "first_seen": "2025-03-05T02:15:00Z"
+}

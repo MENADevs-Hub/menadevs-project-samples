@@ -1,0 +1,90 @@
+{
+    "id": "642a3911-1181-4b3e-af43-8f7d7f654e76",
+    "task_name": "mars-transfer-planner",
+    "trial_name": "mars-transfer-planner__3uq7dVd",
+    "trial_uri": "file:///Users/khaleddabbas/Desktop/skillsbench/jobs/2026-04-06__12-57-06/mars-transfer-planner__3uq7dVd",
+    "task_id": {
+        "path": "tasks/mars-transfer-planner"
+    },
+    "source": null,
+    "task_checksum": "57939553c9d65be0ca088f367c02da8f9b80024c2fc7d0afdb88f5b884a4c66d",
+    "config": {
+        "task": {
+            "path": "tasks/mars-transfer-planner",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "mars-transfer-planner__3uq7dVd",
+        "trials_dir": "jobs/2026-04-06__12-57-06",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-4-20250514",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "4f31c89e-28ed-4c76-9108-5b5a9288ba3f"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "unknown",
+        "model_info": {
+            "name": "claude-sonnet-4-20250514",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 3705792,
+        "n_cache_tokens": 3705103,
+        "n_output_tokens": 27331,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-06T12:57:06.637219",
+    "finished_at": "2026-04-06T13:08:41.532821",
+    "environment_setup": {
+        "started_at": "2026-04-06T12:57:06.641108",
+        "finished_at": "2026-04-06T12:57:09.639453"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-06T12:57:09.639507",
+        "finished_at": "2026-04-06T13:01:30.089029"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-06T13:01:30.089144",
+        "finished_at": "2026-04-06T13:08:33.155385"
+    },
+    "verifier": {
+        "started_at": "2026-04-06T13:08:33.158799",
+        "finished_at": "2026-04-06T13:08:38.939241"
+    }
+}

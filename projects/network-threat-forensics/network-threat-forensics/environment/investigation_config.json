@@ -1,0 +1,11 @@
+{
+  "internal_subnet": "10.0.1.0/24",
+  "baseline_start": "2025-03-01T00:00:00Z",
+  "baseline_end": "2025-03-04T23:59:59Z",
+  "investigation_start": "2025-03-05T00:00:00Z",
+  "investigation_end": "2025-03-07T23:59:59Z",
+  "entropy_threshold": 3.5,
+  "beaconing_jitter_threshold": 0.1,
+  "mad_zscore_threshold": 3.5,
+  "min_beaconing_connections": 20
+}

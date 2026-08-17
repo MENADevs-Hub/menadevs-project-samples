@@ -1,0 +1,16 @@
+{
+  "name": "email-suppression-window-repair",
+  "version": "0.1.0",
+  "type": "commonjs",
+  "private": true,
+  "description": "Deterministic email suppression planning from event streams",
+  "bin": {
+    "suppression-plan": "bin/suppression-cli.js"
+  },
+  "scripts": {
+    "plan": "node bin/suppression-cli.js",
+    "check": "node scripts/smoke-check.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

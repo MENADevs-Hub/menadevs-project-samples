@@ -1,0 +1,12 @@
+source_url:           https://github.com/code-corpus/node-todo-cli
+primary_language:     Node.js
+domain:               cli
+short_description:    CLI todo manager with projects, tags, priorities, due dates, filtering, and JSON/CSV export
+snapshot_commit:      39b2067deab1505d8c0568c47b131de6f58b3db9
+snapshot_date:        2026-06-27
+
+# --- computed by the validation toolkit (leave blank; do not hand-edit) ---
+lines_of_code:
+estimated_tokens:
+number_of_test_cases:
+number_of_unique_developers:

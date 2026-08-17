@@ -1,0 +1,29 @@
+{
+    "id": "3c8e88b8-3a82-4763-b36c-cc427d632a92",
+    "started_at": "2026-03-23T03:49:14.925605",
+    "finished_at": "2026-03-23T03:57:15.043238",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "openhands__nemotron-3-nano:30b__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0833
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0833": [
+                            "sql-engine__zHgryzu"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

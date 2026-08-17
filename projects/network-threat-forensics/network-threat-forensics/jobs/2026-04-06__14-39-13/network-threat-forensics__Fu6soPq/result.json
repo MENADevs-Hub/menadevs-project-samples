@@ -1,0 +1,90 @@
+{
+    "id": "4a1d0db4-d423-4ae0-ac86-afc0e1d1b836",
+    "task_name": "network-threat-forensics",
+    "trial_name": "network-threat-forensics__Fu6soPq",
+    "trial_uri": "file:///Users/mohammadjury/Desktop/MENADevs/skillsbench/jobs/2026-04-06__14-39-13/network-threat-forensics__Fu6soPq",
+    "task_id": {
+        "path": "tasks/network-threat-forensics"
+    },
+    "source": null,
+    "task_checksum": "36655af8db5ec7847956fa7dcd9b0e89e8ebbeb739df97f8c12f14c312c7e0c7",
+    "config": {
+        "task": {
+            "path": "tasks/network-threat-forensics",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "network-threat-forensics__Fu6soPq",
+        "trials_dir": "jobs/2026-04-06__14-39-13",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-4-20250514",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "8028b9ea-5b77-4cf2-a309-e2b7b9fe9540"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "unknown",
+        "model_info": {
+            "name": "claude-sonnet-4-20250514",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 421044,
+        "n_cache_tokens": 420870,
+        "n_output_tokens": 1840,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.2222
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-06T14:39:13.961629",
+    "finished_at": "2026-04-06T14:41:36.741242",
+    "environment_setup": {
+        "started_at": "2026-04-06T14:39:13.966523",
+        "finished_at": "2026-04-06T14:39:16.063302"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-06T14:39:16.063370",
+        "finished_at": "2026-04-06T14:39:54.584440"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-06T14:39:54.584487",
+        "finished_at": "2026-04-06T14:41:31.452343"
+    },
+    "verifier": {
+        "started_at": "2026-04-06T14:41:31.452459",
+        "finished_at": "2026-04-06T14:41:35.453847"
+    }
+}

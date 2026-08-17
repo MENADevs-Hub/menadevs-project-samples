@@ -1,0 +1,19 @@
+# Run once per machine:  pip install pre-commit && pre-commit install
+repos:
+  - repo: https://github.com/trufflesecurity/trufflehog
+    rev: v3.82.0          # pin to a real released tag
+    hooks:
+      - id: trufflehog
+        name: TruffleHog secret scan
+        entry: trufflehog git file://. --since-commit HEAD --only-verified --fail
+        language: system
+        stages: ["commit"]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-added-large-files       # blocks large binaries (Section 5)
+        args: ["--maxkb=2048"]
+      - id: check-merge-conflict

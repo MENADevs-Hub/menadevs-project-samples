@@ -1,0 +1,29 @@
+{
+    "id": "3916f641-b0d9-4744-8c0f-8e2c7b96fa88",
+    "started_at": "2026-03-21T07:28:33.324310",
+    "finished_at": "2026-03-21T11:33:10.640854",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "openhands__qwen3.5:35b__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "sql-engine__uiEfuKQ"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

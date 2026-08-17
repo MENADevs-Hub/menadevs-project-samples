@@ -1,0 +1,1275 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.2, pytest-8.4.1, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collecting ... collected 12 items
+
+../tests/test_sql.py::test_compiles PASSED                               [  8%]
+../tests/test_sql.py::test_expressions FAILED                            [ 16%]
+../tests/test_sql.py::test_schema FAILED                                 [ 25%]
+../tests/test_sql.py::test_writes FAILED                                 [ 33%]
+../tests/test_sql.py::test_queries_core FAILED                           [ 41%]
+../tests/test_sql.py::test_joins FAILED                                  [ 50%]
+../tests/test_sql.py::test_aggregates FAILED                             [ 58%]
+../tests/test_sql.py::test_optimizers FAILED                             [ 66%]
+../tests/test_sql.py::test_transactions FAILED                           [ 75%]
+../tests/test_sql.py::test_median FAILED                                 [ 83%]
+../tests/test_sql.py::test_string_agg FAILED                             [ 91%]
+../tests/test_sql.py::test_integration FAILED                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_expressions _______________________________
+
+    def test_expressions():
+        """lexer.rs + parser.rs: SQL tokenisation and expression evaluation must be correct.
+    
+        Covers: literals, operators (arithmetic, comparison, logic, string LIKE),
+        operator precedence, and expression functions (sqrt etc.).
+        Maps to goldenscripts: src/sql/testscripts/expressions/
+        """
+        ok, output = _cargo_test(["--lib", "sql::tests::expressions", "--", "--test-threads=1"])
+>       assert ok, (
+            f"Expression tests failed (lexer.rs / parser.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: Expression tests failed (lexer.rs / parser.rs):
+E         ^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 12.71s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:74: AssertionError
+_________________________________ test_schema __________________________________
+
+    def test_schema():
+        """planner.rs + local.rs: CREATE TABLE and DROP TABLE must work correctly.
+    
+        Covers: basic DDL, data-type validation, primary keys, unique constraints,
+        foreign-key references, indexes, default values, nullable columns, transactions.
+        Maps to goldenscripts: src/sql/testscripts/schema/
+        """
+        ok, output = _cargo_test(["--lib", "sql::tests::schema", "--", "--test-threads=1"])
+>       assert ok, (
+            f"Schema tests failed (planner.rs / local.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: Schema tests failed (planner.rs / local.rs):
+E         ^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:91: AssertionError
+_________________________________ test_writes __________________________________
+
+    def test_writes():
+        """executor.rs: INSERT, UPDATE, and DELETE must work correctly.
+    
+        Covers: basic inserts, multi-row inserts, data-type handling, default values,
+        primary-key enforcement, unique constraints, foreign-key checks, index updates,
+        conditional deletes/updates, expression-based updates.
+        Maps to goldenscripts: src/sql/testscripts/writes/
+        """
+        ok, output = _cargo_test(["--lib", "sql::tests::writes", "--", "--test-threads=1"])
+>       assert ok, (
+            f"Write tests failed (executor.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: Write tests failed (executor.rs):
+E         ^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:109: AssertionError
+______________________________ test_queries_core _______________________________
+
+    def test_queries_core():
+        """plan.rs + executor.rs: SELECT, WHERE, ORDER BY, LIMIT, OFFSET must work.
+    
+        Runs all query goldenscripts except join and aggregate tests, giving
+        independent credit for the core query pipeline.
+        Maps to goldenscripts: src/sql/testscripts/queries/ (core subset)
+        """
+        ok, output = _cargo_test([
+            "--lib", "sql::tests::queries",
+            "--",
+            "--skip", "join",
+            "--skip", "aggregate",
+            "--skip", "group_by",
+            "--skip", "having",
+            "--test-threads=1",
+        ])
+>       assert ok, (
+            f"Core query tests failed (plan.rs / executor.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: Core query tests failed (plan.rs / executor.rs):
+E         ^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:134: AssertionError
+__________________________________ test_joins __________________________________
+
+    def test_joins():
+        """join.rs: INNER JOIN, LEFT/RIGHT OUTER JOIN, and CROSS JOIN must be correct.
+    
+        Covers hash-join, nested-loop join, and cross-product execution.
+        Maps to goldenscripts: sql::tests::queries::join_*
+        """
+        tests = [
+            "sql::tests::queries::join_inner",
+            "sql::tests::queries::join_outer",
+            "sql::tests::queries::join_cross",
+        ]
+        failures = []
+        for t in tests:
+            ok, output = _cargo_test(["--lib", t, "--", "--test-threads=1"])
+            if not ok:
+                failures.append((t, output[-1500:]))
+    
+>       assert not failures, (
+            "Join tests failed (join.rs):\n"
+            + "\n---\n".join(f"[{t}]\n{out}" for t, out in failures)
+        )
+E       AssertionError: Join tests failed (join.rs):
+E         [sql::tests::queries::join_inner]
+E         dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E         ---
+E         [sql::tests::queries::join_outer]
+E         dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E         ---
+E         [sql::tests::queries::join_cross]
+E         dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert not [('sql::tests::queries::join_inner', 'dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {\n    |        ^^^^^^^^^\n...\n185 |     fn add_column(&mut self, label: Label) -> usize {\n    |        ^^^^^^^^^^\n...\n190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {\n    |        ^^^^^^^^^^^^^\n...\n195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {\n    |        ^^^^^^^^^^^^^\n...\n201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {\n    |        ^^^^^^^^^^^^^^^^\n...\n206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {\n    |        ^^^^^^^^^^^^^^^\n...\n211 |     fn merge(&mut self, scope: Scope) -> Result<()> {\n    |        ^^^^^\n...\n216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {\n    |        ^^^^^^^\n...\n221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {\n    |        ^^^^^\n...\n226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {\n    |        ^^^^^^^^^^^^^\n...\n232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {\n ...t self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {\n    |        ^^^^^^^^^^^^^\n...\n201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {\n    |        ^^^^^^^^^^^^^^^^\n...\n206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {\n    |        ^^^^^^^^^^^^^^^\n...\n211 |     fn merge(&mut self, scope: Scope) -> Result<()> {\n    |        ^^^^^\n...\n216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {\n    |        ^^^^^^^\n...\n221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {\n    |        ^^^^^\n...\n226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {\n    |        ^^^^^^^^^^^^^\n...\n232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {\n    |        ^^^^^^^^^^^^\n\nwarning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s\n     Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)\nerror: test failed, to rerun pass `--lib`\nerror: 1 target failed:\n    `--lib`\n')]
+
+/tests/test_sql.py:160: AssertionError
+_______________________________ test_aggregates ________________________________
+
+    def test_aggregates():
+        """aggregator.rs: COUNT, SUM, AVG, MIN, MAX, GROUP BY, and HAVING must work.
+    
+        Covers standard SQL aggregates, null handling, empty-table behaviour,
+        and grouped aggregation with HAVING filters.
+        Maps to goldenscripts: sql::tests::queries::aggregate, group_by, having
+        """
+        tests = [
+            "sql::tests::queries::aggregate",
+            "sql::tests::queries::group_by",
+            "sql::tests::queries::having",
+        ]
+        failures = []
+        for t in tests:
+            ok, output = _cargo_test([
+                "--lib", t, "--", "--exact", "--test-threads=1",
+            ])
+            if not ok:
+                failures.append((t, output[-1500:]))
+    
+>       assert not failures, (
+            "Aggregate tests failed (aggregator.rs):\n"
+            + "\n---\n".join(f"[{t}]\n{out}" for t, out in failures)
+        )
+E       AssertionError: Aggregate tests failed (aggregator.rs):
+E         [sql::tests::queries::aggregate]
+E         dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E         ---
+E         [sql::tests::queries::group_by]
+E         dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E         ---
+E         [sql::tests::queries::having]
+E         dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert not [('sql::tests::queries::aggregate', 'dd_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {\n    |        ^^^^^^^^^\n...\n185 |     fn add_column(&mut self, label: Label) -> usize {\n    |        ^^^^^^^^^^\n...\n190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {\n    |        ^^^^^^^^^^^^^\n...\n195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {\n    |        ^^^^^^^^^^^^^\n...\n201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {\n    |        ^^^^^^^^^^^^^^^^\n...\n206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {\n    |        ^^^^^^^^^^^^^^^\n...\n211 |     fn merge(&mut self, scope: Scope) -> Result<()> {\n    |        ^^^^^\n...\n216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {\n    |        ^^^^^^^\n...\n221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {\n    |        ^^^^^\n...\n226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {\n    |        ^^^^^^^^^^^^^\n...\n232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {\n  ...t self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {\n    |        ^^^^^^^^^^^^^\n...\n201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {\n    |        ^^^^^^^^^^^^^^^^\n...\n206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {\n    |        ^^^^^^^^^^^^^^^\n...\n211 |     fn merge(&mut self, scope: Scope) -> Result<()> {\n    |        ^^^^^\n...\n216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {\n    |        ^^^^^^^\n...\n221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {\n    |        ^^^^^\n...\n226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {\n    |        ^^^^^^^^^^^^^\n...\n232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {\n    |        ^^^^^^^^^^^^\n\nwarning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s\n     Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)\nerror: test failed, to rerun pass `--lib`\nerror: 1 target failed:\n    `--lib`\n')]
+
+/tests/test_sql.py:190: AssertionError
+_______________________________ test_optimizers ________________________________
+
+    def test_optimizers():
+        """optimizer.rs: filter-pushdown, index-lookup, constant folding, hash-join optimizations.
+    
+        The optimizer must transform query plans correctly while preserving
+        exact output parity with the unoptimized baseline.
+        Maps to goldenscripts: src/sql/testscripts/optimizers/
+        """
+        ok, output = _cargo_test(["--lib", "sql::tests::optimizers", "--", "--test-threads=1"])
+>       assert ok, (
+            f"Optimizer tests failed (optimizer.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: Optimizer tests failed (optimizer.rs):
+E         ^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:208: AssertionError
+______________________________ test_transactions _______________________________
+
+    def test_transactions():
+        """session.rs: BEGIN, COMMIT, ROLLBACK and MVCC isolation must be correct.
+    
+        Covers snapshot isolation, anomaly prevention (dirty read, fuzzy read,
+        phantom read, write skew, lost update), and schema-change transactions.
+        Maps to goldenscripts: src/sql/testscripts/transactions/
+        """
+        ok, output = _cargo_test(["--lib", "sql::tests::transactions", "--", "--test-threads=1"])
+>       assert ok, (
+            f"Transaction tests failed (session.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: Transaction tests failed (session.rs):
+E         ^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:225: AssertionError
+_________________________________ test_median __________________________________
+
+    def test_median():
+        """aggregator.rs: MEDIAN(expr) must compute the statistical median correctly.
+    
+        MEDIAN is a custom aggregate not in the original toydb. It must:
+        - Return the middle value for odd-count datasets.
+        - Return the average of the two middle values for even-count datasets.
+        - Exclude NULL values from the computation.
+        - Return NULL for empty input.
+        Maps to goldenscript: sql::tests::queries::aggregate_median
+        """
+        ok, output = _cargo_test([
+            "--lib", "sql::tests::queries::aggregate_median",
+            "--", "--exact", "--test-threads=1",
+        ])
+>       assert ok, (
+            f"MEDIAN aggregate test failed (aggregator.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: MEDIAN aggregate test failed (aggregator.rs):
+E         ^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:248: AssertionError
+_______________________________ test_string_agg ________________________________
+
+    def test_string_agg():
+        """aggregator.rs: STRING_AGG(expr, delimiter) must concatenate strings correctly.
+    
+        STRING_AGG is a custom aggregate not in the original toydb. It must:
+        - Join non-NULL string values with the given delimiter.
+        - Exclude NULL values from the output.
+        - Return NULL for empty input.
+        Maps to goldenscript: sql::tests::queries::aggregate_string_agg
+        """
+        ok, output = _cargo_test([
+            "--lib", "sql::tests::queries::aggregate_string_agg",
+            "--", "--exact", "--test-threads=1",
+        ])
+>       assert ok, (
+            f"STRING_AGG aggregate test failed (aggregator.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: STRING_AGG aggregate test failed (aggregator.rs):
+E         ^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib test) generated 278 warnings (run `cargo fix --lib -p toydb --tests` to apply 238 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 0.05s
+E              Running unittests src/lib.rs (target/debug/deps/toydb-d9c0cb743d761c7a)
+E         error: test failed, to rerun pass `--lib`
+E         error: 1 target failed:
+E             `--lib`
+E         
+E       assert False
+
+/tests/test_sql.py:270: AssertionError
+_______________________________ test_integration _______________________________
+
+    def test_integration():
+        """local.rs: full end-to-end integration tests using a real storage engine.
+    
+        Runs the integration test suite (tests/tests.rs) which exercises the
+        complete SQL-to-storage stack including Raft consensus simulation.
+        Maps to: cargo test --test tests
+        """
+        ok, output = _cargo_test([
+            "--test", "tests",
+            "--", "--test-threads=1",
+        ], timeout=360)
+>       assert ok, (
+            f"Integration tests failed (local.rs):\n{output[-3000:]}"
+        )
+E       AssertionError: Integration tests failed (local.rs):
+E         ^^^^^^^^^^^^^
+E         ...
+E         113 |     fn collect_aggregates(
+E             |        ^^^^^^^^^^^^^^^^^^
+E         ...
+E         123 |     fn build_select_hidden(
+E             |        ^^^^^^^^^^^^^^^^^^^
+E         ...
+E         140 |     fn build_constant_value(expr: ast::Expression) -> Result<Value> {
+E             |        ^^^^^^^^^^^^^^^^^^^^
+E         
+E         warning: fields `columns`, `tables`, `qualified`, `unqualified`, `aggregates`, and `hidden` are never read
+E            --> src/sql/planner/planner.rs:150:5
+E             |
+E         148 | pub struct Scope {
+E             |            ----- fields in this struct
+E         149 |     /// The currently visible columns.
+E         150 |     columns: Vec<Label>,
+E             |     ^^^^^^^
+E         151 |     /// Index of currently visible tables, by query name.
+E         152 |     tables: HashSet<String>,
+E             |     ^^^^^^
+E         153 |     /// Index of fully qualified table.column names to column indexes.
+E         154 |     qualified: HashMap<(String, String), usize>,
+E             |     ^^^^^^^^^
+E         155 |     /// Index of unqualified column names to column indexes.
+E         156 |     unqualified: HashMap<String, Vec<usize>>,
+E             |     ^^^^^^^^^^^
+E         157 |     /// Index of aggregate and GROUP BY expressions to column indexes.
+E         158 |     aggregates: HashMap<ast::Expression, usize>,
+E             |     ^^^^^^^^^^
+E         159 |     /// Hidden columns.
+E         160 |     hidden: HashSet<usize>,
+E             |     ^^^^^^
+E         
+E         warning: multiple associated items are never used
+E            --> src/sql/planner/planner.rs:170:8
+E             |
+E         163 | impl Scope {
+E             | ---------- associated items in this implementation
+E         ...
+E         170 |     fn from_table(table: &Table) -> Result<Self> {
+E             |        ^^^^^^^^^^
+E         ...
+E         180 |     fn add_table(&mut self, table: &Table, alias: Option<&str>) -> Result<()> {
+E             |        ^^^^^^^^^
+E         ...
+E         185 |     fn add_column(&mut self, label: Label) -> usize {
+E             |        ^^^^^^^^^^
+E         ...
+E         190 |     fn lookup_column(&self, table: Option<&str>, name: &str) -> Result<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         195 |     fn add_aggregate(&mut self, expr: &ast::Expression, parent: &Scope) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         201 |     fn lookup_aggregate(&self, expr: &ast::Expression) -> Option<usize> {
+E             |        ^^^^^^^^^^^^^^^^
+E         ...
+E         206 |     fn add_passthrough(&mut self, parent: &Scope, parent_index: usize, hide: bool) -> usize {
+E             |        ^^^^^^^^^^^^^^^
+E         ...
+E         211 |     fn merge(&mut self, scope: Scope) -> Result<()> {
+E             |        ^^^^^
+E         ...
+E         216 |     fn project(&self, expressions: &[(ast::Expression, Option<String>)]) -> Self {
+E             |        ^^^^^^^
+E         ...
+E         221 |     fn remap(&self, targets: &[Option<usize>]) -> Self {
+E             |        ^^^^^
+E         ...
+E         226 |     fn remove_hidden(&mut self) -> Option<HashSet<usize>> {
+E             |        ^^^^^^^^^^^^^
+E         ...
+E         232 |     fn remap_hidden(&mut self) -> Option<Vec<Option<usize>>> {
+E             |        ^^^^^^^^^^^^
+E         
+E         warning: `toydb` (lib) generated 279 warnings (run `cargo fix --lib -p toydb` to apply 237 suggestions)
+E             Finished `test` profile [unoptimized + debuginfo] target(s) in 3.51s
+E              Running tests/tests.rs (target/debug/deps/tests-e4719fd2af91906f)
+E         error: test failed, to rerun pass `--test tests`
+E         error: 1 target failed:
+E             `--test tests`
+E         
+E       assert False
+
+/tests/test_sql.py:290: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_sql.py::test_compiles
+FAILED ../tests/test_sql.py::test_expressions - AssertionError: Expression te...
+FAILED ../tests/test_sql.py::test_schema - AssertionError: Schema tests faile...
+FAILED ../tests/test_sql.py::test_writes - AssertionError: Write tests failed...
+FAILED ../tests/test_sql.py::test_queries_core - AssertionError: Core query t...
+FAILED ../tests/test_sql.py::test_joins - AssertionError: Join tests failed (...
+FAILED ../tests/test_sql.py::test_aggregates - AssertionError: Aggregate test...
+FAILED ../tests/test_sql.py::test_optimizers - AssertionError: Optimizer test...
+FAILED ../tests/test_sql.py::test_transactions - AssertionError: Transaction ...
+FAILED ../tests/test_sql.py::test_median - AssertionError: MEDIAN aggregate t...
+FAILED ../tests/test_sql.py::test_string_agg - AssertionError: STRING_AGG agg...
+FAILED ../tests/test_sql.py::test_integration - AssertionError: Integration t...
+======================== 11 failed, 1 passed in 36.05s =========================

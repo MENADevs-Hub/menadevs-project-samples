@@ -1,0 +1,15 @@
+# Section 2 — Repository metadata. Fill this in and keep it updated.
+# Some fields are computed by the validation toolkit; fill the rest manually.
+
+source_url: https://github.com/code-corpus/py-md-toc.git
+primary_language: Python
+domain: cli
+short_description: Markdown table of contents generator for Python.
+snapshot_commit: 4d43118014211a57d17907820ce9ef1a041e8890
+snapshot_date: 2026-06-25
+
+# --- computed by the validation toolkit (leave blank; do not hand-edit) ---
+lines_of_code:
+estimated_tokens:
+number_of_test_cases:
+number_of_unique_developers:

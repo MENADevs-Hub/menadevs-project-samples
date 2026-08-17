@@ -1,0 +1,25 @@
+claude --verbose --output-format stream-json -p 'I'"'"'m running a post election audit and I need help comparing two different records of the same election results.
+
+The official certified results are in /root/official_results.csv. Each row is one candidate'"'"'s vote count in one precinct, along with how many voters are registered in that precinct.
+
+The raw tally sheets filled in on election night are in /root/tally_sheets.json. Same election, same precincts and candidates, but this was entered by hand so there might be formatting differences, typos in precinct names, or errors in the numbers.
+
+I need you to compare both sources and find every place they don'"'"'t agree. Write your findings to /root/audit_report.json.
+
+For each discrepancy, include:
+Which precinct and candidate it affects
+The type of problem:
+  vote_count_mismatch, the numbers exist in both but don'"'"'t agree
+  impossible_value, a tally sheet vote count is higher than the registered voters for that precinct
+  candidate_missing, a candidate from the official results has no entry in the tally sheet for that precinct
+  precinct_missing, an entire precinct from the official results is missing from the tally sheets
+How severe it is:
+  low, the vote difference is 10 or fewer
+  medium, the difference is between 11 and 100
+  high, difference over 100, or it'"'"'s an impossible value, or something is missing entirely
+The vote counts from each source and the absolute difference (use null when a value doesn'"'"'t exist)
+
+Also include a summary section at the top with: total precincts in the official results, total tally sheets, how many precincts matched, how many precincts had at least one discrepancy, total discrepancy count, and a breakdown by severity and by type.
+
+Note: precinct names in the tally sheets may have minor typos from data entry. Match them to the official precinct names as best you can.
+' --allowedTools Bash Edit Write Read Glob Grep LS WebFetch NotebookEdit NotebookRead TodoRead TodoWrite Agent Skill SlashCommand Task WebSearch 2>&1 </dev/null | tee /logs/agent/claude-code.txt

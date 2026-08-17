@@ -1,0 +1,49 @@
+# Workspace-only source backup and assistant metadata
+/Data Samples.zip
+/.agents/
+/.codex/
+
+# Dependencies and virtual environments
+node_modules/
+.venv/
+**/.venv/
+venv/
+env/
+
+# Local environment and secret files
+.env
+.env.*
+!.env.example
+
+# Python caches and tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build and package outputs
+build/
+dist/
+out/
+target/
+coverage/
+*.egg-info/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+**/.DS_Store
+._*
+desktop.ini
+Thumbs.db
+__MACOSX/
+**/__MACOSX/

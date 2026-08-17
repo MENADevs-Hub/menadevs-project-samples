@@ -1,0 +1,43 @@
+claude --verbose --output-format stream-json -p 'We had a security incident this week and I need you to investigate the network logs to figure out what happened.
+
+Before writing any code, check /root/skills/ — there are guides there covering the detection techniques and the exact output format your report needs to follow.
+
+There are two data files at /root:
+
+- netflow.csv has network flow records for the past week (March 1 through March 7).
+- dns_queries.csv has DNS query logs for the same period.
+
+The investigation config is in /root/investigation_config.json. It has the internal subnet, the baseline period (March 1 to 4), and the investigation period (March 5 to 7).
+
+I need you to look at four threat types:
+
+1. DNS tunneling. Find which domain is being used to smuggle traffic, which internal host is behind it, and when it started.
+
+2. C2 beaconing. Find any internal host communicating with an external server in an automated, highly regular pattern.
+
+3. Lateral movement. Find any internal host that started reaching out to internal machines it had never contacted during the baseline period.
+
+4. Data exfiltration. Find any host that sent an abnormal volume of data to an external destination during the investigation period compared to baseline.
+
+Save the results to /root/forensic_report.json. The skills in /root/skills/ define the exact field names your report must use. The top-level structure is:
+
+```json
+{
+  "compromised_hosts": ["x.x.x.x"],
+  "c2_server": "x.x.x.x",
+  "exfiltration_destination": "x.x.x.x",
+  "dns_tunneling": { ... },
+  "c2_beaconing": { ... },
+  "lateral_movement": { ... },
+  "exfiltration": { ... },
+  "timeline": [
+    {"timestamp": "2025-03-...", "event": "dns_tunneling_start"},
+    {"timestamp": "2025-03-...", "event": "c2_beaconing_start"},
+    {"timestamp": "2025-03-...", "event": "lateral_movement_start"},
+    {"timestamp": "2025-03-...", "event": "data_exfiltration"}
+  ]
+}
+```
+
+The compromised_hosts list should include every host that shows up in any of the detections. The timeline should have the earliest timestamp from each detection type, sorted chronologically.
+' --allowedTools Bash Edit Write Read Glob Grep LS WebFetch NotebookEdit NotebookRead TodoRead TodoWrite Agent Skill SlashCommand Task WebSearch 2>&1 </dev/null | tee /logs/agent/claude-code.txt

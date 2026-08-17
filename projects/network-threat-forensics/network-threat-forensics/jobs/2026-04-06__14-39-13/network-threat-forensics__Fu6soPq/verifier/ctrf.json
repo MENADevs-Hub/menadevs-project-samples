@@ -1,0 +1,122 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 9,
+            "passed": 2,
+            "failed": 7,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1775475695.3690317,
+            "stop": 1775475695.3975017
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_report_exists_and_valid",
+                "status": "passed",
+                "duration": 0.00027554200016766117,
+                "start": 1775475695.380417,
+                "stop": 1775475695.3808882,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_compromised_host",
+                "status": "passed",
+                "duration": 0.00023554199992759095,
+                "start": 1775475695.3810215,
+                "stop": 1775475695.381381,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_dns_tunneling",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00024308400008976605,
+                "start": 1775475695.3815365,
+                "stop": 1775475695.387227,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_dns_tunneling():\n        report = load_report()\n        d = report[\"dns_tunneling\"]\n>       assert d[\"host\"] == \"10.0.1.7\"\n               ^^^^^^^^^\nE       TypeError: 'NoneType' object is not subscriptable\n\n/tests/test_outputs.py:35: TypeError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_c2_beaconing_identification",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0002105830000118658,
+                "start": 1775475695.387362,
+                "stop": 1775475695.3889222,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_c2_beaconing_identification():\n        report = load_report()\n        assert report[\"c2_server\"] == \"203.0.113.50\"\n        b = report[\"c2_beaconing\"]\n>       assert b[\"host\"] == \"10.0.1.7\"\n               ^^^^^^^^^\nE       KeyError: 'host'\n\n/tests/test_outputs.py:46: KeyError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_c2_beaconing_metrics",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0001958330001343711,
+                "start": 1775475695.3890514,
+                "stop": 1775475695.3904924,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_c2_beaconing_metrics():\n        report = load_report()\n        b = report[\"c2_beaconing\"]\n>       assert 295 <= b[\"mean_interval_seconds\"] <= 305, f\"Interval unexpected: {b['mean_interval_seconds']}\"\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       KeyError: 'mean_interval_seconds'\n\n/tests/test_outputs.py:54: KeyError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_lateral_movement",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00019420700004957325,
+                "start": 1775475695.3906224,
+                "stop": 1775475695.3921149,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_lateral_movement():\n        report = load_report()\n        lm = report[\"lateral_movement\"]\n>       assert lm[\"source_host\"] == \"10.0.1.7\"\n               ^^^^^^^^^^^^^^^^^\nE       KeyError: 'source_host'\n\n/tests/test_outputs.py:62: KeyError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_exfiltration_identification",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00022787599993989716,
+                "start": 1775475695.3923042,
+                "stop": 1775475695.3940017,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_exfiltration_identification():\n        report = load_report()\n        assert report[\"exfiltration_destination\"] == \"198.51.100.77\"\n        e = report[\"exfiltration\"]\n>       assert e[\"host\"] == \"10.0.1.7\"\n               ^^^^^^^^^\nE       KeyError: 'host'\n\n/tests/test_outputs.py:71: KeyError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_exfiltration_stats",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00020845899996402295,
+                "start": 1775475695.3941429,
+                "stop": 1775475695.3956223,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_exfiltration_stats():\n        report = load_report()\n        e = report[\"exfiltration\"]\n>       assert normalize_ts(e[\"peak_hour\"]) == \"2025-03-07T15:00:00Z\"\n                            ^^^^^^^^^^^^^^\nE       KeyError: 'peak_hour'\n\n/tests/test_outputs.py:78: KeyError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_timeline_order_and_events",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0003058330000840215,
+                "start": 1775475695.3957522,
+                "stop": 1775475695.3974454,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_timeline_order_and_events():\n        report = load_report()\n        tl = report[\"timeline\"]\n>       assert len(tl) == 4\nE       AssertionError: assert 3 == 4\nE        +  where 3 = len([{'event': 'lateral_movement_start', 'timestamp': '2025-03-05T00:00:00Z'}, {'event': 'data_exfiltration', 'timestamp': '2025-03-05T00:00:00Z'}, {'event': 'c2_beaconing_start', 'timestamp': '2025-03-05T02:17:00+00:00'}])\n\n/tests/test_outputs.py:87: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            }
+        ]
+    }
+}

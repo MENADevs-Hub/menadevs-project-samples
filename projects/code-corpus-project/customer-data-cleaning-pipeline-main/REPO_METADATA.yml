@@ -1,0 +1,17 @@
+# Section 2 — Repository metadata. Fill this in and keep it updated.
+# Some fields are computed by the validation toolkit; fill the rest manually.
+
+source_url: https://github.com/code-corpus/customer-data-cleaning-pipeline
+primary_language: Python
+domain: data-processing
+short_description: >-
+  A config-driven pipeline that loads, normalizes, validates, deduplicates,
+  and reports on raw customer CSV exports.
+snapshot_commit:   47d0c3d892e56b5e4d16791bf5b1287732b35eff
+snapshot_date: 2026-06-24
+
+# --- computed by the validation toolkit (leave blank; do not hand-edit) ---
+lines_of_code:
+estimated_tokens:
+number_of_test_cases:
+number_of_unique_developers:

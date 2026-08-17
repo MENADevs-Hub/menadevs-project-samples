@@ -1,0 +1,80 @@
+University,Housing Type,Guaranteed Years,Monthly Cost,Meal Plan Included,Single Room Available,Apartment Style Available,Laundry In-Unit
+Ohio State University,On-Campus Dorm,2,1050,Yes,Yes,No,No
+Ohio State University,On-Campus Apartment,0,1350,No,Yes,Yes,Yes
+University of Michigan,On-Campus Dorm,2,1200,Yes,Yes,No,No
+University of Michigan,On-Campus Apartment,0,1500,No,Yes,Yes,Yes
+Purdue University,On-Campus Dorm,2,900,Yes,Yes,No,No
+Purdue University,On-Campus Apartment,0,1100,No,Yes,Yes,No
+University of Illinois Urbana-Champaign,On-Campus Dorm,1,1050,Yes,Yes,No,No
+University of Illinois Urbana-Champaign,On-Campus Apartment,0,1200,No,Yes,Yes,No
+Georgia Institute of Technology,On-Campus Dorm,2,1100,Yes,Yes,No,No
+Georgia Institute of Technology,On-Campus Apartment,0,1300,No,Yes,Yes,Yes
+University of Texas at Austin,On-Campus Dorm,1,1000,Yes,Yes,No,No
+University of Texas at Austin,Off-Campus Affiliated,0,1250,No,Yes,Yes,Yes
+University of Wisconsin-Madison,On-Campus Dorm,2,1050,Yes,Yes,No,No
+University of Wisconsin-Madison,On-Campus Apartment,0,1250,No,Yes,Yes,No
+Penn State University,On-Campus Dorm,2,950,Yes,Yes,No,No
+Penn State University,On-Campus Apartment,0,1150,No,Yes,Yes,No
+Virginia Tech,On-Campus Dorm,2,850,Yes,Yes,No,No
+Virginia Tech,On-Campus Apartment,0,1050,No,Yes,Yes,No
+University of Florida,On-Campus Dorm,1,900,Yes,Yes,No,No
+University of Florida,On-Campus Apartment,0,1100,No,Yes,Yes,Yes
+University of Washington,On-Campus Dorm,1,1150,Yes,Yes,No,No
+University of Washington,On-Campus Apartment,0,1400,No,Yes,Yes,Yes
+Carnegie Mellon University,On-Campus Dorm,2,1400,Yes,Yes,No,No
+Carnegie Mellon University,On-Campus Apartment,0,1700,No,Yes,Yes,Yes
+Massachusetts Institute of Technology,On-Campus Dorm,4,1350,Yes,Yes,No,No
+Massachusetts Institute of Technology,On-Campus Apartment,0,1600,No,Yes,Yes,Yes
+Stanford University,On-Campus Dorm,4,1500,Yes,Yes,No,No
+Stanford University,On-Campus Apartment,0,1800,No,Yes,Yes,Yes
+Rice University,On-Campus Residential College,4,1100,Yes,Yes,No,No
+Northwestern University,On-Campus Dorm,2,1300,Yes,Yes,No,No
+Northwestern University,On-Campus Apartment,0,1550,No,Yes,Yes,Yes
+University of Southern California,On-Campus Dorm,1,1400,Yes,Yes,No,No
+University of Southern California,On-Campus Apartment,0,1700,No,Yes,Yes,Yes
+Case Western Reserve University,On-Campus Dorm,2,1200,Yes,Yes,No,No
+Case Western Reserve University,On-Campus Apartment,0,1450,No,Yes,Yes,No
+Rensselaer Polytechnic Institute,On-Campus Dorm,2,1100,Yes,Yes,No,No
+Rensselaer Polytechnic Institute,On-Campus Apartment,0,1350,No,Yes,Yes,No
+Rochester Institute of Technology,On-Campus Dorm,2,1000,Yes,Yes,No,No
+Rochester Institute of Technology,On-Campus Apartment,0,1250,No,Yes,Yes,Yes
+Drexel University,On-Campus Dorm,1,1250,Yes,Yes,No,No
+Drexel University,On-Campus Apartment,0,1500,No,Yes,Yes,Yes
+Stevens Institute of Technology,On-Campus Dorm,2,1200,Yes,Yes,No,No
+Stevens Institute of Technology,On-Campus Apartment,0,1450,No,Yes,Yes,Yes
+Worcester Polytechnic Institute,On-Campus Dorm,2,1050,Yes,Yes,No,No
+Worcester Polytechnic Institute,On-Campus Apartment,0,1300,No,Yes,Yes,No
+Illinois Institute of Technology,On-Campus Dorm,2,1050,Yes,Yes,No,No
+Illinois Institute of Technology,On-Campus Apartment,0,1300,No,Yes,Yes,Yes
+University of Minnesota,On-Campus Dorm,1,1000,Yes,Yes,No,No
+University of Minnesota,On-Campus Apartment,0,1200,No,Yes,Yes,No
+Iowa State University,On-Campus Dorm,2,800,Yes,Yes,No,No
+Iowa State University,On-Campus Apartment,0,950,No,Yes,Yes,No
+Michigan State University,On-Campus Dorm,2,900,Yes,Yes,No,No
+Michigan State University,On-Campus Apartment,0,1100,No,Yes,Yes,No
+University of Maryland,On-Campus Dorm,2,1100,Yes,Yes,No,No
+University of Maryland,On-Campus Apartment,0,1350,No,Yes,Yes,No
+North Carolina State University,On-Campus Dorm,2,900,Yes,Yes,No,No
+North Carolina State University,On-Campus Apartment,0,1100,No,Yes,Yes,Yes
+Colorado School of Mines,On-Campus Dorm,2,950,Yes,Yes,No,No
+Colorado School of Mines,On-Campus Apartment,0,1150,No,Yes,Yes,No
+University of Colorado Boulder,On-Campus Dorm,1,1000,Yes,Yes,No,No
+University of Colorado Boulder,On-Campus Apartment,0,1200,No,Yes,Yes,No
+Arizona State University,On-Campus Dorm,1,950,Yes,Yes,No,No
+Arizona State University,On-Campus Apartment,0,1150,No,Yes,Yes,Yes
+University of Pittsburgh,On-Campus Dorm,2,1050,Yes,Yes,No,No
+University of Pittsburgh,On-Campus Apartment,0,1300,No,Yes,Yes,No
+Clemson University,On-Campus Dorm,2,850,Yes,Yes,No,No
+Clemson University,On-Campus Apartment,0,1050,No,Yes,Yes,No
+Texas A&M University,On-Campus Dorm,2,900,Yes,Yes,No,No
+Texas A&M University,On-Campus Apartment,0,1100,No,Yes,Yes,No
+University of Virginia,On-Campus Dorm,1,1100,Yes,Yes,No,No
+University of Virginia,On-Campus Apartment,0,1350,No,Yes,Yes,No
+Indiana University Bloomington,On-Campus Dorm,2,900,Yes,Yes,No,No
+Indiana University Bloomington,On-Campus Apartment,0,1100,No,Yes,Yes,No
+Northeastern University,On-Campus Dorm,2,1350,Yes,Yes,No,No
+Northeastern University,On-Campus Apartment,0,1600,No,Yes,Yes,Yes
+Boston University,On-Campus Dorm,2,1300,Yes,Yes,No,No
+Boston University,On-Campus Apartment,0,1550,No,Yes,Yes,Yes
+Lehigh University,On-Campus Dorm,2,1100,Yes,Yes,No,No
+Lehigh University,On-Campus Apartment,0,1350,No,Yes,Yes,No

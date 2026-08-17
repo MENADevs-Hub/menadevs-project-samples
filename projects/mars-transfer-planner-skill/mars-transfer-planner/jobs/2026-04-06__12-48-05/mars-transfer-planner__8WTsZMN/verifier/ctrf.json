@@ -1,0 +1,88 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "9.0.2"
+        },
+        "summary": {
+            "tests": 7,
+            "passed": 7,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1775469383166,
+            "stop": 1775469383179
+        },
+        "environment": {
+            "buildName": "Pytest JSON CTRF Report",
+            "buildNumber": "000",
+            "buildUrl": "https://ctrf.io"
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_plan_structure",
+                "status": "passed",
+                "duration": 0,
+                "start": 1775469383176,
+                "stop": 1775469383176,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_orbital_mechanics",
+                "status": "passed",
+                "duration": 1,
+                "start": 1775469383176,
+                "stop": 1775469383177,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_transfer_time",
+                "status": "passed",
+                "duration": 0,
+                "start": 1775469383177,
+                "stop": 1775469383177,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_fuel_budget",
+                "status": "passed",
+                "duration": 0,
+                "start": 1775469383177,
+                "stop": 1775469383177,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_constraints_and_cost",
+                "status": "passed",
+                "duration": 1,
+                "start": 1775469383177,
+                "stop": 1775469383178,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_provider_and_compatibility",
+                "status": "passed",
+                "duration": 0,
+                "start": 1775469383178,
+                "stop": 1775469383178,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_timeline",
+                "status": "passed",
+                "duration": 1,
+                "start": 1775469383178,
+                "stop": 1775469383179,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

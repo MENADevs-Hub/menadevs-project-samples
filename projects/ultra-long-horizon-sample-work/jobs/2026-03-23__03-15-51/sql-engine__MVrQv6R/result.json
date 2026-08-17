@@ -1,0 +1,97 @@
+{
+    "id": "139411c4-cc76-4bf4-a624-4a82209cbb88",
+    "task_name": "sql-engine",
+    "trial_name": "sql-engine__MVrQv6R",
+    "trial_uri": "file:///home/zaid/tmp/Abundant-AI-Task-2/jobs/2026-03-23__03-15-51/sql-engine__MVrQv6R",
+    "task_id": {
+        "path": "sql-engine"
+    },
+    "source": null,
+    "task_checksum": "11fcce53fe9330d253e01cf46e2a94d4bb2e19ec7919feaf2514bb7fbbf04736",
+    "config": {
+        "task": {
+            "path": "sql-engine",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "sql-engine__MVrQv6R",
+        "trials_dir": "jobs/2026-03-23__03-15-51",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "openhands",
+            "import_path": null,
+            "model_name": "openai/nemotron-3-super:120b",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "60ad0776-ce5a-4ae2-9b66-13cf0344f421"
+    },
+    "agent_info": {
+        "name": "openhands",
+        "version": "unknown",
+        "model_info": {
+            "name": "nemotron-3-super:120b",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0833
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-23T00:15:51.684132Z",
+    "finished_at": "2026-03-23T00:35:06.365126Z",
+    "environment_setup": {
+        "started_at": "2026-03-23T00:15:51.684521Z",
+        "finished_at": "2026-03-23T00:15:54.660573Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-23T00:15:54.660602Z",
+        "finished_at": "2026-03-23T00:20:00.916883Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-23T00:20:00.916915Z",
+        "finished_at": "2026-03-23T00:33:09.632800Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-23T00:33:09.643090Z",
+        "finished_at": "2026-03-23T00:34:11.406018Z"
+    }
+}

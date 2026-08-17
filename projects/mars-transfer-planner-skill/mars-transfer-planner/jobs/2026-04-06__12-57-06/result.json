@@ -1,0 +1,29 @@
+{
+    "id": "4f31c89e-28ed-4c76-9108-5b5a9288ba3f",
+    "started_at": "2026-04-06T12:57:06.635594",
+    "finished_at": "2026-04-06T13:08:41.559090",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "claude-code__claude-sonnet-4-20250514__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "mars-transfer-planner__3uq7dVd"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

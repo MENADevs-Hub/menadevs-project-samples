@@ -1,0 +1,84 @@
+University,Scholarship Name,Amount,Type,Eligibility,Renewable,GPA Requirement,Residency Requirement
+Ohio State University,Provost Scholarship,5000,Merit,All admitted,Yes,3.5,None
+Ohio State University,Maximus Scholarship,11000,Merit,Top 10% class rank,Yes,3.7,None
+Ohio State University,Morrill Scholarship,14000,Merit,Leadership + academics,Yes,3.8,None
+Ohio State University,National Buckeye Scholarship,13000,Merit,National Merit Semifinalist,Yes,3.9,None
+University of Michigan,Regents Merit Scholarship,12000,Merit,All admitted,Yes,3.7,None
+University of Michigan,LSA Dean Scholarship,7500,Merit,LSA applicants,Yes,3.5,None
+Purdue University,Presidential Scholarship,16000,Merit,GPA 3.8+,Yes,3.8,None
+Purdue University,Trustees Scholarship,10000,Merit,GPA 3.5+,Yes,3.5,None
+Purdue University,Engineering Dean Scholarship,5000,Merit,Engineering admits,Yes,3.5,None
+University of Illinois Urbana-Champaign,Chancellor Scholarship,8000,Merit,Top academics,Yes,3.7,None
+University of Illinois Urbana-Champaign,Engineering Visionary Scholarship,12000,Merit,Engineering admits,Yes,3.8,None
+Georgia Institute of Technology,Provost Scholarship,8000,Merit,All admitted,Yes,3.5,None
+Georgia Institute of Technology,President Scholarship,18000,Merit,Top-tier academics,Yes,3.9,None
+Georgia Institute of Technology,Stamps Scholarship,24000,Merit,Top 1% applicants,Yes,3.95,None
+University of Texas at Austin,Distinguished Scholar Award,10000,Merit,All admitted,Yes,3.5,In-State
+University of Texas at Austin,STEM Excellence Scholarship,5000,Merit,STEM majors,Yes,3.6,None
+University of Wisconsin-Madison,Kemper Knapp Scholarship,6000,Merit,All admitted,Yes,3.5,None
+University of Wisconsin-Madison,Chancellor Scholarship,11000,Merit,Top academics,Yes,3.7,None
+Penn State University,Provost Award,6000,Merit,All admitted,Yes,3.4,None
+Penn State University,Schreyer Honors Scholarship,8500,Merit,Honors College,Yes,3.6,None
+Penn State University,Academic Excellence Scholarship,12000,Merit,Top 5% class,Yes,3.8,None
+Virginia Tech,Presidential Scholarship,7000,Merit,All admitted,Yes,3.5,None
+Virginia Tech,Emerging Leaders Scholarship,4000,Need + Merit,First-gen or underrepresented,Yes,3.3,None
+University of Florida,Bright Futures Scholarship,9000,Merit,Florida residents,Yes,3.5,In-State
+University of Florida,Machen Florida Opportunity,10500,Need,Need-based,Yes,3.0,In-State
+University of Washington,Purple & Gold Scholarship,10000,Merit,All admitted,Yes,3.6,None
+University of Washington,Husky Promise,12000,Need,Family income < 65K,Yes,3.0,In-State
+Carnegie Mellon University,Carnegie Scholarship,20000,Merit,Top admits,Yes,3.8,None
+Carnegie Mellon University,Andrew Carnegie Scholarship,30000,Merit,Exceptional achievement,Yes,3.9,None
+Massachusetts Institute of Technology,MIT Grant,25000,Need,Need-based,Yes,3.0,None
+Stanford University,Stanford Scholarship,28000,Need,Need-based,Yes,3.0,None
+Rice University,Rice Engineering Scholarship,22000,Merit,Engineering admits,Yes,3.7,None
+Rice University,Century Scholarship,15000,Merit,All admitted,Yes,3.5,None
+Northwestern University,Dean Scholarship,18000,Merit,Top admits,Yes,3.7,None
+Northwestern University,Northwestern Scholarship,25000,Need,Need-based,Yes,3.0,None
+University of Southern California,Presidential Scholarship,24000,Merit,Half-tuition,Yes,3.8,None
+University of Southern California,Trustee Scholarship,32000,Merit,Full-tuition,Yes,3.9,None
+Case Western Reserve University,Provost Scholarship,20000,Merit,All admitted,Yes,3.5,None
+Case Western Reserve University,Dean Scholarship,15000,Merit,Strong academics,Yes,3.6,None
+Rensselaer Polytechnic Institute,Rensselaer Medal,25000,Merit,Math/science,Yes,3.7,None
+Rensselaer Polytechnic Institute,Dean Scholarship,15000,Merit,All admitted,Yes,3.5,None
+Rochester Institute of Technology,Presidential Scholarship,18000,Merit,Top admits,Yes,3.6,None
+Rochester Institute of Technology,RIT Innovation Scholarship,12000,Merit,STEM admits,Yes,3.5,None
+Drexel University,Drexel Grant,16000,Merit,All admitted,Yes,3.4,None
+Drexel University,A.J. Drexel Scholarship,22000,Merit,Top academics,Yes,3.8,None
+Stevens Institute of Technology,Edwin A. Stevens Scholarship,25000,Merit,Top admits,Yes,3.7,None
+Stevens Institute of Technology,Dean Scholarship,15000,Merit,All admitted,Yes,3.5,None
+Worcester Polytechnic Institute,WPI Merit Scholarship,20000,Merit,All admitted,Yes,3.5,None
+Worcester Polytechnic Institute,STEM Leadership Award,12000,Merit,Leadership,Yes,3.6,None
+Illinois Institute of Technology,Camras Scholarship,30000,Merit,Top admits,Yes,3.8,None
+Illinois Institute of Technology,IIT Dean Award,18000,Merit,All admitted,Yes,3.4,None
+University of Minnesota,Gold Scholar Award,10000,Merit,All admitted,Yes,3.5,None
+University of Minnesota,Presidential Scholarship,16000,Merit,Top 5%,Yes,3.8,None
+Iowa State University,George Washington Carver Scholarship,8000,Merit,STEM admits,Yes,3.5,None
+Iowa State University,Academic Recognition Award,5000,Merit,All admitted,Yes,3.3,None
+Michigan State University,Dean Scholarship,5000,Merit,All admitted,Yes,3.4,None
+Michigan State University,Alumni Distinguished Scholarship,20000,Merit,Top 1% admits,Yes,3.9,None
+University of Maryland,President Scholarship,12000,Merit,Top admits,Yes,3.7,None
+University of Maryland,Dean Scholarship,8000,Merit,All admitted,Yes,3.5,None
+North Carolina State University,Park Scholarship,25000,Merit,Full-ride nomination,Yes,3.8,None
+North Carolina State University,Goodnight Scholarship,18000,Merit,Engineering STEM,Yes,3.7,None
+Colorado School of Mines,President Scholarship,15000,Merit,Top admits,Yes,3.7,None
+Colorado School of Mines,Mines Medal of Achievement,8000,Merit,All admitted,Yes,3.5,None
+University of Colorado Boulder,Esteemed Scholars Award,10000,Merit,Top admits,Yes,3.6,None
+University of Colorado Boulder,CU Engineering Scholarship,6000,Merit,Engineering admits,Yes,3.5,None
+Arizona State University,New American University Scholarship,12000,Merit,Out-of-state up to 3.5,Yes,3.5,Out-of-State
+Arizona State University,Provost Scholarship,7000,Merit,3.0+ GPA,Yes,3.0,None
+University of Pittsburgh,Pitt Honors Scholarship,14000,Merit,Honors College,Yes,3.7,None
+University of Pittsburgh,Provost Scholarship,8000,Merit,All admitted,Yes,3.5,None
+Clemson University,President Award,6000,Merit,All admitted,Yes,3.4,None
+Clemson University,National Scholars Program,16000,Merit,Full-ride nomination,Yes,3.8,None
+Texas A&M University,President Endowed Scholarship,10000,Merit,Top 10%,Yes,3.6,None
+Texas A&M University,Engineering Honors Scholarship,7000,Merit,Engineering admits,Yes,3.5,None
+University of Virginia,Jefferson Scholarship,30000,Merit,Full-ride finalist,Yes,3.9,None
+University of Virginia,Echols Scholar Award,5000,Merit,Echols admits,Yes,3.6,None
+Indiana University Bloomington,Dean Scholarship,8000,Merit,All admitted,Yes,3.5,None
+Indiana University Bloomington,Wells Scholarship,22000,Merit,Full-ride nomination,Yes,3.8,None
+Northeastern University,Dean Scholarship,20000,Merit,Top admits,Yes,3.6,None
+Northeastern University,University Scholarship,28000,Merit,Exceptional academics,Yes,3.8,None
+Boston University,Trustee Scholarship,28000,Merit,Full-tuition,Yes,3.9,None
+Boston University,Presidential Scholarship,22000,Merit,Top admits,Yes,3.7,None
+Lehigh University,Dean Scholarship,20000,Merit,All admitted,Yes,3.5,None
+Lehigh University,Marquis Scholarship,30000,Merit,Top admits,Yes,3.8,None

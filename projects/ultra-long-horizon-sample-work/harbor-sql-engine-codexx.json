@@ -1,0 +1,28 @@
+{
+  "jobs_dir": "jobs",
+  "n_attempts": 1,
+  "timeout_multiplier": 1.0,
+  "environment": {
+    "type": "docker",
+    "force_build": true,
+    "delete": true
+  },
+  "verifier": {
+    "disable": false
+  },
+  "agents": [
+    {
+      "name": "codex",
+      "model_name": "openai/gpt-oss-120b",
+      "env": {},
+      "kwargs": {
+        "reasoning_effort": "high"
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "path": "/Users/khaleddabbas/Documents/Abundant-AI-Task-2/sql-engine"
+    }
+  ]
+}

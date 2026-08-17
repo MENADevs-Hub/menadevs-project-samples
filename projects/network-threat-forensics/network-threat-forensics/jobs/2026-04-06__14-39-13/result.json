@@ -1,0 +1,29 @@
+{
+    "id": "8028b9ea-5b77-4cf2-a309-e2b7b9fe9540",
+    "started_at": "2026-04-06T14:39:13.958808",
+    "finished_at": "2026-04-06T14:41:36.743735",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "claude-code__claude-sonnet-4-20250514__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.2222
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.2222": [
+                            "network-threat-forensics__Fu6soPq"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

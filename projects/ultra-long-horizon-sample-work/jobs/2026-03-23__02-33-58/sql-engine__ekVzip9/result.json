@@ -1,0 +1,97 @@
+{
+    "id": "5e2f2b1e-337b-404d-acd1-64ff0ccacbd9",
+    "task_name": "sql-engine",
+    "trial_name": "sql-engine__ekVzip9",
+    "trial_uri": "file:///home/zaid/tmp/Abundant-AI-Task-2/jobs/2026-03-23__02-33-58/sql-engine__ekVzip9",
+    "task_id": {
+        "path": "sql-engine"
+    },
+    "source": null,
+    "task_checksum": "11fcce53fe9330d253e01cf46e2a94d4bb2e19ec7919feaf2514bb7fbbf04736",
+    "config": {
+        "task": {
+            "path": "sql-engine",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "sql-engine__ekVzip9",
+        "trials_dir": "jobs/2026-03-23__02-33-58",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "openhands",
+            "import_path": null,
+            "model_name": "openai/qwen3.5:122b-chat",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "662a082f-c208-40ba-a3de-e408cbb60a85"
+    },
+    "agent_info": {
+        "name": "openhands",
+        "version": "unknown",
+        "model_info": {
+            "name": "qwen3.5:122b-chat",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 6042893,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 49144,
+        "cost_usd": 2.5154452,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-22T23:33:58.310790Z",
+    "finished_at": "2026-03-22T23:53:55.109453Z",
+    "environment_setup": {
+        "started_at": "2026-03-22T23:33:58.316131Z",
+        "finished_at": "2026-03-22T23:34:01.468690Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-22T23:34:01.468720Z",
+        "finished_at": "2026-03-22T23:38:21.438721Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-22T23:38:21.438776Z",
+        "finished_at": "2026-03-22T23:53:17.143727Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-22T23:53:17.143787Z",
+        "finished_at": "2026-03-22T23:53:36.464146Z"
+    }
+}

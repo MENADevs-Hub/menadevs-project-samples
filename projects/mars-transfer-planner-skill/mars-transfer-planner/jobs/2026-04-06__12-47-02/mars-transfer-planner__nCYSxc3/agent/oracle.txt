@@ -1,0 +1,20 @@
+waiting for server to start.... stopped waiting
+Mission: Mars Cargo 2026
+Window: 2026-Beta (alignment=0.92)
+Total delta-v: 6.167266 km/s
+Transfer time: 258.87 days
+  Valkyrie Express: fuel=41873kg, margin=35.6%
+  StormRider: fuel=49545kg, margin=36.5%
+  Ares Clipper: fuel=54422kg, margin=36.0%
+  Helios Mk2: fuel=62836kg, margin=33.9%
+  DeepStar III: fuel=76158kg, margin=13.5%
+  Red Horizon: fuel=95632kg, margin=20.3%
+  Cargo King: fuel=110663kg, margin=20.9%
+  Olympus Carrier: fuel=142690kg, margin=10.8%
+Chosen: StormRider (LOX/LCH4)
+Provider: DeepSpace Fuels @ $14.2/kg
+Total cost: $310,170,661
+Timeline: 6 phases
+
+Mission plan written to /app/output/mission_plan.json
+Timeline written to /app/output/mission_timeline.csv

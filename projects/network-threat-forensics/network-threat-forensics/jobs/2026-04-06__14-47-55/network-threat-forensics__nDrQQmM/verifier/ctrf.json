@@ -1,0 +1,101 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 9,
+            "passed": 9,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1775476087.6549158,
+            "stop": 1775476087.6714735
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_report_exists_and_valid",
+                "status": "passed",
+                "duration": 0.00028800099999770623,
+                "start": 1775476087.6664436,
+                "stop": 1775476087.6669407,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_compromised_host",
+                "status": "passed",
+                "duration": 0.0002947930000001264,
+                "start": 1775476087.6670861,
+                "stop": 1775476087.667619,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_dns_tunneling",
+                "status": "passed",
+                "duration": 0.00020724899999891022,
+                "start": 1775476087.6678967,
+                "stop": 1775476087.6682346,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_c2_beaconing_identification",
+                "status": "passed",
+                "duration": 0.00016520900000216443,
+                "start": 1775476087.6683547,
+                "stop": 1775476087.6686246,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_c2_beaconing_metrics",
+                "status": "passed",
+                "duration": 0.0004222919999996577,
+                "start": 1775476087.668739,
+                "stop": 1775476087.669383,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_lateral_movement",
+                "status": "passed",
+                "duration": 0.00021529100000172718,
+                "start": 1775476087.6695378,
+                "stop": 1775476087.669962,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_exfiltration_identification",
+                "status": "passed",
+                "duration": 0.0001631249999984874,
+                "start": 1775476087.670097,
+                "stop": 1775476087.6703718,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_exfiltration_stats",
+                "status": "passed",
+                "duration": 0.00028662500000109503,
+                "start": 1775476087.6704695,
+                "stop": 1775476087.6709483,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_timeline_order_and_events",
+                "status": "passed",
+                "duration": 0.00020029200000060143,
+                "start": 1775476087.6710925,
+                "stop": 1775476087.6714125,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

@@ -1,0 +1,98 @@
+claude --verbose --output-format stream-json -p '## Task
+
+Plan a cargo resupply mission to Mars using the 2026 launch window. All mission data lives in a PostgreSQL database called `mission_db` running locally spacecraft specs, launch windows, fuel providers, and mission constraints are all in the database.
+
+The specific mission is "Mars Cargo 2026" use this exact name when querying constraints. Watch out the database has multiple constraint sets including preliminary/draft versions, so make sure you pull the right one.
+
+Here'"'"'s what I need you to do:
+
+1. Query the database for the Mars Cargo 2026 constraints, then find the best 2026 launch window based on alignment quality. Some launch windows have been deprecated/withdrawn — don'"'"'t use those.
+2. Compute the Hohmann transfer orbit from Earth to Mars — departure burn, arrival burn, total delta-v with all corrections (gravity losses, midcourse, solar radiation pressure), and transfer time. Factor in the launch window'"'"'s delta-v penalty.
+3. Figure out which available spacecraft can carry enough fuel while meeting payload and reliability requirements. Important: check that the spacecraft'"'"'s fuel certifications are still current for 2026 — some expired. Use the Tsiolkovsky rocket equation for base fuel, then account for propellant boil-off during coast (varies by fuel type), settling losses at ignition, and operational reserve.
+4. Pick the cheapest fuel provider that'"'"'s actually active (not suspended or under review), meets the reliability threshold, can supply enough fuel, and whose fuel type is compatible with the spacecraft'"'"'s certified engine configuration.
+5. Estimate the total mission cost including fuel, handling surcharges, launch ops, mission control, insurance, and contingency.
+6. Build a phase-by-phase mission timeline from pre-launch through arrival in Mars orbit.
+
+## Output
+
+Create two files in `/app/output/`:
+
+### 1. `mission_plan.json`
+
+Use this exact JSON structure and key names:
+
+```json
+{
+  "mission": "<constraint name from DB>",
+  "target_planet": "Mars",
+  "mission_type": "cargo",
+  "launch_window": {
+    "name": "...",
+    "open_date": "YYYY-MM-DD",
+    "close_date": "YYYY-MM-DD",
+    "alignment_quality": 0.0,
+    "delta_v_penalty_pct": 0.0
+  },
+  "spacecraft": {
+    "name": "...",
+    "manufacturer": "...",
+    "dry_mass_kg": 0,
+    "engine_isp_s": 0,
+    "thrust_kn": 0.0,
+    "max_fuel_capacity_kg": 0,
+    "max_payload_kg": 0,
+    "reliability_rating": 0.0
+  },
+  "orbital_mechanics": {
+    "departure_orbit_km": 0.0,
+    "arrival_orbit_km": 0.0,
+    "semi_major_axis_km": 0.0,
+    "delta_v1_km_s": 0.0,
+    "delta_v2_km_s": 0.0,
+    "gravity_loss_km_s": 0.0,
+    "midcourse_correction_km_s": 0.0,
+    "solar_radiation_pressure_km_s": 0.0,
+    "total_delta_v_km_s": 0.0,
+    "ideal_total_delta_v_km_s": 0.0,
+    "transfer_time_days": 0.0
+  },
+  "fuel_budget": {
+    "base_fuel_mass_kg": 0.0,
+    "settling_loss_kg": 0.0,
+    "boil_off_loss_kg": 0.0,
+    "boil_off_rate_pct_per_day": 0.0,
+    "fuel_reserve_kg": 0.0,
+    "fuel_reserve_pct": 0.0,
+    "fuel_mass_kg": 0.0,
+    "total_wet_mass_kg": 0.0,
+    "mass_ratio": 0.0,
+    "fuel_margin_pct": 0.0,
+    "payload_kg": 0
+  },
+  "fuel_provider": {
+    "name": "...",
+    "fuel_type": "...",
+    "cost_per_kg_usd": 0.0,
+    "reliability_rating": 0.0
+  },
+  "cost_breakdown": {
+    "fuel_cost_usd": 0.0,
+    "fuel_handling_surcharge_usd": 0.0,
+    "launch_ops_cost_usd": 0.0,
+    "launch_season_premium_usd": 0.0,
+    "launch_pad_rental_usd": 0.0,
+    "range_safety_fee_usd": 0.0,
+    "mission_control_cost_usd": 0.0,
+    "insurance_cost_usd": 0.0,
+    "contingency_usd": 0.0,
+    "total_cost_usd": 0.0
+  }
+}
+```
+
+### 2. `mission_timeline.csv`
+
+Columns: `phase`, `start_date`, `end_date`, `duration_days`, `delta_v_km_s`, `fuel_consumed_kg`, `fuel_remaining_kg`, `spacecraft`, `status`
+
+Should include these phases: Pre-launch, Launch, Trans-Mars Injection, Coast, Mars Orbit Insertion, Arrival.
+' --allowedTools Bash Edit Write Read Glob Grep LS WebFetch NotebookEdit NotebookRead TodoRead TodoWrite Agent Skill SlashCommand Task WebSearch 2>&1 </dev/null | tee /logs/agent/claude-code.txt

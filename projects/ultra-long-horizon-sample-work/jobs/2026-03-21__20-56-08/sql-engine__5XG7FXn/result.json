@@ -1,0 +1,97 @@
+{
+    "id": "104aeaf4-a4cf-4236-8a35-75d0f5c4d730",
+    "task_name": "sql-engine",
+    "trial_name": "sql-engine__5XG7FXn",
+    "trial_uri": "file:///home/zaid/tmp/Abundant-AI-Task-2/jobs/2026-03-21__20-56-08/sql-engine__5XG7FXn",
+    "task_id": {
+        "path": "sql-engine"
+    },
+    "source": null,
+    "task_checksum": "11fcce53fe9330d253e01cf46e2a94d4bb2e19ec7919feaf2514bb7fbbf04736",
+    "config": {
+        "task": {
+            "path": "sql-engine",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "sql-engine__5XG7FXn",
+        "trials_dir": "jobs/2026-03-21__20-56-08",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "openhands",
+            "import_path": null,
+            "model_name": "openai/qwen3.5:35b",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "3417e6bf-a7ca-4e84-a131-0ac24d009b44"
+    },
+    "agent_info": {
+        "name": "openhands",
+        "version": "unknown",
+        "model_info": {
+            "name": "qwen3.5:35b",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 36985937,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 112450,
+        "cost_usd": 9.47138425,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-21T17:56:08.549039Z",
+    "finished_at": "2026-03-21T19:46:54.929410Z",
+    "environment_setup": {
+        "started_at": "2026-03-21T17:56:08.550885Z",
+        "finished_at": "2026-03-21T17:56:11.979923Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-21T17:56:11.979950Z",
+        "finished_at": "2026-03-21T17:58:44.373405Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-21T17:58:44.373436Z",
+        "finished_at": "2026-03-21T19:46:16.132348Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-21T19:46:16.132386Z",
+        "finished_at": "2026-03-21T19:46:35.438225Z"
+    }
+}

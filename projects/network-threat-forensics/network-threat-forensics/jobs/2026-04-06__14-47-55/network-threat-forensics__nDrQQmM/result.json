@@ -1,0 +1,87 @@
+{
+    "id": "13dacffe-82d7-4f0d-9e14-3342954cb8ef",
+    "task_name": "network-threat-forensics",
+    "trial_name": "network-threat-forensics__nDrQQmM",
+    "trial_uri": "file:///Users/mohammadjury/Desktop/MENADevs/skillsbench/jobs/2026-04-06__14-47-55/network-threat-forensics__nDrQQmM",
+    "task_id": {
+        "path": "tasks/network-threat-forensics"
+    },
+    "source": null,
+    "task_checksum": "32cff0316a9895de28d9e4c85bc016bf173e6282c90e1f8dd017b7bb750cbc40",
+    "config": {
+        "task": {
+            "path": "tasks/network-threat-forensics",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "network-threat-forensics__nDrQQmM",
+        "trials_dir": "jobs/2026-04-06__14-47-55",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "oracle",
+            "import_path": null,
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "d331e8b3-b31b-4550-b12c-c85e0a8bd4cc"
+    },
+    "agent_info": {
+        "name": "oracle",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-06T14:47:55.724815",
+    "finished_at": "2026-04-06T14:48:08.982795",
+    "environment_setup": {
+        "started_at": "2026-04-06T14:47:55.730063",
+        "finished_at": "2026-04-06T14:48:01.597441"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-06T14:48:01.597512",
+        "finished_at": "2026-04-06T14:48:01.597576"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-06T14:48:01.597598",
+        "finished_at": "2026-04-06T14:48:03.380200"
+    },
+    "verifier": {
+        "started_at": "2026-04-06T14:48:03.380521",
+        "finished_at": "2026-04-06T14:48:07.740528"
+    }
+}

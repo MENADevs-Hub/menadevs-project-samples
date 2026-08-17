@@ -1,0 +1,48 @@
+Collecting pytest
+  Downloading pytest-9.0.2-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-json-ctrf
+  Downloading pytest_json_ctrf-0.4.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting iniconfig>=1.0.1 (from pytest)
+  Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting packaging>=22 (from pytest)
+  Downloading packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pluggy<2,>=1.5 (from pytest)
+  Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting pygments>=2.7.2 (from pytest)
+  Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Downloading pytest-9.0.2-py3-none-any.whl (374 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 374.8/374.8 kB 367.8 kB/s eta 0:00:00
+Downloading pytest_json_ctrf-0.4.1-py3-none-any.whl (7.2 kB)
+Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Downloading packaging-26.0-py3-none-any.whl (74 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 74.4/74.4 kB 402.3 kB/s eta 0:00:00
+Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 363.2 kB/s eta 0:00:00
+Installing collected packages: pygments, pluggy, packaging, iniconfig, pytest, pytest-json-ctrf
+Successfully installed iniconfig-2.3.0 packaging-26.0 pluggy-1.6.0 pygments-2.20.0 pytest-9.0.2 pytest-json-ctrf-0.4.1
+============================= test session starts ==============================
+platform linux -- Python 3.11.15, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.11
+cachedir: .pytest_cache
+rootdir: /tests
+plugins: json-ctrf-0.4.1
+collecting ... collected 7 items
+
+../tests/test_outputs.py::test_plan_structure PASSED                     [ 14%]
+../tests/test_outputs.py::test_orbital_mechanics PASSED                  [ 28%]
+../tests/test_outputs.py::test_transfer_time PASSED                      [ 42%]
+../tests/test_outputs.py::test_fuel_budget PASSED                        [ 57%]
+../tests/test_outputs.py::test_constraints_and_cost PASSED               [ 71%]
+../tests/test_outputs.py::test_provider_and_compatibility PASSED         [ 85%]
+../tests/test_outputs.py::test_timeline PASSED                           [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_plan_structure
+PASSED ../tests/test_outputs.py::test_orbital_mechanics
+PASSED ../tests/test_outputs.py::test_transfer_time
+PASSED ../tests/test_outputs.py::test_fuel_budget
+PASSED ../tests/test_outputs.py::test_constraints_and_cost
+PASSED ../tests/test_outputs.py::test_provider_and_compatibility
+PASSED ../tests/test_outputs.py::test_timeline
+============================== 7 passed in 0.01s ===============================

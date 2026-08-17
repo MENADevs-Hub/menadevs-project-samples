@@ -1,0 +1,11 @@
+customer_id,full_name,email,phone,country,postal_code,signup_date
+1,John Smith,john.smith@example.com,+1 (555) 123-4567,US,90210,2023-01-15
+2,jane doe,JANE.DOE@EXAMPLE.COM,555.987.6543,US,10001,2023-02-20
+3,John  Smith,john.smith@example.com,555-123-4567,US,90210,2023-01-16
+4,Bob Johnson,not-an-email,+44 20 7946 0958,GB,SW1A 1AA,2023-03-10
+5,Alice Brown,alice@example.com,,CA,M5H 2N2,2023-04-05
+6,,missing.name@example.com,5551234567,US,30301,2023-05-12
+7,Carlos Ruiz,carlos.ruiz@example.com,+34 91 123 4567,XX,28001,2023-06-18
+8,Mary  Jones ,mary.jones@example.com,12,DE,10115,bad-date
+9,Mary Jones,mary.jones@example.com,+49 30 12345678,DE,10115,2023-07-22
+10,Tom White,tom.white@example,555 000 1111,FR,75001,2023-08-30

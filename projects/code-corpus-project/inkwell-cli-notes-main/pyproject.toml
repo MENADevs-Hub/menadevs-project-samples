@@ -1,0 +1,67 @@
+[build-system]
+requires = ["hatchling>=1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "inkwell-cli-notes"
+version = "0.1.0"
+description = "Production-ready local-first CLI for managing Markdown notes."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Inkwell CLI Notes contributors" }]
+dependencies = [
+  "platformdirs>=4.3.6",
+  "pydantic>=2.10.6",
+  "python-frontmatter>=1.1.0",
+  "rich>=13.9.4",
+  "typer>=0.16.0",
+]
+
+[project.scripts]
+inkwell = "inkwell_cli_notes.cli:app"
+
+[dependency-groups]
+dev = [
+  "build>=1.2.2.post1",
+  "mypy>=1.15.0",
+  "pre-commit>=4.1.0",
+  "pytest>=8.3.4",
+  "ruff>=0.9.10",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/inkwell_cli_notes"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+  "A",
+  "B",
+  "C4",
+  "E",
+  "F",
+  "I",
+  "N",
+  "UP",
+  "W",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unused_configs = true
+mypy_path = "src"

@@ -1,0 +1,25 @@
+precinct_id,precinct_name,candidate,party,votes,registered_voters
+P001,North Ward,Maria Chen,DEM,1247,3200
+P001,North Ward,James Walker,REP,1089,3200
+P001,North Ward,Sofia Rivera,IND,156,3200
+P002,South Ward,Maria Chen,DEM,892,2100
+P002,South Ward,James Walker,REP,756,2100
+P002,South Ward,Sofia Rivera,IND,98,2100
+P003,East Ward,Maria Chen,DEM,1103,2800
+P003,East Ward,James Walker,REP,1245,2800
+P003,East Ward,Sofia Rivera,IND,87,2800
+P004,West Ward,Maria Chen,DEM,567,1900
+P004,West Ward,James Walker,REP,823,1900
+P004,West Ward,Sofia Rivera,IND,201,1900
+P005,Central,Maria Chen,DEM,1892,4100
+P005,Central,James Walker,REP,1456,4100
+P005,Central,Sofia Rivera,IND,312,4100
+P006,University District,Maria Chen,DEM,1567,2600
+P006,University District,James Walker,REP,623,2600
+P006,University District,Sofia Rivera,IND,189,2600
+P007,Industrial Zone,Maria Chen,DEM,498,1750
+P007,Industrial Zone,James Walker,REP,876,1750
+P007,Industrial Zone,Sofia Rivera,IND,45,1750
+P008,Harbor Area,Maria Chen,DEM,1234,3100
+P008,Harbor Area,James Walker,REP,1098,3100
+P008,Harbor Area,Sofia Rivera,IND,203,3100

@@ -1,0 +1,84 @@
+{
+    "id": "23a0efd5-939b-47b8-8ba7-6d23e7ff8910",
+    "task_name": "election-results-reconciler",
+    "trial_name": "election-results-reconciler__XAyV2eo",
+    "trial_uri": "file:///mnt/c/Users/hp/Desktop/Mohammad/skillsbench/jobs/2026-04-06__13-18-58/election-results-reconciler__XAyV2eo",
+    "task_id": {
+        "path": "tasks/election-results-reconciler"
+    },
+    "source": null,
+    "task_checksum": "0a0ce6a7df947b7b852b37567f1e49145dc24e43a5299d6490df8dbcdf8c0b30",
+    "config": {
+        "task": {
+            "path": "tasks/election-results-reconciler",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "election-results-reconciler__XAyV2eo",
+        "trials_dir": "jobs/2026-04-06__13-18-58",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "oracle",
+            "import_path": null,
+            "model_name": null,
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "955563af-3bd5-441c-b4b7-05713cc34989"
+    },
+    "agent_info": {
+        "name": "oracle",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-06T13:18:58.227270",
+    "finished_at": "2026-04-06T13:20:22.708914",
+    "environment_setup": {
+        "started_at": "2026-04-06T13:18:58.308316",
+        "finished_at": "2026-04-06T13:19:49.338008"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-06T13:19:49.338070",
+        "finished_at": "2026-04-06T13:19:49.338160"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-06T13:19:49.338199",
+        "finished_at": "2026-04-06T13:19:51.094743"
+    },
+    "verifier": {
+        "started_at": "2026-04-06T13:19:51.094901",
+        "finished_at": "2026-04-06T13:20:11.681110"
+    }
+}

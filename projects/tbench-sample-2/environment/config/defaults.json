@@ -1,0 +1,5 @@
+{
+  "hardBounceDays": 180,
+  "softBounceDays": 14,
+  "reasonOrder": ["complaint", "hard_bounce", "soft_bounce", "unsubscribe"]
+}

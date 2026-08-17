@@ -1,0 +1,29 @@
+{
+    "id": "850ab911-903d-4a86-a957-f5ae33aefd49",
+    "started_at": "2026-03-23T09:15:52.556208",
+    "finished_at": "2026-03-23T09:21:51.459252",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "openhands__openhands-lm__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0833
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0833": [
+                            "sql-engine__pXPaRmn"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

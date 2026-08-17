@@ -1,0 +1,15 @@
+# Section 2 — Repository metadata. Fill this in and keep it updated.
+# Some fields are computed by the validation toolkit; fill the rest manually.
+
+source_url:           https://github.com/code-corpus/node-dir-tree
+primary_language:     Node.js
+domain:               cli
+short_description:    CLI tool to print directory trees with depth limiting, ignore patterns, size display, and JSON output
+snapshot_commit:      741f4a0d4ea1d3af0b8f5849790932c01dfb0cf0
+snapshot_date:        2026-06-25
+
+# --- computed by the validation toolkit (leave blank; do not hand-edit) ---
+lines_of_code:
+estimated_tokens:
+number_of_test_cases:
+number_of_unique_developers:

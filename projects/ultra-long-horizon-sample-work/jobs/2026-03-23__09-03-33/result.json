@@ -1,0 +1,29 @@
+{
+    "id": "0067c7f2-3457-4b94-9500-1605f2fd37db",
+    "started_at": "2026-03-23T09:03:33.008029",
+    "finished_at": "2026-03-23T09:12:41.142521",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "openhands__nemotron-cascade-2:30b__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0833
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0833": [
+                            "sql-engine__k57UUVe"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

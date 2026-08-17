@@ -1,0 +1,73 @@
+[build-system]
+requires = []
+build-backend = "build_backend"
+backend-path = ["."]
+
+[project]
+name = "py-md-toc"
+version = "0.1.0"
+description = "Markdown table of contents generator for Python."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "py-md-toc contributors" }]
+dependencies = [
+  "typer>=0.12.5",
+]
+
+[project.scripts]
+py-md-toc = "py_md_toc.cli:app"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3.3",
+  "ruff>=0.7.4",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/py_md_toc"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+  "A",
+  "B",
+  "C4",
+  "E",
+  "F",
+  "I",
+  "N",
+  "S",
+  "UP",
+  "W",
+]
+ignore = [
+  "S101",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["S101"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unused_configs = true
+plugins = []
+mypy_path = "src"
+
+[[tool.mypy.overrides]]
+module = ["tests.*"]
+disallow_untyped_decorators = false

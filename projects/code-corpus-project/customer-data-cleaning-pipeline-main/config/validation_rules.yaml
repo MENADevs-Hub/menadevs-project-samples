@@ -1,0 +1,19 @@
+# Field validation rules consumed by the rule engine.
+# Supported rule types: required, regex, range, enum, email, phone.
+rules:
+  full_name:
+    - type: required
+  email:
+    - type: required
+    - type: email
+  phone:
+    - type: phone
+  country:
+    - type: enum
+      values: [US, CA, GB, DE, FR, JO, AE, SA]
+  postal_code:
+    - type: regex
+      pattern: '^[A-Za-z0-9 -]{3,10}$'
+  signup_date:
+    - type: regex
+      pattern: '^\d{4}-\d{2}-\d{2}$'

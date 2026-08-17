@@ -1,0 +1,19 @@
+# Pipeline behavior: normalization options and deduplication settings.
+normalization:
+  phone:
+    default_country_code: "1"
+    min_digits: 7
+    max_digits: 15
+  name:
+    title_case: true
+    collapse_whitespace: true
+  postal_code:
+    uppercase: true
+
+deduplication:
+  blocking_key: email_domain
+  similarity_threshold: 0.9
+  key_fields: [email, full_name]
+
+output:
+  directory: data/output

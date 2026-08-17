@@ -1,0 +1,15 @@
+# Section 2 — Repository metadata. Fill this in and keep it updated.
+# Some fields are computed by the validation toolkit; fill the rest manually.
+
+source_url: https://github.com/code-corpus/inkwell-cli-notes
+primary_language: Python
+domain: cli
+short_description: Local-first Python CLI for managing Markdown notes.
+snapshot_commit: 937baddd4305fa2fe55caa8c805072e087449d89
+snapshot_date: 2026-06-25
+
+# --- computed by the validation toolkit (leave blank; do not hand-edit) ---
+lines_of_code:
+estimated_tokens:
+number_of_test_cases:
+number_of_unique_developers:

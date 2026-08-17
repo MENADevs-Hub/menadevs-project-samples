@@ -1,0 +1,56 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 3,
+            "passed": 1,
+            "failed": 2,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1775471280.327761,
+            "stop": 1775471280.3987794
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_report_structure",
+                "status": "passed",
+                "duration": 0.001176498997665476,
+                "start": 1775471280.3485882,
+                "stop": 1775471280.350086,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_summary",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0011782669971580617,
+                "start": 1775471280.350441,
+                "stop": 1775471280.3687418,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "summary = {'precincts_matched': 7, 'precincts_with_discrepancies': 6, 'severity_breakdown': {'high': 4, 'low': 1, 'medium': 1}, 'total_discrepancies': 6, ...}\n\n    def test_summary(summary):\n        \"\"\"Summary counts match the 6 known discrepancies: totals, severity breakdown, and type breakdown.\"\"\"\n        assert summary[\"total_discrepancies\"] == 6, \\\n            f\"Expected 6 total discrepancies, got {summary['total_discrepancies']}\"\n    \n>       sev = summary[\"discrepancies_by_severity\"]\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       KeyError: 'discrepancies_by_severity'\n\n/tests/test_outputs.py:63: KeyError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_discrepancy",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0009001209982670844,
+                "start": 1775471280.3690407,
+                "stop": 1775471280.3746593,
+                "retries": 5,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::precinct,candidate,d_type,severity,checks::[('North Ward', 'Maria Chen', 'vote_count_mismatch', 'low', {'official_votes': 1247, 'tally_votes': 1249, 'difference': 2}), ('South Ward', 'James Walker', 'impossible_value', 'high', {'tally_votes': 4500}), ('West Ward', 'Sofia Rivera', 'vote_count_mismatch', 'medium', {'difference': 14}), ('Central', 'Maria Chen', 'vote_count_mismatch', 'high', {'difference': 150}), ('University District', 'Sofia Rivera', 'candidate_missing', 'high', {}), ('Harbor Area', None, 'precinct_missing', 'high', {})]"
+                ],
+                "trace": "discrepancies = [{'candidate': 'Sofia Rivera', 'difference': 14, 'official_votes': 201, 'precinct': 'West Ward', ...}, {'candidate': '...entral', ...}, {'candidate': 'James Walker', 'difference': 3744, 'official_votes': 756, 'precinct': 'South Ward', ...}]\nprecinct = 'Harbor Area', candidate = None, d_type = 'precinct_missing'\nseverity = 'high', checks = {}\n\n    @pytest.mark.parametrize(\"precinct,candidate,d_type,severity,checks\", [\n        (\"North Ward\",        \"Maria Chen\",   \"vote_count_mismatch\", \"low\",    {\"official_votes\": 1247, \"tally_votes\": 1249, \"difference\": 2}),\n        (\"South Ward\",        \"James Walker\", \"impossible_value\",    \"high\",   {\"tally_votes\": 4500}),\n        (\"West Ward\",         \"Sofia Rivera\", \"vote_count_mismatch\", \"medium\", {\"difference\": 14}),\n        (\"Central\",           \"Maria Chen\",   \"vote_count_mismatch\", \"high\",   {\"difference\": 150}),\n        (\"University District\", \"Sofia Rivera\", \"candidate_missing\", \"high\",   {}),\n        (\"Harbor Area\",       None,           \"precinct_missing\",    \"high\",   {}),\n    ])\n    def test_discrepancy(discrepancies, precinct, candidate, d_type, severity, checks):\n        \"\"\"Each known discrepancy is present with the correct type, severity, and numeric fields.\"\"\"\n        d = find(discrepancies, precinct, candidate, d_type)\n>       assert d is not None, f\"Missing discrepancy: {precinct} / {candidate} ({d_type})\"\nE       AssertionError: Missing discrepancy: Harbor Area / None (precinct_missing)\nE       assert None is not None\n\n/tests/test_outputs.py:86: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            }
+        ]
+    }
+}

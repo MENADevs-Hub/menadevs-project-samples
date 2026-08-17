@@ -1,0 +1,126 @@
+Collecting pytest==8.4.1
+  Downloading pytest-8.4.1-py3-none-any.whl.metadata (7.7 kB)
+Collecting pytest-json-ctrf==0.3.5
+  Downloading pytest_json_ctrf-0.3.5-py3-none-any.whl.metadata (3.3 kB)
+Collecting iniconfig>=1 (from pytest==8.4.1)
+  Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting packaging>=20 (from pytest==8.4.1)
+  Downloading packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pluggy<2,>=1.5 (from pytest==8.4.1)
+  Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting pygments>=2.7.2 (from pytest==8.4.1)
+  Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Downloading pytest-8.4.1-py3-none-any.whl (365 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 365.5/365.5 kB 1.9 MB/s eta 0:00:00
+Downloading pytest_json_ctrf-0.3.5-py3-none-any.whl (6.8 kB)
+Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Downloading packaging-26.0-py3-none-any.whl (74 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 74.4/74.4 kB 8.7 MB/s eta 0:00:00
+Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 8.0 MB/s eta 0:00:00
+Installing collected packages: pygments, pluggy, packaging, iniconfig, pytest, pytest-json-ctrf
+Successfully installed iniconfig-2.3.0 packaging-26.0 pluggy-1.6.0 pygments-2.20.0 pytest-8.4.1 pytest-json-ctrf-0.3.5
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collecting ... collected 9 items
+
+../tests/test_outputs.py::test_report_exists_and_valid PASSED            [ 11%]
+../tests/test_outputs.py::test_compromised_host PASSED                   [ 22%]
+../tests/test_outputs.py::test_dns_tunneling FAILED                      [ 33%]
+../tests/test_outputs.py::test_c2_beaconing_identification FAILED        [ 44%]
+../tests/test_outputs.py::test_c2_beaconing_metrics FAILED               [ 55%]
+../tests/test_outputs.py::test_lateral_movement FAILED                   [ 66%]
+../tests/test_outputs.py::test_exfiltration_identification FAILED        [ 77%]
+../tests/test_outputs.py::test_exfiltration_stats FAILED                 [ 88%]
+../tests/test_outputs.py::test_timeline_order_and_events FAILED          [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_dns_tunneling ______________________________
+
+    def test_dns_tunneling():
+        report = load_report()
+        d = report["dns_tunneling"]
+>       assert d["host"] == "10.0.1.7"
+               ^^^^^^^^^
+E       TypeError: 'NoneType' object is not subscriptable
+
+/tests/test_outputs.py:35: TypeError
+_______________________ test_c2_beaconing_identification _______________________
+
+    def test_c2_beaconing_identification():
+        report = load_report()
+        assert report["c2_server"] == "203.0.113.50"
+        b = report["c2_beaconing"]
+>       assert b["host"] == "10.0.1.7"
+               ^^^^^^^^^
+E       KeyError: 'host'
+
+/tests/test_outputs.py:46: KeyError
+__________________________ test_c2_beaconing_metrics ___________________________
+
+    def test_c2_beaconing_metrics():
+        report = load_report()
+        b = report["c2_beaconing"]
+>       assert 295 <= b["mean_interval_seconds"] <= 305, f"Interval unexpected: {b['mean_interval_seconds']}"
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'mean_interval_seconds'
+
+/tests/test_outputs.py:54: KeyError
+____________________________ test_lateral_movement _____________________________
+
+    def test_lateral_movement():
+        report = load_report()
+        lm = report["lateral_movement"]
+>       assert lm["source_host"] == "10.0.1.7"
+               ^^^^^^^^^^^^^^^^^
+E       KeyError: 'source_host'
+
+/tests/test_outputs.py:62: KeyError
+_______________________ test_exfiltration_identification _______________________
+
+    def test_exfiltration_identification():
+        report = load_report()
+        assert report["exfiltration_destination"] == "198.51.100.77"
+        e = report["exfiltration"]
+>       assert e["host"] == "10.0.1.7"
+               ^^^^^^^^^
+E       KeyError: 'host'
+
+/tests/test_outputs.py:71: KeyError
+___________________________ test_exfiltration_stats ____________________________
+
+    def test_exfiltration_stats():
+        report = load_report()
+        e = report["exfiltration"]
+>       assert normalize_ts(e["peak_hour"]) == "2025-03-07T15:00:00Z"
+                            ^^^^^^^^^^^^^^
+E       KeyError: 'peak_hour'
+
+/tests/test_outputs.py:78: KeyError
+________________________ test_timeline_order_and_events ________________________
+
+    def test_timeline_order_and_events():
+        report = load_report()
+        tl = report["timeline"]
+>       assert len(tl) == 4
+E       AssertionError: assert 3 == 4
+E        +  where 3 = len([{'event': 'lateral_movement_start', 'timestamp': '2025-03-05T00:00:00Z'}, {'event': 'data_exfiltration', 'timestamp': '2025-03-05T00:00:00Z'}, {'event': 'c2_beaconing_start', 'timestamp': '2025-03-05T02:17:00+00:00'}])
+
+/tests/test_outputs.py:87: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_report_exists_and_valid
+PASSED ../tests/test_outputs.py::test_compromised_host
+FAILED ../tests/test_outputs.py::test_dns_tunneling - TypeError: 'NoneType' o...
+FAILED ../tests/test_outputs.py::test_c2_beaconing_identification - KeyError:...
+FAILED ../tests/test_outputs.py::test_c2_beaconing_metrics - KeyError: 'mean_...
+FAILED ../tests/test_outputs.py::test_lateral_movement - KeyError: 'source_host'
+FAILED ../tests/test_outputs.py::test_exfiltration_identification - KeyError:...
+FAILED ../tests/test_outputs.py::test_exfiltration_stats - KeyError: 'peak_hour'
+FAILED ../tests/test_outputs.py::test_timeline_order_and_events - AssertionEr...
+========================= 7 failed, 2 passed in 0.03s ==========================
+Score: 0.2222 (2/9)
