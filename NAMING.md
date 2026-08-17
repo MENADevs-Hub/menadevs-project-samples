@@ -6,6 +6,7 @@ Project directories use lowercase, descriptive kebab-case names. The source-to-r
 | --- | --- |
 | `Evaluation Environment - Electronic StoreAug.zip` | `projects/electronic-store-evaluation-environment/` |
 | `MENADevs-samples-code-corpus-project.zip` | `projects/code-corpus-project/` |
+| `mena-pheonix/grafana__loki__21237` | `projects/grafana-loki-21237/` |
 | `Tbench Sample 2.zip` | `projects/tbench-sample-2/` |
 | `Ultra Long Horizon Sample Work.zip` | `projects/ultra-long-horizon-sample-work/` |
 | `SMILE Dataset - Sample TasksAug.xlsx` | `projects/smile-dataset/` |

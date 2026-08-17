@@ -1,0 +1,13 @@
+{
+  "instance_id": "mena-helix/grafana__loki__21237",
+  "repo": "mena-helix/grafana__loki__21237",
+  "base_commit": "26c9810354b09c183c129fd89d6e0a5d87c84b93",
+  "language": "Go",
+  "task_title": "fix: Bloom index gateway skipping chunks with 1 log line",
+  "task_type": "",
+  "problem_statement": "",
+  "problem_statement_variant": "",
+  "fail_to_pass": [],
+  "pass_to_pass": [],
+  "hints": []
+}

@@ -10,6 +10,7 @@ Each entry under [`projects/`](projects/) is self-contained. Supplied project ar
 | --- | --- |
 | [Electronic Store Evaluation Environment](projects/electronic-store-evaluation-environment/) | Electronic-store evaluation artifacts, including a Python entry sample, an ERD, workflow documents, and supporting visuals. |
 | [Code Corpus Project](projects/code-corpus-project/) | A five-project corpus of Python and Node.js command-line and data-processing samples with tests and project metadata. |
+| [Grafana Loki 21237](projects/grafana-loki-21237/) | A Phoenix BPO task based on Grafana Loki pull request #21237, preserving the supplied Loki source tree and task context. |
 | [TBench Sample 2](projects/tbench-sample-2/) | A Dockerized Node.js benchmark task for correcting deterministic email-suppression decisions, supported by Python tests. |
 | [Ultra Long Horizon Sample Work](projects/ultra-long-horizon-sample-work/) | A long-horizon Rust task focused on implementing the SQL layer of a distributed database, with evaluation tooling and recorded runs. |
 | [SMILE Dataset](projects/smile-dataset/) | An Excel dataset containing sample SMILE tasks. |
