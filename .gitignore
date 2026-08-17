@@ -1,4 +1,5 @@
 # Workspace-only source backup and assistant metadata
+/Data Samples/
 /Data Samples.zip
 /.agents/
 /.codex/
