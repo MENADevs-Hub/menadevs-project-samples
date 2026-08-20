@@ -6,7 +6,7 @@
 
 # MENADevs Project Samples
 
-This repository is a curated collection of sample projects and technical tasks showcasing MENADevs’ capabilities across software engineering, evaluation environments, data processing, security analysis, and complex implementation work. It has been prepared for direct client review as a practical representation of the breadth and quality of our work.
+This repository is a curated collection of sample projects and technical tasks showcasing MENADevs’ capabilities across software engineering, evaluation environments, data processing, security analysis, and complex implementation work. It has been prepared for direct client partner review as a practical representation of the breadth and quality of our work.
 
 ## Sample Projects
 
@@ -32,7 +32,7 @@ This repository is a curated collection of sample projects and technical tasks s
 
 | Project | Description |
 | --- | --- |
-| [SMILE Dataset](projects/smile-dataset/) | An Excel dataset containing representative SMILE sample tasks for structured review and evaluation. |
+| [SMILE Dataset](projects/smile-dataset/) | A dataset containing representative SMILE sample tasks for structured review and evaluation. |
 
 ## Repository Notes
 
@@ -51,4 +51,4 @@ For general inquiries and project discussions:
 - Email: [hello@menadevs.io](mailto:hello@menadevs.io)
 - Website: [www.menadevs.io](https://www.menadevs.io/)
 
-This work was led by **Osama Bsharat** ([osama.bsharat@menadevs.io](mailto:osama.bsharat@menadevs.io)). MENADevs team members can also reach Osama through internal channels, including Microsoft Teams and Slack, for additional details.
+This work was led by **Osama Bsharat**. 
