@@ -51,4 +51,4 @@ For general inquiries and project discussions:
 - Email: [hello@menadevs.io](mailto:hello@menadevs.io)
 - Website: [www.menadevs.io](https://www.menadevs.io/)
 
-This work was led by **Osama Bsharat**. 
+This work was compiled by **Osama Bsharat**. 
