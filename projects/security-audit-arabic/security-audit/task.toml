@@ -1,0 +1,37 @@
+schema_version = "1.1"
+
+[task]
+name = "skills/security-audit"
+description = "Audit and harden a vulnerable internal Flask portal for example.com; document findings and extend regression tests."
+authors = []
+keywords = ["security", "web", "flask", "xss", "csp"]
+
+[metadata]
+difficulty = "hard"
+expert_time_estimate_hours = 3
+category = "security"
+tags = ["security", "web-application", "python", "flask", "arabic"]
+difficulty_explanation = "This is synthetic but realistic appsec work: a security engineer or application-security consultant would audit an internal Flask portal before release, then ship fixes, tests, and a written report. The app is about 190 lines with 10 routes, helper functions, and partial controls that create false confidence. A sanitize_input() helper only strips script tags, so agents must understand why input filtering fails and switch to context-aware output escaping. Stored issues require tracing session data into several HTML views, not just the route where input first appears. The CSP looks semi-strict (default-src 'self') but still allows unsafe-inline and unsafe-eval in script-src, which needs real CSP knowledge to fix. Redirect validation must handle protocol-relative URLs, javascript: targets, and allowlisting for internal paths plus the org domain example.com. Some headers are already set, which hides what is still missing. Completing all of that plus regression tests and a structured report is closer to a focused half-day audit than a short homework exercise. Five bundled skills mimic a realistic appsec workspace: code-security-audit and security-review for tracing vulnerabilities, security-headers-configuration plus secure-headers-csp-builder for composing header/CSP review, and dependency-supply-chain-audit as a distractor for library/CVE work that is out of scope here. Skills are domain-generic checklists without copy-paste fixes for this Flask app; agents still trace routes and session data, implement fixes, write regression tests, and author the report."
+solution_explanation = "The reference solution removes the flawed sanitize_input() function and replaces all output rendering with markupsafe.escape() across search, dashboard, index, settings, and the 404 handler. It replaces the CSP with a strict policy (no unsafe directives), implements is_safe_redirect() to allowlist internal paths and example.com, hardens session cookies (HttpOnly, SameSite), adds the full set of security response headers via a centralized after_request hook, writes comprehensive regression tests covering all XSS paths, and creates SECURITY_REPORT.md documenting seven findings."
+verification_explanation = "pytest in /tests/test_outputs.py asserts reflected and stored XSS are escaped, CSP has no wildcards and script-src has no unsafe-inline and no unsafe-eval anywhere, unsafe redirects return 400, safe redirects (internal and example.com) succeed, cookies use HttpOnly/SameSite, three security headers are present (X-Frame-Options, X-Content-Type-Options, Referrer-Policy), SECURITY_REPORT.md covers required topics with severity/root-cause/remediation structure, and the agent wrote at least 4 test functions in /app/tests."
+
+[verifier]
+timeout_sec = 600.0
+
+[agent]
+timeout_sec = 1200.0
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240
+gpus = 0
+allow_internet = true
+mcp_servers = []
+
+[verifier.env]
+
+[environment.env]
+
+[solution.env]
